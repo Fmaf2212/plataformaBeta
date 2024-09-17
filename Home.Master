@@ -38,7 +38,7 @@
     <%--    <link href="vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet" />
     <link href="vendors/bootstrap-selector/css/bootstrap-select.min.css" rel="stylesheet" />--%>
 
-    <link href="css/proyecto2/style-v3.css?Fv63" rel="stylesheet" />
+    <link href="css/proyecto2/style-v3.css?Fv64" rel="stylesheet" />
     <%--    <link href="css/responsive.css" rel="stylesheet" />--%>
 
     <!------ Include the above in your HEAD tag ---------->
@@ -1651,7 +1651,9 @@
         </asp:ScriptManager>--%>
 
         <!--Cuando carga la pantalla-->
-        <div class="loader"></div>
+        <div class="loader">
+            <img src="https://tienda.mundosantanatura.com/img/loadingPageSantanatura-optimize.gif" alt="Loading..." />
+        </div>
         <div id="overlay" class="hiddenOverlay"></div>
         <div class="vistaPagina">
             <div style="display: none">
@@ -1844,8 +1846,8 @@
                                             <div>
                                                 <img width="79" id="imgLogoFooter3" src="https://tienda.mundosantanatura.com/img/Tienda/logoSN-compacto.png" alt="">
                                             </div>
-                                            <p style="margin-top: -35px; font-size: 13px; color: white; padding: 30px 0px 0px 0px;">"Porque vivir bien está en nuestras raíces"</p>
-                                            <ul style="margin: 8px 0 30px; display: flex; justify-content: center; align-items: center; grid-gap: 20px;">
+                                            <p style="margin-top: -35px; font-size: 13px; color: white; padding: 40px 0px 0px 0px;">"Porque vivir bien está en nuestras raíces"</p>
+                                            <ul style="margin: 8px 0 30px; display: flex; justify-content: center; align-items: center; grid-gap: 20px; padding-bottom: 40px;">
                                                 <li id="facebook" style="margin-left: 0"><a href="http://www.facebook.com/santanaturanetworkoficialperu" style="font-size: 30px; display: flex;"><i class="social_facebook" style="font-size: 27px"></i></a></li>
                                                 <%--<li id="twitter" style="margin-left: 0"><a href="#" style="font-size: 30px; display: flex;"><i class="social_twitter" style="font-size: 27px"></i></a></li>--%>
                                                 <li style="margin-left: 0"><a href="https://www.youtube.com/c/SANTANATURANETWORK" style="font-size: 30px; display: flex;"><i class="social_youtube" style="font-size: 27px"></i></a></li>
@@ -1854,7 +1856,7 @@
                                             </ul>
                                         </aside>
                                     </div>
-                                    <div class="text-center">
+                                    <div class="text-center" style="display:none;">
                                         <span style="font-size: 14px; color: white">Esta tienda está autorizada por Visa para realizar transacciones electrónicas.</span>
                                     </div>
                                 </div>
@@ -1946,7 +1948,7 @@
                         <div class="text-center">
                             <div class="col-2 col-sm-2 col-md-2">
                             </div>
-                            <div class="autorizacionVisa col-xs-12 col-sm-8 col-md-8">
+                            <div style="display:none;" class="autorizacionVisa col-xs-12 col-sm-8 col-md-8">
                                 <span>Esta tienda está autorizada por Visa para realizar transacciones electrónicas.</span>
 
                             </div>
@@ -1985,7 +1987,7 @@
                     <div class="text-center">
                         <div class="col-2 col-sm-2 col-md-2">
                         </div>
-                        <div class="autorizacionVisa col-xs-12 col-sm-8 col-md-8">
+                        <div class="autorizacionVisa col-xs-12 col-sm-8 col-md-8" style="display:none;">
                             <span>Esta tienda está autorizada por Visa para realizar transacciones electrónicas.</span>
 
                         </div>
