@@ -1,0 +1,88 @@
+﻿.bloqueSeguros#nav-tabContent {
+    display: flex;
+    margin-top: 80px;
+}
+
+.bloqueSeguros > section {
+    padding: 0 40px 20px;
+}
+
+.bloqueSeguros > .bloqueSeguros__seguro,
+.bloqueSeguros > .bloqueSeguros__seguroAdicional {
+    margin: 0 auto;
+}
+
+    .bloqueSeguros > .bloqueSeguros__seguro > div:nth-last-child(1) {
+        max-width: 600px;
+    }
+
+
+    .bloqueSeguros > .bloqueSeguros__seguro > #seguro .table-success > tr > th:nth-last-child(1) {
+        background-image: none;
+    }
+
+
+.bloqueSeguros > section > .titleTablaSeguros {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 0px 1px 3px 0px grey;
+}
+
+    .bloqueSeguros > section > .titleTablaSeguros h6 {
+        margin: 0;
+        line-height: .8;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+    .bloqueSeguros > .bloqueSeguros__seguroAdicional > #seguroAdicional .table-success > tr > th:nth-last-child(-n+2) {
+        background-image: none;
+    }
+@media (min-width: 1440px){
+    .bloqueSeguros#nav-tabContent {
+        padding: 0 200px;
+    }
+}
+@media (max-width: 1240px){
+    .bloqueSeguros#nav-tabContent {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    }
+    .bloqueSeguros > .bloqueSeguros__seguro, .bloqueSeguros > .bloqueSeguros__seguroAdicional{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .bloqueSeguros#nav-tabContent {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+
+    .bloqueSeguros#nav-tabContent {
+        margin-top: 50px;
+    }
+
+    .bloqueSeguros > section {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bloqueSeguros > section {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .bloqueSeguros#nav-tabContent {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-device-width: 768px) and (max-height: 1024px) {
+    body > form {
+        height: max-content !important;
+    }
+}

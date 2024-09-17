@@ -1,0 +1,69 @@
+﻿:root {
+    --Dark-primary: #1B2C5E;
+    --Medium-primary: #2D4A9D;
+}
+
+.arrow {
+    border: 2em solid transparent;
+    height: 0;
+    margin: 50vh auto;
+    width: 0;
+}
+
+    .arrow.down {
+        border-bottom: none;
+        border-top-color: #e5e5e5;
+    }
+
+    .arrow.up {
+        border-bottom-color: #e5e5e5;
+        border-top: none;
+    }
+
+svg.radial-progress {
+    height: auto;
+    max-width: 203px;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+    svg.radial-progress circle {
+        fill: rgba(0,0,0,0);
+        stroke: #fff;
+        stroke-dashoffset: 219.91148575129; 
+        stroke-width: 10;
+    }
+
+        svg.radial-progress circle.incomplete {
+            opacity: 0.05;
+        }
+
+        svg.radial-progress circle.complete {
+            stroke-dasharray: 219.91148575129; 
+        }
+
+    svg.radial-progress text {
+        fill: #000;
+        font: 400 1em/1 'Oswald', sans-serif;
+        text-anchor: middle;
+    }
+
+    svg.radial-progress:nth-of-type(6n+1) circle {
+        stroke: var(--Light-primary);
+    }
+
+    svg.radial-progress:nth-of-type(6n+2) circle {
+        stroke: #83e4e2;
+    }
+
+    svg.radial-progress:nth-of-type(6n+3) circle {
+        stroke: #fd6470;
+    }
+
+    svg.radial-progress:nth-of-type(6n+4) circle {
+        stroke: #fca858;
+    }
+
+    svg.radial-progress:nth-of-type(6n+5) circle {
+        stroke: #fddc32;
+    }

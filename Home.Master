@@ -1,0 +1,2395 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="SantaNaturaNetwork.Home" ClientIDMode="Static" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="content-language" content="es" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Santa Natura</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <%--<link href="css/EstilosNavBarNuevo.css" rel="stylesheet">--%>
+    <%--        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>--%>
+
+    <!--Hover del menú-->
+    <%--<link href="css/CrearCuentaCss.css" rel="stylesheet"/>--%>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Icono Santa Natura-->
+    <link rel="icon" href="https://tienda.mundosantanatura.com/img/Natural_Food_icon.png" type="image/x-icon" />
+
+    <link href="css/proyecto2/materialize.css" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link href="css/proyecto2/bootstrap.min-v2.css?Fv35" rel="stylesheet" />
+    <!--Para que salga el video de socios-->
+    <link href="css/proyecto2/bootstrap-3.3.0-css-bootstrap.min-v3.css?Fv40" rel="stylesheet" />
+
+    <!-- Rev slider css -->
+    <link href="css/proyecto2/vendors/revolution/css/settings.css" rel="stylesheet" />
+    <link href="css/proyecto2/vendors/revolution/css/layers.css" rel="stylesheet" />
+    <link href="css/proyecto2/vendors/revolution/css/navigation.css" rel="stylesheet" />
+    <!-- Extra plugin css -->
+    <%--    <link href="vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet" />
+    <link href="vendors/bootstrap-selector/css/bootstrap-select.min.css" rel="stylesheet" />--%>
+
+    <link href="css/proyecto2/style-v3.css?Fv63" rel="stylesheet" />
+    <%--    <link href="css/responsive.css" rel="stylesheet" />--%>
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <%--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    --%>
+
+    <%-- desde aqui--%>
+    <%--<script src="js/bootstrap4.min.js"></script>--%>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K062PLEYM3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-K062PLEYM3');
+    </script>
+
+
+    <link href="css/proyecto2/estilos-videos4.css?Fv63" rel="stylesheet" />
+
+
+    <%--hasta aqui--%>
+    <style>
+        :root {
+            /* Orange */
+            --Intense-orange: #C37D05;
+            --Primary-orange: #F8B808;
+            --Medium-orange: #F2CD4B;
+            --Light-orange: #FBDB92;
+            /* Purple */
+            --Intense-purple: #872C6C;
+            --Primary-purple: #B23F8E;
+            --Medium-purple: #C971A8;
+            --Light-purple: #D89FC6;
+            /* Red */
+            --Intense-red: #B31A1A;
+            --Dark-red: #C11E1E;
+            --Primary-red: #E42320;
+            --Medium-red: #EB5A5A;
+            --Light-red: #F19193;
+            /* Green */
+            --Intense-green: #17732A;
+            --Dark-green: #198F34;
+            --Primary-green: #1FA438;
+            --Medium-green: #5FAF6B;
+            --Light-green: #91D19C;
+            /*Primary*/
+            --Darkest-primary: #03164C;
+            --Dark-primary: #1B2C5E;
+            --Medium-primary: #153285;
+            --Light-primary: #6884D3;
+            --Lightest-primary: #AFBEE7;
+            --Darkest2-primary: #FE8538;
+            --Dark2-primary: #FFA56C;
+            /*Secundary*/
+            --Darkest-secundary: #4F9CD3;
+            --Dark-secundary: #B1ECFF;
+            --Medium-secundary: #D8F5FF;
+            --Light-secundary: #E5F8FF;
+            --Lightest-secundary: #F1FBFF;
+            /*Grises*/
+            --Darkest-grises: #000000;
+            --Dark-grises: #6D6D6D;
+            --Medium-grises: #C4C4C4;
+            --Light-grises: #E9E9E9;
+            --Light2-grises: #F4F4F4;
+            --Lightest-grises: #FFFFFF;
+            /*Success*/
+            --Medium-success: #008C27;
+            /*Error*/
+            --Medium-error: #EA2325;
+            --Light-error: #F6A7A7;
+            --Font-type: system-ui;
+            --anchoHeaderResponsive: calc(100vw - 14%);
+            --anchoHeaderResponsiveTablet: calc(100vw - 62%);
+            /*Table*/
+            --encabezado-tabla-modal: #3F3F3F;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+            /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+            .sticky + .content {
+                padding-top: 60px;
+            }
+
+        /*cuadrado que aparece cuando bajas hasta cierto punto*/
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            border: 0px;
+            background-color: var(--Primary-green);
+            z-index: 3000000;
+            transition: .3s background-color;
+        }
+
+            .back-to-top:hover {
+                background-color: var(--Dark-green);
+            }
+
+            .back-to-top:focus {
+                background-color: var(--Intense-green);
+            }
+
+        #navbarSupportedContent {
+            width: 100vw
+        }
+
+        .newNavBar-nav {
+            width: 100%;
+            text-align: center;
+        }
+
+            .newNavBar-nav > li:not(.redesSinMenu) {
+                float: none;
+                display: inline-block;
+            }
+
+        #clicLogin {
+            font-size: 14px;
+            text-transform: none;
+            font-weight: 700;
+            color: var(--Dark-green);
+            width: max-content;
+            background-color: #f2cd4bde;
+            border-radius: 25px;
+            padding: 7px 15px;
+            transition: .3s background-color;
+        }
+
+            #clicLogin:hover {
+                background-color: #1fa438c7;
+                color: #fff;
+            }
+
+            #clicLogin:focus {
+                background-color: #1fa438c7;
+                color: #fff;
+            }
+
+        .claseFuente1 {
+            font-family: var(--Font-type);
+        }
+
+        .navBar {
+            /*margin-top: 3px !important;*/
+        }
+
+        .menuRegistrar {
+            padding-left: calc(100vw - 1090px);
+            padding-right: 0;
+        }
+
+            .menuRegistrar a:hover {
+                background-color: var(--Darkest2-primary) !important;
+                border: 1px solid transparent !important;
+            }
+
+            .menuRegistrar a:focus {
+                background-color: var(--Dark2-primary) !important;
+                border: 1px solid transparent !important;
+                color: white !important;
+            }
+
+        .navbar-collapse > ul > li:hover > .dropdown-menus, .main-navigation > ul > li.focus > .dropdown-menus {
+            opacity: 1;
+            -moz-opacity: 1;
+            filter: alpha(opacity=100);
+            visibility: visible;
+            top: 27px;
+        }
+
+        .top-nav.light-header .navbar-collapse > ul > li:hover > .dropdown-menus, .main-navigation > ul > li.focus > .dropdown-menus {
+            top: 27px;
+        }
+
+        .navbar-collapse > ul > li:hover > .dropdown-menu-user, .main-navigation > ul > li.focus > .dropdown-menu-user {
+            opacity: 1;
+            -moz-opacity: 1;
+            filter: alpha(opacity=100);
+            visibility: visible;
+            top: 60px;
+        }
+
+        .noHover li a.claseFuente1 {
+            padding: 7px 0 7px 30px !important;
+        }
+
+        /*@media (min-width: 500px) {
+
+            #navcerrar:hover > .hover {
+                display: block;
+            }
+
+        }*/
+
+        /*.show > .noHover {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 5px
+        }*/
+
+
+        .dropdown-menu-user {
+            width: 282px;
+            background-color: #153285;
+            -webkit-box-shadow: 0px 4px 4px rgba(0 0 0 / 25%);
+            -moz-box-shadow: 0px 4px 4px rgba(0 0 0 / 25%);
+            box-shadow: 0px 4px 4px rgba(0 0 0 / 25%);
+            list-style-type: none;
+            margin: 0;
+            -moz-opacity: 0;
+            filter: alpha(opacity=0);
+            padding: .5rem 0;
+            position: absolute;
+            top: 60px;
+            right: 0px;
+            left: auto;
+            border-radius: 7px;
+            -webkit-transition: all .50s ease;
+            -moz-transition: all .50s ease;
+            -ms-transition: all .50s ease;
+            -o-transition: all .50s ease;
+            transition: all .5s ease;
+            min-width: 10rem;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            grid-gap: 5px;
+            text-align: left;
+        }
+
+        .vistaPagina {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        .copyright {
+            margin-top: -10px;
+            margin-bottom: -3px;
+            color: #555;
+            font-size: 13px;
+            font-family: var(--Font-type);
+            font-weight: 100;
+            line-height: 12px;
+        }
+
+
+
+        .imgUser {
+            border: none;
+            vertical-align: top;
+            height: 90px;
+            width: 90px;
+            text-align: center;
+            filter: invert(.5);
+            margin: 10px 0 20px;
+        }
+
+        .gb_jb > svg.gb_kb, .gb_wb > svg.gb_xb, .gb_yb > svg.gb_zb {
+            color: #5f6368;
+            fill: currentColor;
+        }
+
+        .gb_pa svg, .gb_Ac svg, .gb_Wc .gb_5d, .gb_Mc .gb_5d {
+            color: #5f6368;
+            opacity: 1;
+        }
+
+        .gb_jb {
+            box-shadow: 0 0px 1px 0 rgb(65 69 73 / 30%), 0 0px 3px 1px rgb(65 69 73 / 15%);
+            margin: 0px 3.5px 4px;
+            outline: 0;
+            position: absolute;
+            right: 0;
+            height: 26px;
+            width: 26px;
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+            bottom: 0;
+            padding: 0 !important;
+        }
+
+        .navbar:before, .navbar:after {
+            content: none !important;
+        }
+
+        .nav:before, .nav:after {
+            content: none !important;
+        }
+
+        .ocultarDatos__parrafo1 {
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 0 0 0;
+        }
+
+        .ocultarDatos__parrafo2 {
+            font-weight: 400;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            margin: 0 0 10px;
+        }
+
+
+
+
+
+        .menu__item {
+            --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+            --transform: rotate(-90deg);
+        }
+
+            .menu__item:hover {
+                --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                --transform: rotate(0);
+            }
+
+        .menu__item-redes {
+            --clip: polygon(0 0, 0 0, 0 100%, 0 100%);
+            --transform: rotate(-90deg);
+            display: flex !important;
+            align-items: center !important;
+        }
+
+            .menu__item-redes:hover {
+                --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                --transform: rotate(0);
+            }
+
+        .activarDesplegableMenu {
+            --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+            --transform: rotate(0) !important;
+        }
+
+        .menu__nesting {
+            list-style: none;
+            transition: clip-path .3s;
+            clip-path: var(--clip);
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: max-content;
+            transform: translateY(100%);
+            background-color: var(--Primary-green);
+            padding-bottom: 5px;
+        }
+
+            .menu__nesting li {
+                padding: 5px 5px 2px 5px;
+                padding: 5px 5px 2px 5px;
+                transition: 0.3s ease all;
+            }
+
+                .menu__nesting li:not(.ocultar):hover {
+                    border-bottom: 1px solid var(--Intense-green);
+                    transform: scale(1.01);
+                    background-color: #29b844;
+                }
+
+                .menu__nesting li:hover a {
+                    color: #fff;
+                }
+
+            .menu__nesting a {
+                font-size: 12px;
+                font-weight: 400;
+                color: #D0D0D0;
+                padding: 5px;
+                transition: 0.3s;
+                transition-property: color;
+            }
+
+        .menu__nesting-redes {
+            list-style: none;
+            transition: clip-path .3s;
+            clip-path: var(--clip);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: max-content;
+            transform: translate(18%, -50%);
+            border-radius: 5px;
+            background-color: #fff;
+            padding-bottom: 2px;
+            display: flex;
+            align-items: center;
+            z-index: 9;
+            border: 1px solid var(--Primary-green);
+            /*display: grid;
+                position: unset;
+                width: 100%;
+                transform: translateY(0);
+                background-color: white;
+                max-height: 0;
+                transition: max-height .3s, height .3s;
+                padding-bottom: 0;*/
+        }
+
+            .menu__nesting-redes li {
+                padding: 5px 5px 2px 5px;
+                padding: 5px 5px 2px 5px;
+                transition: 0.3s ease all;
+                /*border-left: 1px solid #fff;
+                    width: 100%;
+                    margin-left: auto;
+                    padding: 0;*/
+            }
+
+            .menu__nesting-redes > li:hover {
+                border-bottom: none;
+            }
+
+            .menu__nesting-redes > li > a {
+                margin: 0px;
+                color: #fff;
+            }
+
+            .menu__nesting-redes a {
+                font-size: 12px;
+                font-weight: 400;
+                color: #D0D0D0;
+                padding: 5px;
+                transition: 0.3s;
+                transition-property: color;
+            }
+
+
+
+
+
+
+        .menu__nestingCerrar {
+            list-style: none;
+            transition: clip-path .3s;
+            clip-path: var(--clip);
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: auto;
+            width: 282px;
+            transform: translateY(100%);
+            background-color: #fff;
+            padding-bottom: 5px;
+            border-radius: 7px;
+            box-shadow: inset rgba(0, 0, 0, 0.1) 0px 0px 2px 1px;
+        }
+
+            .menu__nestingCerrar .subMenuCerrar {
+                padding: 5px 0;
+            }
+
+            .menu__nestingCerrar li {
+                padding: 5px 5px 2px 5px;
+                transition: 0.3s;
+                transition-property: border;
+            }
+
+                .menu__nestingCerrar li:hover {
+                    border-bottom: 1px solid #FE8538;
+                }
+
+                    .menu__nestingCerrar li:hover a {
+                        color: #fff;
+                    }
+
+            .menu__nestingCerrar a {
+                font-size: 12px;
+                font-weight: 400;
+                color: #fff;
+                padding: 5px;
+                transition: 0.3s;
+                transition-property: color;
+            }
+
+
+
+        .section-main {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(to left, rgba(74,164,195,.8), rgba(0,0,0,0.1)), url(image/fondo.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 80px;
+        }
+
+            .section-main h1 {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 60px;
+                font-weight: 800;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                line-height: 80px;
+                text-shadow: 0 0 3px #fff, 0 0 3px #000000;
+            }
+
+        header {
+            height: 73px;
+            z-index: 999;
+            position: fixed;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3.5px 14px;
+            background-image: url(../img/Tienda/barra-navbar-sinLogo.png);
+            background-color: #fff;
+        }
+
+            header.down {
+                /*background: url(../img/Tienda/barra-navbar-sinLogo.png);*/
+                /*padding: 0px;*/
+            }
+
+            header .menu {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                header .menu .newNavBar-nav {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+                }
+
+        .menu__links--show {
+            transform: unset;
+            width: 100%;
+        }
+
+
+
+        header .menu ul li {
+            list-style: none;
+            text-align: start;
+        }
+
+        header > .menu > ul > li > a {
+            color: var(--Dark-green);
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            padding: 0;
+            transition: 0.3s;
+            transition-property: color, border;
+        }
+
+            header > .menu > ul > li > a:hover {
+                /*color: #fff;*/
+                /*border-bottom: 1px solid #FE8538;*/
+            }
+
+        header > .menuSoloLogin > ul > li > a {
+            color: #D0D0D0;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            padding: 0;
+            transition: 0.3s;
+            transition-property: color, border;
+        }
+
+            header > .menuSoloLogin > ul > li > a:hover {
+                color: #fff;
+                /*border-bottom: 1px solid #FE8538;*/
+            }
+
+        header > .menu > ul > li > ul > li > a {
+            text-transform: uppercase;
+        }
+
+
+        .section-two {
+            padding: 20px;
+        }
+
+        header .btn {
+            color: #fff;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        #header .btn {
+            padding: 0;
+            margin: 0.375rem 0.75rem;
+            line-height: 0;
+        }
+
+        header .btn.menu__hamburguer {
+            color: var(--Primary-green);
+        }
+
+        header > .menu > ul > li > ul > li > .menuEditarPerfil {
+            font-size: 14px !important;
+            font-weight: 400;
+            padding: 10px 0 10px 30px !important;
+            color: var(--Dark-grises);
+            transition: .3s ease color;
+        }
+
+        header > .menu > ul > li > ul > li:hover > .menuEditarPerfil {
+            color: #fff;
+        }
+
+        header > .menu > ul > li > ul > li > .linkCerrar {
+            padding: 10px 0 10px 30px !important;
+            font-size: 14px !important;
+            font-weight: 400;
+            color: var(--Dark-grises);
+            transition: .3s ease color;
+        }
+
+        header > .menu > ul > li > ul > li:hover > .linkCerrar {
+            color: #fff;
+        }
+
+        .newNavBar-nav > .navResponsive > a > i {
+            display: none
+        }
+
+
+        .barraNavInferiorResponsive {
+            display: none
+        }
+        /*.footerResponsive{
+            display: none !important;
+        }
+        .navCerrarSesion{
+            display: none !important;
+        }*/
+        header {
+            grid-gap: inherit;
+        }
+
+        .redesSinMenu {
+            display: none;
+            width: 100%;
+            justify-content: center
+        }
+
+        .footerMaxWidth {
+            background-image: url(../img/Tienda/bg-footer.jpg);
+            height: 337px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            /*position: fixed;
+            bottom: 0;
+            width: 100%;*/
+        }
+
+        @media (min-width: 1149px) {
+            #header .btn, #navUsuario, #navUsuario img, .newNavBar-nav > li > img, #footerResponsive {
+                display: none
+            }
+
+            .navCerrarSesion {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 1148px) {
+            .newNavBar-nav .ocultar {
+                height: 110px;
+            }
+
+                .newNavBar-nav .ocultar a {
+                    margin: 0;
+                    margin-top: 10px;
+                    padding: 0 !important;
+                    text-transform: inherit;
+                    font-size: 16px !important;
+                    color: var(--Primary-green) !important;
+                    font-weight: bold;
+                }
+
+            header, header.down {
+                padding: 0 14px;
+                height: 73px;
+                grid-gap: inherit;
+            }
+
+            .navBarNavegadorDesplegado {
+                grid-gap: 0 !important;
+                margin-left: -17px !important;
+            }
+
+            .menu__nesting li:hover a {
+                color: #fff !important;
+            }
+
+            header {
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+            }
+
+                header .brand {
+                    flex-grow: 1;
+                    text-align: center;
+                    margin-right: 40px;
+                    display: block;
+                }
+
+                header .menu .newNavBar-nav {
+                    align-items: start;
+                }
+
+                header .btn.menu__hamburguer {
+                    display: block;
+                }
+
+                header .menu {
+                    position: fixed;
+                    background: #fff;
+                    min-width: var(--anchoHeaderResponsiveTablet);
+                    height: 100vh;
+                    top: 0;
+                    left: -100%;
+                    padding: 0;
+                    transition: 0.5s;
+                    transition-property: left;
+                    align-items: flex-start;
+                }
+
+                header > .menu > ul {
+                    flex-direction: column !important;
+                }
+
+                    header > .menu > ul > li > a {
+                        font-size: 14px;
+                    }
+
+                header .menu.active {
+                    left: 0;
+                    overflow-y: auto;
+                }
+
+                header .menu .close-btn {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    margin: 17px;
+                    color: var(--Primary-green);
+                    z-index: 99;
+                }
+
+                header .menu a {
+                    display: block;
+                    font-size: 14px;
+                    margin: 14px 0 14px 62px;
+                    padding: 0 15px;
+                    text-transform: uppercase;
+                    color: #212121 !important;
+                }
+
+                header .menu .borderBottom a {
+                    border-bottom: none !important;
+                    width: fit-content;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: auto;
+                    padding-right: 20px;
+                }
+
+                header .menu ul .menu__item--active > a {
+                    color: white !important;
+                }
+
+                header .menu ul .menu__item--active2 > a {
+                    color: white !important;
+                }
+
+            .newNavBar-nav li:last-child a {
+                width: inherit;
+            }
+
+            #navDesplegable .menu__nesting li:not(.ocultar):hover {
+                background: var(--Primary-purple);
+            }
+
+            #navbonificiones .menu__nesting li:not(.ocultar):hover {
+                background: var(--Primary-orange);
+            }
+
+            #navDocumentos .menu__nesting li:not(.ocultar):hover {
+                background: var(--Primary-red);
+            }
+
+
+            .newNavBar-nav .menu__item {
+                --clip: 0;
+                overflow: hidden;
+            }
+
+            .newNavBar-nav > .navResponsive {
+                width: 100%;
+                padding: 0;
+            }
+
+                .newNavBar-nav > .navResponsive#navRedes {
+                    width: 100%;
+                    padding: 0;
+                    display: none !important;
+                }
+
+            .menu__item--active {
+                --transform: rotate(0);
+                --background: #5e7094;
+            }
+
+            .newNavBar-nav .menu__item--show {
+                background-color: var(--background);
+            }
+
+            .newNavBar-nav .ocultar img {
+                display: block;
+                top: calc(100% - 49px);
+                left: 19px;
+                width: 38px;
+                height: 38px;
+                /*display: none;*/
+            }
+
+            .newNavBar-nav > li > img {
+                position: absolute;
+                width: 26px;
+                top: 10px;
+                left: 25px;
+                transition: 0.3s filter;
+                z-index: 1;
+            }
+
+            .newNavBar-nav > li > .animacionBorderBottom::before {
+                display: none
+            }
+
+            .newNavBar-nav > .navResponsive > a > i {
+                display: flex;
+                align-items: center;
+                font-size: 30px;
+                color: var(--Primary-green);
+                transition: 0.3s color;
+                height: 22px;
+            }
+
+            .ocultarDatos p:nth-child(1) {
+                font-weight: 400 !important;
+            }
+
+            .ocultarDatos p {
+                color: #000 !important;
+                margin: 0 !important;
+            }
+
+            .newNavBar-nav .ocultar .ocultarDatos {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                padding-left: 65px;
+            }
+
+            .menu__item--active {
+                background: var(--Dark2-primary);
+            }
+
+                .menu__item--active img {
+                    filter: brightness(0) invert(1);
+                }
+
+                .menu__item--active a i {
+                    color: white !important;
+                }
+
+            .menu__item--active2 {
+                background: var(--Dark2-primary);
+            }
+
+                .menu__item--active2 img {
+                    filter: brightness(0) invert(1);
+                }
+
+                .menu__item--active2 a i {
+                    color: white !important;
+                }
+
+            .footerResponsive {
+                /*display: block !important;*/
+                background: var(--Dark-green);
+                position: fixed !important;
+                bottom: 0;
+                width: var(--anchoHeaderResponsiveTablet);
+            }
+
+                .footerResponsive .linea {
+                    border-bottom: 1px solid #9F8948;
+                    width: 80%;
+                    margin: auto;
+                }
+
+            .footerMaxWidth {
+                background-image: url(../img/Tienda/bg-footer-992x337.png);
+            }
+
+            .footer_widgets {
+                padding: 10px 0 5px !important;
+            }
+
+                .footer_widgets > .text-center {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0 23px;
+                }
+
+            .f_about_widget ul {
+                flex-direction: row !important;
+                margin: -5px 0 5px !important;
+                grid-gap: 0 !important
+            }
+
+                .f_about_widget ul li a {
+                    margin: 7px;
+                }
+
+                    .f_about_widget ul li a i {
+                        font-size: 19px !important
+                    }
+
+                    .f_about_widget ul li a img {
+                        width: 19px
+                    }
+
+
+            header > .menu > ul > li > a {
+                margin: 0;
+                padding: 14px 0 14px 62px;
+            }
+
+                header > .menu > ul > li > a:hover {
+                    border-bottom: none;
+                }
+
+            .menu__nesting {
+                display: grid;
+                position: unset;
+                width: 100%;
+                transform: translateY(0);
+                background-color: white;
+                max-height: 0;
+                transition: max-height .3s, height .3s;
+                padding-bottom: 0;
+            }
+
+                .menu__nesting > li {
+                    border-left: 1px solid #fff;
+                    width: 100%;
+                    margin-left: auto;
+                    padding: 0;
+                }
+
+                    .menu__nesting > li:hover {
+                        border-bottom: none;
+                    }
+
+                    .menu__nesting > li > a {
+                        margin: 10px
+                    }
+
+            .menu__nesting-redes {
+                display: grid;
+                position: unset;
+                width: 100%;
+                transform: translateY(0);
+                background-color: white;
+                max-height: 0;
+                transition: max-height .3s, height .3s;
+                padding-bottom: 0;
+                border: none;
+            }
+
+                .menu__nesting-redes > li {
+                    border-left: 1px solid #fff;
+                    width: 100%;
+                    margin-left: auto;
+                    padding: 0;
+                }
+
+                    .menu__nesting-redes > li:hover {
+                        border-bottom: none;
+                    }
+
+                    .menu__nesting-redes > li > a {
+                        margin: 10px
+                    }
+
+            .menu__nestingCerrar .subMenuCerrar {
+                padding: unset;
+            }
+
+            .menu__nestingCerrar {
+                width: 150% !important;
+            }
+
+                .menu__nestingCerrar a {
+                    color: #D0D0D0;
+                    white-space: pre;
+                    text-transform: uppercase;
+                    padding: 0 15px !important;
+                }
+
+                .menu__nestingCerrar li:hover a {
+                    color: #fff !important;
+                }
+
+            .ocultar {
+                display: none;
+                width: 100%;
+                background: #DFDFDF;
+                padding: 10px 15px;
+            }
+
+            .redesSinMenu {
+                display: flex;
+            }
+        }
+
+        /*PARA MEDIDAS MENOS DE 1024 (iPad Pro, ...)*/
+        @media (max-device-width: 1024px) {
+            header .btn {
+                font-size: 25px;
+            }
+
+            .ocultarDatos p {
+                font-size: 14px;
+            }
+
+                .ocultarDatos p:nth-child(2) {
+                    font-size: 12px;
+                }
+
+            .menu__hamburguer {
+                padding: 0 !important;
+                line-height: 0 !important;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 1148px) {
+            #navPreRegistroTablet {
+                display: block;
+            }
+
+                #navPreRegistroTablet .enlaceRegistrar {
+                    border: 1px solid var(--Primary-green);
+                    margin: 14px 0 14px 23px;
+                    color: var(--Primary-green) !important;
+                }
+
+                    #navPreRegistroTablet .enlaceRegistrar:hover {
+                        border: 1px solid var(--Primary-green);
+                        background-color: var(--Primary-green);
+                        color: #fff !important;
+                    }
+
+            #navPreRegistro {
+                display: none !important;
+            }
+
+            #footerResponsive {
+                display: none
+            }
+        }
+
+        @media (max-width: 1148px) {
+            header > .menu > ul > li > ul > li > a {
+                margin-left: 50px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header > .menu > ul > li > ul > li > a {
+                text-transform: uppercase;
+                margin-left: 60px;
+                white-space: nowrap;
+            }
+
+            .footerMaxWidth {
+                background-image: url(../img/Tienda/bg-footer-768x337.png);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .section-main h1 {
+                font-size: 50px;
+                line-height: 60px;
+            }
+
+            header > .menu > ul > li > ul > li > a {
+                margin-left: 55px;
+            }
+        }
+
+        .newNavBar-nav > li > .animacionBorderBottom::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--Primary-green);
+            z-index: -1;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .newNavBar-nav > li > .animacionBorderBottom:hover::before {
+            transform: scaleX(1);
+        }
+
+        .newNavBar-nav[data-animation="center"] > li > .animacionBorderBottom::before {
+            transform-origin: center;
+        }
+
+        .barraNavInferiorResponsive .imagenIcono {
+            width: 22px;
+            filter: brightness(0) invert(1);
+        }
+
+        .barraNavInferiorResponsive a p {
+            color: #fff;
+            font-size: 11px;
+            margin: 0
+        }
+
+        @media (max-device-width: 500px) {
+            #navPreRegistroTablet {
+                display: none;
+            }
+
+            .menu.active {
+                overflow-y: auto;
+                height: calc(100vh - 171px);
+            }
+
+            #navlogin {
+                margin-left: -7px
+            }
+
+            header .menu {
+                position: fixed;
+                background: #fff;
+                min-width: var(--anchoHeaderResponsive);
+                height: 100vh;
+                top: 0;
+                left: -100%;
+                padding: 0;
+                transition: 0.5s;
+                transition-property: left;
+                align-items: flex-start;
+            }
+
+                header .menu a {
+                    margin: 12px 0 12px 62px;
+                    padding: 0;
+                    font-size: 12px !important;
+                }
+
+                header .menu ul .menu__item--active > a {
+                    color: white !important;
+                }
+
+            header, header.down {
+                padding: 0 14px;
+                height: 47px;
+                grid-gap: calc(100vw - 420px);
+                flex-direction: row-reverse;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+                header .brand {
+                    flex-grow: 1;
+                    display: block;
+                }
+
+            .fa-bars:active {
+                color: #FE8538
+            }
+
+            #wowslider-container1.ws_gestures {
+                margin-top: 45px !important;
+            }
+
+            .ocultarDatos p {
+                color: var(--Dark-grises) !important;
+                margin: 0 !important;
+                line-height: 1;
+            }
+
+            #valorNombreDesplegable {
+                font-weight: bold !important;
+            }
+
+            .newNavBar-nav > .navResponsive {
+                width: 100%;
+                padding: 0;
+            }
+
+                .newNavBar-nav > .navResponsive > a > i {
+                    display: flex;
+                    align-items: center;
+                    font-size: 30px;
+                    color: var(--Primary-green);
+                    transition: 0.3s color;
+                    height: 22px;
+                }
+            /*#navtienda2:active {
+                background: var(--Darkest2-primary);
+            }*/
+            header > .menu > ul > li > ul > li > a {
+                text-transform: uppercase;
+                margin-left: 43px;
+                white-space: nowrap;
+                padding-left: 20px;
+            }
+
+            .menu__item--active {
+                background: var(--Dark2-primary)
+            }
+
+                .menu__item--active img {
+                    /*filter: none;*/
+                    filter: brightness(0) invert(1);
+                }
+
+                .menu__item--active a i {
+                    color: white !important;
+                }
+
+            .newNavBar-nav .ocultar {
+                height: 60px
+            }
+
+                .newNavBar-nav .ocultar .ocultarDatos {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: center;
+                    padding-left: 65px;
+                    grid-row-gap: 2px;
+                }
+
+                .newNavBar-nav .ocultar img {
+                    display: block;
+                    top: calc(100% - 49px);
+                    left: 19px;
+                    width: 38px;
+                    height: 38px;
+                    /*display: none;*/
+                }
+            /*.newNavBar-nav>li:after{
+                content:'v';
+                position: absolute;
+                width: 10px
+                
+            }*/
+            .newNavBar-nav > li > img {
+                position: absolute;
+                width: 22px;
+                top: 12px;
+                left: 25px;
+                transition: 0.3s filter;
+            }
+
+            .newNavBar-nav > li > .animacionBorderBottom::before {
+                display: none
+            }
+
+            .menuRegistrar {
+                display: none !important
+            }
+
+            .footerResponsive {
+                display: block;
+                /*display: block !important;*/
+                /*background: var(--Primary-green);
+                position: fixed !important;
+                bottom: 0;
+                width: var(--anchoHeaderResponsive);*/
+                background: #fff;
+                background-image: url(../img/Tienda/bg-footer-576x337.png);
+                background-size: 100% 100%;
+                position: fixed !important;
+                bottom: 0;
+                width: var(--anchoHeaderResponsive);
+                height: 171px;
+            }
+
+                .footerResponsive .linea {
+                    border-bottom: 1px solid #9F8948;
+                    width: 60%;
+                    margin: auto;
+                }
+
+            .footer_widgets .text-center span {
+                font-size: 9px !important;
+                color: var(--Dark-grises) !important;
+            }
+
+            #imgLogoFooter {
+                width: 81px !important;
+                height: auto !important;
+            }
+
+            .footer_widgets {
+                padding: 10px 0 5px !important;
+            }
+
+                .footer_widgets > .text-center {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0 23px;
+                }
+
+            .f_about_widget ul {
+                flex-direction: row !important;
+                margin: -5px 0 5px !important;
+                grid-gap: 0 !important
+            }
+
+                .f_about_widget ul li a {
+                    margin: 7px;
+                }
+
+                    .f_about_widget ul li a i {
+                        font-size: 19px !important
+                    }
+
+                    .f_about_widget ul li a img {
+                        width: 19px
+                    }
+
+            .f_about_widget > p {
+                font-size: 10px !important;
+                letter-spacing: 0;
+                color: var(--Dark-grises) !important;
+            }
+
+            .footer_copyright {
+                padding: 5px 0px 15px !important;
+            }
+
+                .footer_copyright .copyright {
+                    font-size: 8px;
+                    color: var(--Dark-grises) !important;
+                    font-weight: 500;
+                    width: fit-content;
+                    background: #fff;
+                    margin: 0 auto;
+                }
+
+            #imgLogoNavBar {
+                width: 150px
+            }
+
+            .footerMaxWidth {
+                display: none;
+            }
+
+            #navCerrar {
+                display: none !important
+            }
+
+            .redesSinMenu {
+                padding: 14px 0;
+                visibility: hidden;
+            }
+
+            #back-to-top {
+                display: none !important;
+            }
+
+            .barraNavInferiorResponsive {
+                position: sticky;
+                bottom: 0;
+                background: var(--Primary-green);
+                height: 50px;
+                width: 100%;
+                z-index: 10;
+                display: flex;
+                justify-content: space-evenly;
+                z-index: 200;
+            }
+
+                .barraNavInferiorResponsive > a:last-child > img {
+                    width: 24px;
+                }
+
+                .barraNavInferiorResponsive a p {
+                    color: #fff;
+                    font-size: 11px;
+                    margin: 3px 0 0;
+                    line-height: 1;
+                }
+            /*.navCerrarSesion{
+                display: block !important;
+            }*/
+
+            .footerMaxWidth {
+                background-image: url(../img/Tienda/bg-footer-768x337.png);
+            }
+        }
+
+        @media (max-device-width: 320px) {
+            header .menu a {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-device-width: 280px) {
+            header .menu {
+                min-width: calc(100vw - 5.5%);
+            }
+
+            header > .menu > ul > li > a {
+                font-size: 12px !important;
+            }
+
+            header > .menu > ul > li > ul > li > a {
+                margin: 14px 16px 14px 62px;
+                white-space: nowrap;
+                padding-left: 10px;
+            }
+
+            header .menu .borderBottom a {
+                font-size: 11.2px;
+            }
+
+            header .menu a {
+                padding: 0;
+            }
+
+            .newNavBar-nav > li > img {
+                width: 22px;
+                top: 13px;
+            }
+
+
+            .footerResponsive {
+                width: calc(100vw - 5.3%);
+            }
+
+            .barraNavInferiorResponsive .imagenIcono {
+                width: 18px;
+            }
+
+            .barraNavInferiorResponsive > a:last-child > img {
+                width: 22px;
+            }
+        }
+
+        .popups {
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,.8);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            animation: modal 1.5s 1s forwards;
+            visibility: visible;
+            opacity: 1;
+            z-index: 10000000;
+        }
+
+        .autorizacionVisa {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .peso700 {
+            font-weight: 700 !important;
+        }
+
+        #imgNoti:hover {
+            -webkit-animation: tiembla 0.2s;
+            animation-iteration-count: 2;
+        }
+
+        @-webkit-keyframes tiembla {
+            0% {
+                -webkit-transform: rotateZ(-5deg);
+            }
+
+            50% {
+                -webkit-transform: rotateZ( 0deg) scale(.8);
+            }
+
+            100% {
+                -webkit-transform: rotateZ( 5deg);
+            }
+        }
+
+        #imgNavNotify > .displayBlock {
+            display: block;
+        }
+
+        .ul_idNavNotify {
+            display: none;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Color negro con opacidad del 70% */
+            z-index: 999; /* Asegura que esté encima de otros elementos */
+        }
+
+        .hiddenOverlay {
+            display: none;
+        }
+    </style>
+
+    <!--Begin NavBar-->
+    <link href="css/proyecto2/estilos-navbar-v3.css?Fv71" rel="stylesheet" />
+
+    <%--<link href="css/proyecto2/estilosNavBar2.css" rel="stylesheet">--%>
+    <!--End NavBar-->
+    <link href="css/proyecto2/responsive-v3.css?Fv63" rel="stylesheet" />
+
+
+    <%--    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>--%>
+    <script src="js/JQUERY1.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $(".loader").fadeOut("slow"); // fadeOut oculta el objeto, "slow" indica la duración del efecto
+            }, 1500); // 1000 milisegundos = 1 segundo
+        });
+    </script>
+
+
+
+    <!--Para mostrar los iconos de las redes sociales-->
+    <link href="css/proyecto2/vendors/elegant-icon/style.css?v2" rel="stylesheet" />
+
+
+
+    <!--Para el tipo de letra de los menús y submenús del navbar, y todo en general por ser master-->
+    <!--YA NO SE USARÁ, SE USARÁ ROBOTO-->
+    <%--<link href="css/proyecto2/fonts-v2.css?v3" rel="stylesheet" type="text/css" />--%>
+</head>
+<body id="body">
+    <form id="miFormulario" runat="server">
+        <%--<asp:ScriptManager runat="server">
+            <Scripts>--%>
+        <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+        <%--Framework Scripts--%>
+        <%--<asp:ScriptReference Name="MsAjaxBundle" />--%>
+        <%--<asp:ScriptReference Name="jquery" />--%>
+        <%--<asp:ScriptReference Name="bootstrap" />--%>
+        <%--<asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />--%>
+        <%--<asp:ScriptReference Name="WebFormsBundle" />--%>
+        <%--Site Scripts--%>
+        <%-- </Scripts>
+        </asp:ScriptManager>--%>
+
+        <!--Cuando carga la pantalla-->
+        <div class="loader"></div>
+        <div id="overlay" class="hiddenOverlay"></div>
+        <div class="vistaPagina">
+            <div style="display: none">
+                <h1 id="h1CountDown"></h1>
+                <input id="inputCountDown" type="datetime-local" value="2023-01-01T00:00" />
+            </div>
+            <!--================Menu Area =================-->
+            <header id="header">
+                <div id="brand" class="brand">
+                    <a href="Index.aspx">
+                        <img id="imgLogoNavBar" src="https://tienda.mundosantanatura.com/img/Tienda/logoSN-estirado.png" style="width: 300px" />
+                    </a>
+                </div>
+                <nav id="idMenu" class="menu">
+                    <div id="iconCerrar" class="btn">
+                        <i id="clickCerrar" class="fa fa-times close-btn"></i>
+                    </div>
+                    <ul class="nav newNavBar-nav navBarNavegadorDesplegado" data-animation="center" style="grid-gap: 30px;">
+                        <li class="nav-item ocultar navResponsive" id="navUsuario" runat="server">
+                            <img src="img/IconUserGray.png" alt="Alternate Text" />
+                            <div class="ocultarDatos">
+                                <p id="valorNombreDesplegable" class="claseFuente1 ocultarDatos__parrafo1"><%=NombresCompletos%></p>
+                                <p class="ocultarDatos__parrafo2">ID: <%=IDCLIENTE%></p>
+                                <a id="idEditarPerfil2" class="claseFuente1 menuEditarPerfil" href="EditarPerfil.aspx">Editar Perfil</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown submenu menuRegistrarTablet" id="navPreRegistroTablet" runat="server">
+                            <a id="idMenuPreRegistroTablet" class=" claseFuente1 enlaceRegistrar" href="PreRegistroSocio.aspx">Registrar</a>
+                        </li>
+                        <li class="nav-item" id="nav-quienessomos" style="display: none">
+                            <a id="clicquienessomos" class="claseFuente1" href="#" style="font-size: 14px">quienes somos</a>
+                        </li>
+                        <%-- <li class="nav-item borderBottom dropdown submenu" id="navtienda2" runat="server" style="margin: 0;display: none">
+                                <a id="idMenuTienda" class="claseFuente1" href="tiendasn.aspx" style="font-size: 16px">Tienda</a>
+                            </li>--%>
+                        <li id="idMenuMisComprasNoSocio" class="nav-item" style="display: none" runat="server">
+                            <img src="img/purchase-history.png" alt="Alternate Text" style="top: 8px;" />
+                            <a class="fondoNaranjaFocus claseFuente1" href="MisComprasV2.aspx" style="font-size: 14px">Historial de Compras</a>
+                        </li>
+                        <li class="menu__item borderBottom nav-item dropdown submenu navResponsive" id="navtienda2" runat="server" style="margin: 0; display: none">
+                            <img src="img/iconosNavbar1148/tienda-menu-green.png" alt="Alternate Text" />
+                            <a href="#navtienda2" id="idMenuTienda" class="animacionBorderBottom claseFuente1 newNavBarDevice" role="button" style="font-size: 14px">Compras<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+                            <ul class="menu__nesting">
+                                <li id="liTienda" class="nav-item"><a id="idSubMenuTienda" class="fondoNaranjaFocus  claseFuente1" href="DatosPedidoSN.aspx">Tienda</a></li>
+                                <li id="liHistCompras" class="nav-item"><a id="idSubMenuHisCompras" class="fondoNaranjaFocus  claseFuente1" href="MisComprasV2.aspx">Historial de Compras</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item borderBottom nav-item dropdown submenu navResponsive" style="display: none" id="navDesplegable" runat="server">
+                            <img src="img/iconosNavbar1148/red-menu-purple.png" alt="Alternate Text" />
+                            <a href="#navDesplegable" id="idMenuRed" class="animacionBorderBottom claseFuente1 newNavBarDevice" role="button" style="font-size: 14px">Red<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="menu__nesting">
+                                <li id="liMapaPatro" class="nav-item"><a id="idSubMenuMapaDePatrocinio" class="fondoNaranjaFocus  claseFuente1" href="MapaDePatrocinio.aspx">Mapa Patrocinio</a></li>
+                                <li id="liMapaRed" class="nav-item"><a id="idSubMenuMapaDeRed" class="fondoNaranjaFocus  claseFuente1" href="MapaRedSocios.aspx">Mapa Red</a></li>
+                                <li id="liListadoActividad" class="nav-item"><a id="idSubMenuListadoActividad" class="fondoNaranjaFocus  claseFuente1" href="ListadoActividad.aspx">Listado de Actividad</a></li>
+                                <li id="liTopReportes" class="nav-item"><a id="idSubMenuTopReportes" class="fondoNaranjaFocus  claseFuente1" href="ResumenVentas.aspx">Top Reportes</a></li>
+                                <li id="liTablaCali" class="nav-item"><a id="idSubMenuTablaCalificacion" class="fondoNaranjaFocus  claseFuente1" href="TablaCalificacion.aspx">Tabla de Calificación</a></li>
+                                <li id="liEmprRegis" class="nav-item"><a id="idSubMenuDatosPre" class="fondoNaranjaFocus  claseFuente1" href="CompletarPregistro.aspx">Empresarios Registrados</a></li>
+                                <li id="liEstadisticas" class="nav-item" style="display: none"><a id="idSubMenuEstadisticas" class="fondoNaranjaFocus  claseFuente1" href="Estadisticas.aspx">Estadísticas</a></li>
+                                <li id="liTop10" class="nav-item" style="display: none"><a id="idSubMenuTop10" class="fondoNaranjaFocus  claseFuente1" href="Top10.aspx">TOP 10</a></li>
+                                <li id="liArbolRed" class="nav-item"><a id="idSubMenuArbolRed" class="fondoNaranjaFocus  claseFuente1" href="https://arbol.mundosantanatura.com/?idCliente=<%=IDCLIENTE%>&dni=<%=DNI%>" target="_blank">Arbol de Red</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu__item borderBottom nav-item dropdown submenu navResponsive" id="navbonificiones" style="display: none" runat="server">
+                            <img src="img/iconosNavbar1148/comisiones-menu-orange.png" alt="Alternate Text" />
+                            <a href="#navbonificiones" id="clicBonif" class="animacionBorderBottom claseFuente1 newNavBarDevice" role="button" style="font-size: 14px">Comisiones<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="menu__nesting">
+                                <li class="nav-item"><a id="idSubMenuVerComi" class="fondoNaranjaFocus claseFuente1" href="ComisionesMLM2.aspx">Ver comisión</a></li>
+                                <%--<li class="nav-item"><a id="idSubMenuCobrarComi" class="fondoNaranjaFocus claseFuente1" href="CobroComision.aspx">Cobrar comisión</a></li>
+                                <li class="nav-item"><a id="idSubMenuGestionarMone" class="fondoNaranjaFocus claseFuente1" href="GestionMonedero.aspx">Gestionar monedero</a></li>--%>
+                                <%--<li class="nav-item"><a id="idSubBonificaciones" class="fondoNaranjaFocus claseFuente1" href="Bonificaciones.aspx">Bonificaciones</a></li>--%>
+                                <%--<li class="nav-item"><a id="idSubFacturacion" class=" claseFuente1" href="HistorialFacturas.aspx" style="color: white;">Facturas</a></li>--%>
+                                <%--<li class="nav-item"><a id="idSubComisionesMLM" class="fondoNaranjaFocus claseFuente1" href="ComisionesMLM.aspx">Comisiones MLM</a></li>--%>
+                                <%--<li class="nav-item"><a id="idSubComisionesMLM2" class="fondoNaranjaFocus claseFuente1" href="ComisionesMLM2.aspx">Comisiones MLM 2</a></li>--%>
+                            </ul>
+                        </li>
+                        <li class="nav-item borderBottom" id="nav-sistemaeducativo" style="display: none">
+                            <a id="clicSistEdu" class=" claseFuente1" href="#" style="font-size: 16px">Sistema Educativo</a>
+                        </li>
+                        <li class="menu__item borderBottom nav-item dropdown submenu navResponsive" style="display: none" id="navDocumentos" runat="server">
+                            <img src="img/iconosNavbar1148/informacion-menu-red.png" alt="Alternate Text" />
+                            <a href="#navDocumentos" id="idMenuDocumentos" class="animacionBorderBottom claseFuente1 newNavBarDevice" role="button" style="font-size: 14px">Información<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="menu__nesting" style="width: 150%;">
+                                <%--<li class="nav-item"><a id="idSubMenuContactenos" class=" claseFuente1" href="Contactenos.aspx" style="color: white;">Contáctenos</a></li>--%>
+                                <li id="liDocu" class="nav-item"><a id="idSubMenuDocume" class="fondoNaranjaFocus claseFuente1" href="Documentos.aspx">Documentos</a></li>
+                                <li id="liPromo" class="nav-item"><a id="idSubMenuPromociones" class="fondoNaranjaFocus claseFuente1" href="Promociones.aspx">Promociones</a></li>
+                                <li class="nav-item"><a id="idSubMenuMarketinheader" class=" claseFuente1" href="Marketing.aspx">Materiales</a></li>
+                            </ul>
+                        </li>
+                        <%--<li class="nav-item borderBottom navResponsive" style="display: none" id="navContactenos" runat="server">
+                            <img src="img/contactanos-menu.png" alt="Alternate Text" />
+                            <a id="idMenuContactenos" class="animacionBorderBottom claseFuente1" href="atc.aspx" style="font-size: 14px">Contacto</a>
+                        </li>--%>
+                        <li class="menu__item-redes nav-item borderBottom navResponsive" style="display: none !important" id="navRedes" runat="server">
+                            <img src="img/contactanos-menu.png" alt="Alternate Text" />
+                            <a id="idMenuRedes" class="animacionBorderBottom claseFuente1" href="#navRedes" style="font-size: 14px">Redes</a>
+                            <ul class="menu__nesting-redes">
+                                <li id="liFacebook" class="nav-item"><a href="https://www.facebook.com/santanaturanetworkoficialperu" style="font-size: 30px; display: flex;"><i class="social_facebook" style="font-size: 17px"></i></a></li>
+                                <li id="liYoutube" class="nav-item"><a href="https://www.youtube.com/c/SANTANATURANETWORK" style="font-size: 30px; display: flex;"><i class="social_youtube" style="font-size: 17px"></i></a></li>
+                                <li id="liInstagram" class="nav-item"><a href="https://www.instagram.com/santanatura.network/">
+                                    <img class="social_instagram" src="img/instagram.png" alt="iconInstagram" style="width: 17px"></a></li>
+                            </ul>
+                            <%--<ul>
+                                <li id="facebook2" style="margin-left: 0"><a href="http://www.facebook.com/santanaturanetworkoficialperu" style="font-size: 30px; display: flex;"><i class="social_facebook" style="font-size: 27px"></i></a></li>
+                                <li style="margin-left: 0"><a href="https://www.youtube.com/c/SANTANATURANETWORK" style="font-size: 30px; display: flex;"><i class="social_youtube" style="font-size: 27px"></i></a></li>
+                                <li style="margin-left: 0"><a href="https://www.instagram.com/santanatura.network/"><img class="social_instagram" src="img/iconInstagram.png" alt="iconInstagram"></a></li>
+                            </ul>--%>
+                        </li>
+
+                        <%--<li class="nav-item borderBottom navResponsive" style="display: none" id="navMonedero" runat="server">
+                            <img src="img/iconosNavHeadHistorial/Compras-pendientes-pe.png" alt="Alternate Text" />
+                            <a id="idMenuMonedero" class="animacionBorderBottom claseFuente1" href="#" style="font-size: 14px">Monedero</a>
+                        </li>--%>
+
+                        <li class="nav-item borderBottom navResponsive" style="display: none" id="navSeguros" runat="server">
+                            <img src="img/contactanos-menu.png" alt="contactanos-menu" />
+                            <a id="idMenuSeguros" class="animacionBorderBottom claseFuente1" href="Seguros.aspx" style="font-size: 14px">Seguros</a>
+                        </li>
+
+                        <li id="navCerrarSesion" class="menu__item borderBottom nav-item dropdown submenu navResponsive navCerrarSesion">
+                            <img src="img/iconosNavbar1148/cerrar-sesion.png" alt="Alternate Text" />
+                            <asp:LinkButton runat="server" class="linkCerrarResponsive claseFuente1" Font-Size="14px" OnClick="Unnamed_Click">Cerrar Sesión</asp:LinkButton>
+                        </li>
+                        <li class="nav-item dropdown submenu menuRegistrar" id="navPreRegistro" runat="server" style="display: none;">
+                            <a id="idMenuPreRegistro" class=" claseFuente1 enlaceRegistrar" href="PreRegistroSocio.aspx">Registrar</a>
+                        </li>
+                        <%--<img id="imgNavNotify" src="../img/Notificacion.png" alt="Alternate Text" runat="server" style="display: none;"/>--%>
+                        <li class="dropdown submenu navResponsive" style="display: none" id="imgNavNotify" runat="server">
+                            <a id="idNavNotify" class="claseFuente1 newNavBarDevice" role="button" style="font-size: 14px">
+                                <img id="imgNoti" src="../img/Notificacion.png" alt="Alternate Text" runat="server" /></a>
+                            <ul class="menu__nesting ul_idNavNotify" id="ul_idNavNotify" style="background-color: #F6F6F6; width: 370px; height: 430px; left: auto; right: -60px; border-radius: 7px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); bottom: -25px;">
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item" id="navlogin" runat="server">
+                            <a id="clicLogin" class="iniSesion claseFuente1" href="login.aspx" onclick="javascript:cambiarcolornav('clicklogin');">Iniciar sesión</a>
+                        </li>
+                        <li class="menu__item borderBottom nav-item dropdown submenu" id="navCerrar" runat="server">
+                            <a class=" claseFuente1" role="button" style="font-size: 14px; border-bottom: none; padding: 0; text-align: center">
+                                <img style="width: 44px" src="img/usuario-white.png" alt="user" />
+                                <%--<img style="width: 60px" src="img/user-fondo.png" alt="user" />--%>
+                            </a>
+                            <ul class="menu__nesting menu__nestingCerrar" <%--style="height:30px;vertical-align:middle"--%>>
+                                <li style="border-bottom: none" class="ocultar">
+                                    <div style="margin-bottom: 10px; position: relative; height: 86px; width: 86px; margin: auto;">
+                                        <img class="imgUser" src="img/IconUserGray.png" alt="user" />
+                                        <div style="background: #fff; border-radius: 50%; bottom: 0; position: absolute; right: 0; overflow: visible; height: 32px; width: 32px;">
+                                            <a href="#" class="gb_jb">
+                                                <svg class="gb_kb" enable-background="new 0 0 24 24" focusable="false" height="26" viewBox="0 0 24 24" width="18" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <path d="M20 5h-3.17L15 3H9L7.17 5H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 14H4V7h16v12zM12 9c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path></svg></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <%-- <li class="nav-item"><a class=" claseFuente1" id="logout" onserverclick="logout_ServerClick" runat="server" style="color: white;">cerrar sesión</a></li>--%>
+                                <li class="nav-item ocultar" id="navUsuario2" runat="server" style="border-bottom: 1px solid var(--Dark-grises);">
+                                    <p id="valorNombre" class="claseFuente1" style="color: var(--Dark-grises); text-align: center; font-weight: bold; font-size: 14px; margin: 10px 0 0 0;"><%=NombresCompletos%></p>
+                                    <p style="color: var(--Dark-grises); text-align: center; font-size: 14px; margin: 0 0 10px;">ID: <%=IDCLIENTE%></p>
+                                </li>
+                                <li class="nav-item subMenuCerrar" id="navPerfil" style="display: none" runat="server">
+                                    <a id="idEditarPerfil" class="claseFuente1 menuEditarPerfil" href="EditarPerfil.aspx">Editar Perfil</a>
+                                </li>
+                                <li class="nav-item subMenuCerrar">
+                                    <asp:LinkButton runat="server" class="linkCerrar claseFuente1" OnClick="Unnamed_Click">Cerrar Sesión</asp:LinkButton>
+                                </li>
+                            </ul>
+                            <%--                                <ul class="dropdown-menu-user hover"> style="right: 0px; left: -150px; border-radius: 7px; top: 100%; background-color: rgba(255,255,255,.8);">
+                                    <li class="nav-item" id="Li1" runat="server">
+                                        <p class="claseFuente1" style="color: black; text-align: center; font-weight: bold; margin: 5px;"><%=NombresCompletos%></p>
+                                        <p style="color: black; text-align: center; margin: 0 0 5px;">ID: 73011583</p>
+                                    </li>
+                                </ul>--%>
+                        </li>
+                        <li id="redesSinMenu" class="redesSinMenu" style="display: none" runat="server">
+                            <ul style="display: flex; gap: 20px; align-items: center">
+                                <li id="liFacebook2" class="nav-item"><a href="http://www.facebook.com/santanaturanetworkoficialperu" style="font-size: 30px; display: flex; margin: 0 14px;"><i class="social_facebook" style="font-size: 27px"></i></a></li>
+                                <li id="liYoutube2" class="nav-item"><a href="https://www.youtube.com/c/SANTANATURANETWORK" style="font-size: 30px; display: flex; margin: 0 14px;"><i class="social_youtube" style="font-size: 27px"></i></a></li>
+                                <li id="liInstagram2" class="nav-item"><a href="https://www.instagram.com/santanatura.network/" style="font-size: 30px; display: flex; margin: 0 14px;">
+                                    <img class="social_instagram" src="img/iconInstagram.png" alt="iconInstagram"></a></li>
+                            </ul>
+                        </li>
+
+                        <li id="footerResponsive" class="footerResponsive">
+                            <div style="position: relative; z-index: 100; width: 95%; margin: auto;">
+                                <div class="footer_widgets" style="border-top: none; border-bottom: 0; display: flex; flex-direction: column; grid-gap: 40px; padding: 16px 0 29px;">
+                                    <div>
+                                        <aside class="f_about_widget" style="margin-bottom: -45px">
+                                            <div>
+                                                <img width="79" id="imgLogoFooter3" src="https://tienda.mundosantanatura.com/img/Tienda/logoSN-compacto.png" alt="">
+                                            </div>
+                                            <p style="margin-top: -35px; font-size: 13px; color: white; padding: 30px 0px 0px 0px;">"Porque vivir bien está en nuestras raíces"</p>
+                                            <ul style="margin: 8px 0 30px; display: flex; justify-content: center; align-items: center; grid-gap: 20px;">
+                                                <li id="facebook" style="margin-left: 0"><a href="http://www.facebook.com/santanaturanetworkoficialperu" style="font-size: 30px; display: flex;"><i class="social_facebook" style="font-size: 27px"></i></a></li>
+                                                <%--<li id="twitter" style="margin-left: 0"><a href="#" style="font-size: 30px; display: flex;"><i class="social_twitter" style="font-size: 27px"></i></a></li>--%>
+                                                <li style="margin-left: 0"><a href="https://www.youtube.com/c/SANTANATURANETWORK" style="font-size: 30px; display: flex;"><i class="social_youtube" style="font-size: 27px"></i></a></li>
+                                                <li style="margin-left: 0"><a href="https://www.instagram.com/santanatura.network">
+                                                    <img class="social_instagram" src="img/iconInstagram.png" alt="iconInstagram" /></a></li>
+                                            </ul>
+                                        </aside>
+                                    </div>
+                                    <div class="text-center">
+                                        <span style="font-size: 14px; color: white">Esta tienda está autorizada por Visa para realizar transacciones electrónicas.</span>
+                                    </div>
+                                </div>
+                                <div class="linea"></div>
+                                <div class="footer_copyright" style="padding: 21px 0px 22px;">
+                                    <p class="copyright">
+                                        ©
+                        <script>document.write(new Date().getFullYear());</script>
+                                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                                        All rights reserved 
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </nav>
+                <div class="btn menu__hamburguer">
+                    <i id="sanguche" class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </header>
+            <%--<nav class="navbar navbar-expand-lg navbar-light fixed-top top-nav" style="width:100%; max-width: 100vw;">
+                <a class="navbar-brand" href="Index.aspx"><img id="imgLogoNavBar2" src="https://tienda.mundosantanatura.com/img/LOGO-PARA-BARRA-MOVEDIZA.png" style="margin-right: 40px; width: 300px" /></a>
+                <button style="height: 73px" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    
+                </div>
+            </nav>--%>
+
+            <div>
+                <%--<div runat="server" id="modalGeneral" style="display: none">
+                    <div id="popup" class="popup">
+                    </div>
+
+                </div>--%>
+                <div id="popup-article" class="popups">
+                    <div class="popup__container">
+                        <a href="#" class="popup__close" id="popup__close">
+                            <span class="screen-reader"></span>
+                        </a>
+                        <div class="popup__content">
+                            <h1 class="popup__title r-title">The my adventure in the France and photography with Tour De France</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque optio vitae in explicabo recusandae sit id sapiente excepturi tempore, nemo, nulla odio deleniti rerum nisi perferendis aut molestias! Incidunt nesciunt iusto praesentium! In at maiores quibusdam enim quis, quam!</p>
+                            <p>Architecto magni dolores cumque tenetur nemo id aperiam, ratione temporibus at, consectetur totam, fuga et illo rerum earum dicta. Vitae ullam harum enim aliquid hic commodi voluptas cumque iste ex accusantium architecto doloremque reprehenderit, asperiores vero dolor, esse inventore dolorem.</p>
+                            <p>Excepturi eaque, reprehenderit dolores, cum molestias repellendus in expedita. Placeat totam, quos pariatur quidem explicabo id harum ab voluptatum. Necessitatibus, aliquam! Dolorum voluptatem ut laudantium excepturi cumque, hic iure impedit ullam accusantium error natus recusandae, quia fuga quo voluptates officiis?</p>
+                            <p>Dignissimos debitis eos necessitatibus accusantium natus voluptates illo blanditiis corporis minus. Repudiandae libero quae, illo error expedita consectetur possimus voluptate eum esse quam molestiae tempore dignissimos ipsam similique ab quod. Ea earum adipisci rem voluptatem aliquid voluptatum deleniti necessitatibus provident.</p>
+                        </div>
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <!-- CARGAR EL DISEÑO QUE HEREDA DE MASTER PAGE -->
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="barraNavInferiorResponsive" class="barraNavInferiorResponsive">
+                <a href="Index.aspx" style="display: flex; flex-direction: column; justify-content: center; align-items: center">
+                    <img class="imagenIcono" src="img/home-white.png" alt="Alternate Text" />
+                    <p>Inicio</p>
+                </a>
+                <a href="PreRegistroSocio.aspx" style="display: flex; flex-direction: column; justify-content: center; align-items: center">
+                    <img class="imagenIcono" src="img/agregar-white.png" alt="Alternate Text" />
+                    <p>Registrar</p>
+                </a>
+                <a href="EditarPerfil.aspx" style="display: flex; flex-direction: column; justify-content: center; align-items: center">
+                    <img class="imagenIcono" src="img/usuario-white.png" alt="Alternate Text" />
+                    <p>Perfil</p>
+                </a>
+            </div>
+        </div>
+        <%--<div class="page">
+            <div class="page__container">
+                <a href="#popup-article" class="open-popup" >open popup</a>
+            </div>
+        </div>--%>
+        <a style="display: none; color: floralwhite; transition: .2s background" id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"></i></a>
+        <%--<div style="clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%); position: relative; height: 336px;">
+            <footer id="footerMaxWidth" class="footerMaxWidth">
+                <div style="position: relative; z-index: 100; width: 95%; margin: auto;">
+                    <div class="footer_widgets" style="border-top: none; border-bottom: 1px solid transparent; display: flex; flex-direction: column; grid-gap: 40px; padding: 16px 0 8px;">
+                        <div>
+                            <aside class="f_about_widget" style="margin-bottom: 0">
+                                <div style="margin: 0 0 10px">
+                                    <img width="193" id="imgLogoFooter2" src="https://tienda.mundosantanatura.com/img/Tienda/logoSN-compacto.png" alt="">
+                                </div>
+                                <p>"Vivir bien está en nuestras raíces"</p>
+                            </aside>
+                        </div>
+                        <div class="text-center">
+                            <div class="col-2 col-sm-2 col-md-2">
+                            </div>
+                            <div class="autorizacionVisa col-xs-12 col-sm-8 col-md-8">
+                                <span>Esta tienda está autorizada por Visa para realizar transacciones electrónicas.</span>
+
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="footer_copyright" style="padding: 21px 0px 22px;">
+                        <p class="copyright">
+                            ©
+                        <script>document.write(new Date().getFullYear());</script>
+                            Copyright ©<script>document.write(new Date().getFullYear());</script>
+                            All rights reserved 
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>--%>
+        <footer id="footerMaxWidth" class="footerMaxWidth">
+            <div style="position: relative; z-index: 100; width: 95%; margin: auto;">
+                <div class="footer_widgets" style="border-top: none; border-bottom: 1px solid transparent; display: flex; flex-direction: column; grid-gap: 40px; padding: 16px 0 8px;">
+                    <div>
+                        <aside class="f_about_widget" style="margin-bottom: 0">
+                            <div style="margin: 0 0 10px">
+                                <img width="193" id="imgLogoFooter2" src="https://tienda.mundosantanatura.com/img/Tienda/logoSN-compacto.png" alt="">
+                            </div>
+                            <p>"Vivir bien está en nuestras raíces"</p>
+                            <%--<ul style="margin: 8px 0 30px; display: flex; justify-content: center; align-items: center; grid-gap: 20px;">
+                                <li id="facebook2" style="margin-left: 0"><a href="http://www.facebook.com/santanaturanetworkoficialperu" style="font-size: 30px; display: flex;"><i class="social_facebook" style="font-size: 27px"></i></a></li>
+                                <li style="margin-left: 0"><a href="https://www.youtube.com/c/SANTANATURANETWORK" style="font-size: 30px; display: flex;"><i class="social_youtube" style="font-size: 27px"></i></a></li>
+                                <li style="margin-left: 0"><a href="https://www.instagram.com/santanatura.network/"><img class="social_instagram" src="img/iconInstagram.png" alt="iconInstagram"></a></li>
+                            </ul>--%>
+                        </aside>
+                    </div>
+                    <div class="text-center">
+                        <div class="col-2 col-sm-2 col-md-2">
+                        </div>
+                        <div class="autorizacionVisa col-xs-12 col-sm-8 col-md-8">
+                            <span>Esta tienda está autorizada por Visa para realizar transacciones electrónicas.</span>
+
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="footer_copyright" style="padding: 21px 0px 22px;">
+                    <p class="copyright">
+                        ©
+                        <script>document.write(new Date().getFullYear());</script>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright ©<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved 
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </form>
+
+    <%--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>--%>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/proyecto2/estilos-navbar-v2.js"></script>
+    <%--<script src="js/proyecto2/desplegarNavBarEnResponsive.js"></script>--%>
+
+    <script src="js/proyecto2/newNavBar.js?Fv44"></script>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/proyecto2/countDown.js?Fv64"></script>
+    <script src="js/proyecto2/axiosBannerEduca.js"></script>
+    <script src="js/proyecto2/axiosComisionTotal.js?Fv70"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".social_instagram").hover(
+                function () {
+                    // Cambiar a la imagen de hover
+                    $(this).attr("src", "img/instagram-color.png");
+                },
+                function () {
+                    // Volver a la imagen original
+                    $(this).attr("src", "img/instagram.png");
+                }
+            );
+        });
+        function IrLogin() {
+            var cerrarSession = "SI";
+            $.ajax({
+                type: "POST",
+                url: "Index.aspx/Logout",
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                error: function (xhr, ajaxOptions, thrownError) {
+                    console.log(xhr.status + " \n" + xhr.responseText, "\n" + thrownError);
+                },
+                success: function (response) {
+                    if (response.d == true) {
+                        //window.location.href = 'Index.aspx?cerrarSession=' + cerrarSession;
+                        window.location.href = 'Index.aspx';
+
+                    }
+                }
+            });
+        }
+
+        function GetToken() {
+            $.ajax({
+                type: "POST",
+                url: "Index.aspx/EvaluateToken",
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                error: function (xhr, ajaxOptions, thrownError) {
+                    console.log(xhr.status + " \n" + xhr.responseText, "\n" + thrownError);
+                },
+                success: function (response) {
+                    localStorage.setItem('Token', response.d);
+                }
+            });
+        }
+        GetToken();
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 250) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });
+
+
+
+
+
+        //javascript for navigation bar effect on scroll
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle('down', window.scrollY > 0);
+
+        });
+
+
+
+        //var el = document.querySelector('#navDocumentos');
+
+        //el.onclick = function () {
+        //    el.classList.toggle("cursor");
+        //}
+
+
+        //var on = Array.from(document.querySelectorAll('.menu__item'));
+        //console.log('on es igual a: ' + on);
+        //on.forEach(o => {
+        //    console.log('dentro de o hay: ' + o);
+        //})
+        //on.onclick = function () {
+        //    on.classList.toggle("activarDesplegableMenu");
+        //}
+
+
+        /* Para agregar y quitar clase desplegable al dar click en un menu solo en dimensión Nest Hub*/
+        if (screen.width > 1279 & 1366 > screen.width) {
+            var controls = document.querySelectorAll('.menu__item');
+            // también puedes usar forEach aquí
+            [].forEach.call(controls, el => {
+                el.addEventListener('click', btnClick, false)
+            })
+            function btnClick() {
+                // use la función Array para este léxico
+                [].forEach.call(controls, el => {
+                    // excepto por el elemento en el que se hizo clic, eliminar la clase activarDesplegableMenu
+                    if (el !== this) el.classList.remove('activarDesplegableMenu');
+                });
+                // Alternar la clase en el botón al hacer clic.
+                this.classList.toggle('activarDesplegableMenu');
+            }
+        }
+
+        //javascript for responsive navigation sidebar menu
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.fa-bars');
+        var closeBtn = document.querySelector('.close-btn');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        });
+
+        let abreDesplegable = document.getElementById("imgNavNotify");
+        abreDesplegable.addEventListener("click", changeText);
+        function changeText() {
+            document.getElementById("ul_idNavNotify").classList.toggle('displayBlock');
+        }
+
+        let idMenu = document.getElementById('idMenu');
+        let sanguche = document.getElementById('sanguche');
+        const openOverlayButton = document.getElementById("openOverlayButton");
+        const overlay = document.getElementById("overlay");
+        sanguche.onclick = muestraAlerta;
+        function muestraAlerta(evento) {
+            document.getElementById("header").style.zIndex = "10000";
+            document.getElementById("header").style.backgroundColor = "rgba(255,255,255,0.5)";
+            //document.getElementById("modalGeneral").style.display = "block";
+            overlay.classList.remove("hiddenOverlay");
+            //document.getElementById("popup").style.animation = "modal .5s forwards";
+            //document.getElementById("contenido").style.display = "none";
+            document.getElementById("body").style.overflowY = "hidden";
+            document.querySelector('#brand > a').style.pointerEvents = "none";
+            document.getElementById("imgLogoNavBar").style.filter = "opacity(0.5)";
+            document.getElementById("imgNavNotify").style.filter = "opacity(0.5)";
+            document.getElementById("imgNavNotify").style.pointerEvents = "none";
+
+
+        }
+        let clickCerrar = document.getElementById('clickCerrar');
+        clickCerrar.onclick = muestraAlerta2;
+        function muestraAlerta2(evento) {
+            document.getElementById("header").style.zIndex = "999";
+            document.getElementById("header").style.backgroundColor = "#fff";
+            overlay.classList.add("hiddenOverlay");
+            //document.getElementById("modalGeneral").style.display = "none";
+            document.getElementById("body").style.overflowY = "unset";
+            document.querySelector('#brand > a').style.pointerEvents = "auto";
+            document.getElementById("imgLogoNavBar").style.filter = "opacity(1)";
+            document.getElementById("imgNavNotify").style.filter = "opacity(1)";
+            document.getElementById("imgNavNotify").style.pointerEvents = "inherit";
+        }
+        //function muestraAlerta(evento) {
+        //    document.getElementById("header").style.zIndex = "10000000000";
+        //    document.getElementById("header").style.background = "rgba(21,50,133,0.45)";
+        //    document.getElementById("modal").style.display = "block";
+        //}
+
+        let element = document.getElementById('navlogin');
+        let elementStyle = window.getComputedStyle(element);
+        let elementDisplay = elementStyle.getPropertyValue('display');
+        //console.log(elementDisplay);
+        //No Logueado
+        if (elementDisplay == "block") {
+            document.getElementById("publicaciones").style.display = "none";
+            document.getElementById("footerMaxWidth").style.display = "none";
+            $('#idMenu').removeClass("menu").addClass("menuSoloLogin");
+            document.getElementById("sanguche").style.display = "none";
+            document.getElementById("iconCerrar").style.display = "none";
+            document.getElementById("navUsuario").style.display = "none";
+            document.getElementById("navCerrarSesion").style.display = "none";
+            document.getElementById("footerResponsive").style.display = "none";
+            document.getElementById("barraNavInferiorResponsive").style.display = "none";
+            document.getElementById("navPreRegistroTablet").style.display = "none";
+            document.getElementById("idMenuPreRegistroTablet").style.display = "none";
+            if (window.innerWidth < 500) {
+                document.getElementById("header").style.flexDirection = "row";
+                document.getElementById("header").style.justifyContent = "space-between";
+                document.getElementById("header").style.gridGap = "calc(100vw - 330px)";
+                //document.getElementById("clicLogin").style.border = "none";
+            }
+            else if (screen.width < 768) {
+                document.getElementById("header").style.flexDirection = "row";
+                document.getElementById("header").style.justifyContent = "space-between";
+                document.getElementById("header").style.gridGap = "calc(100vw - 410px)";
+            }
+            else if (window.innerWidth < 1140) {
+                document.getElementById("header").style.flexDirection = "row";
+                document.getElementById("header").style.justifyContent = "space-between";
+                document.getElementById("header").style.gridGap = "calc(100vw - 470px)";
+            }
+            else {
+                document.getElementById("header").style.flexDirection = "row";
+                document.getElementById("header").style.justifyContent = "space-between";
+                document.getElementById("header").style.gridGap = "0";
+            }
+            window.addEventListener("resize", showInfo);
+            function showInfo() {
+                if (window.innerWidth < 500) {
+                    document.getElementById("header").style.flexDirection = "row";
+                    document.getElementById("header").style.justifyContent = "space-between";
+                    document.getElementById("header").style.gridGap = "calc(100vw - 330px)";
+                    //document.getElementById("clicLogin").style.border = "none";
+                }
+                else if (screen.width < 768) {
+                    document.getElementById("header").style.flexDirection = "row";
+                    document.getElementById("header").style.justifyContent = "space-between";
+                    document.getElementById("header").style.gridGap = "calc(100vw - 410px)";
+                }
+                else if (window.innerWidth < 1149) {
+                    document.getElementById("header").style.flexDirection = "row";
+                    document.getElementById("header").style.justifyContent = "space-between";
+                    document.getElementById("header").style.gridGap = "calc(100vw - 470px)";
+
+                }
+                else {
+                    document.getElementById("header").style.flexDirection = "row";
+                    document.getElementById("header").style.justifyContent = "space-between";
+                    document.getElementById("header").style.gridGap = "0";
+                }
+            }
+
+        } else if (elementDisplay == "none") {// Logueado
+            if (window.innerWidth > 1140) {// mayor a 1140 es cuando se debe ocultar el menu desplegable
+                document.getElementById("navPreRegistroTablet").style.display = "none";
+            } else if (window.innerWidth < 500) {
+                document.getElementById("navPreRegistroTablet").style.display = "none";
+                document.getElementById("imgNoti").style.width = "26px";
+                document.getElementById("imgNavNotify").style.display = "none";
+                document.getElementById("imgNavNotify").style.position = "fixed";
+                document.getElementById("imgNavNotify").style.top = "-4px";
+                document.getElementById("imgNavNotify").style.left = "calc(100% - 100px)";
+            }
+            else {
+                document.getElementById("header").style.flexDirection = "row-reverse";
+                document.getElementById("brand").style.display = "block";
+                document.getElementById("navPreRegistroTablet").style.display = "block";
+                document.getElementById("imgNavNotify").style.position = "fixed";
+                document.getElementById("imgNavNotify").style.top = "0";
+                document.getElementById("imgNavNotify").style.left = "calc(100% - 120px)";
+            }
+
+            window.addEventListener("resize", showInfo);
+            function showInfo() {
+                if (window.innerWidth > 1148) {
+                    document.getElementById("header").style.flexDirection = "row";
+                    document.getElementById("navPreRegistroTablet").style.display = "none";
+                    document.getElementById("imgNavNotify").style.position = "relative";
+                    document.getElementById("imgNavNotify").style.left = "0";
+                    document.getElementById("imgNavNotify").style.top = "0";
+
+                    document.getElementById("header").style.zIndex = "999";
+                    document.getElementById("header").style.backgroundColor = "#fff";
+                    overlay.classList.add("hiddenOverlay");
+                    document.getElementById("body").style.overflowY = "unset";
+                    document.querySelector('#brand > a').style.pointerEvents = "auto";
+                    document.getElementById("imgLogoNavBar").style.filter = "opacity(1)";
+                    document.getElementById("imgNavNotify").style.filter = "opacity(1)";
+                    document.getElementById("imgNavNotify").style.pointerEvents = "inherit";
+                    document.getElementById("idMenu").classList.remove("active");
+                } else if (window.innerWidth < 500) {
+                    document.getElementById("header").style.flexDirection = "row-reverse";
+                    document.getElementById("navPreRegistroTablet").style.display = "none";
+                    document.getElementById("imgNoti").style.width = "26px";
+                    document.getElementById("imgNavNotify").style.display = "none";
+                    document.getElementById("imgNavNotify").style.position = "fixed";
+                    document.getElementById("imgNavNotify").style.top = "-4px";
+                    document.getElementById("imgNavNotify").style.left = "calc(100% - 100px)";
+                    /*-------------------------------------------------------------------------*/
+                    document.getElementById("header").style.zIndex = "999";
+                    document.getElementById("header").style.backgroundColor = "#fff";
+                    //overlay.classList.add("hiddenOverlay");
+                    document.getElementById("body").style.overflowY = "unset";
+                    document.querySelector('#brand > a').style.pointerEvents = "auto";
+                    document.getElementById("imgLogoNavBar").style.filter = "opacity(1)";
+                    document.getElementById("imgNavNotify").style.filter = "opacity(1)";
+                    document.getElementById("imgNavNotify").style.pointerEvents = "inherit";
+                } else if (500 < window.innerWidth < 1148 && idMenu.classList.contains('active')) {
+                    document.getElementById("header").style.flexDirection = "row-reverse";
+                    document.getElementById("brand").style.display = "block";
+                    document.getElementById("navPreRegistroTablet").style.display = "block";
+                    document.getElementById("imgNavNotify").style.position = "fixed";
+                    document.getElementById("imgNavNotify").style.top = "0";
+                    document.getElementById("imgNavNotify").style.left = "calc(100% - 120px)";
+                    /*-------------------------------------------------------------------------*/
+                    document.getElementById("header").style.zIndex = "10000";
+                    document.getElementById("header").style.backgroundColor = "rgba(255,255,255,0.5)";
+                    //overlay.classList.add("hiddenOverlay");
+                    document.getElementById("body").style.overflowY = "unset";
+                    document.querySelector('#brand > a').style.pointerEvents = "auto";
+                    document.getElementById("imgNavNotify").style.filter = "opacity(1)";
+                    document.getElementById("imgNavNotify").style.pointerEvents = "inherit";
+                } else if (500 < window.innerWidth < 1148 && !idMenu.classList.contains('active')) {
+                    document.getElementById("header").style.flexDirection = "row-reverse";
+                    document.getElementById("brand").style.display = "block";
+                    document.getElementById("navPreRegistroTablet").style.display = "block";
+                    document.getElementById("imgNavNotify").style.position = "fixed";
+                    document.getElementById("imgNavNotify").style.top = "0";
+                    document.getElementById("imgNavNotify").style.left = "calc(100% - 120px)";
+                    /*-------------------------------------------------------------------------*/
+                    document.getElementById("header").style.zIndex = "999";
+                    document.getElementById("header").style.backgroundColor = "#fff";
+                    //overlay.classList.add("hiddenOverlay");
+                    document.getElementById("body").style.overflowY = "unset";
+                    document.querySelector('#brand > a').style.pointerEvents = "auto";
+                    document.getElementById("imgLogoNavBar").style.filter = "opacity(1)";
+                    document.getElementById("imgNavNotify").style.filter = "opacity(1)";
+                    document.getElementById("imgNavNotify").style.pointerEvents = "inherit";
+                }
+            }
+
+
+        };
+
+        //let element2 = document.getElementById('navCerrarSesion');
+        //let elementStyle2 = window.getComputedStyle(element2);
+        //let elementDisplay2 = elementStyle2.getPropertyValue('display');
+        //if (elementDisplay2 == "block") {
+        //    document.getElementById("publicaciones").style.display = "none";
+        //}
+
+
+        let element2 = document.getElementById('valorNombre').innerHTML;
+        //console.log('el valor es: ' + element2);
+        if (element2 == "null") {
+            document.getElementById("publicaciones").style.display = "none";
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

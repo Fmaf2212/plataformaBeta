@@ -1,0 +1,645 @@
+﻿.bloqueHistoricoResumenVentas {
+    margin-top: 73px;
+    padding: 40px 94px;
+}
+
+    .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .sectionHistoricoResumenVentas__top {
+        display: flex;
+        align-items: center;
+        grid-column-gap: 15px;
+        margin-bottom: 49px;
+    }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .sectionHistoricoResumenVentas__top > a {
+            display: flex;
+        }
+
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .sectionHistoricoResumenVentas__top > a:hover > i {
+                color: #9B9B9B;
+            }
+
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .sectionHistoricoResumenVentas__top > a > i {
+                font-size: 20px;
+                color: #000;
+                transition: .3s color;
+            }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .sectionHistoricoResumenVentas__top > span {
+            font-size: 25px;
+            color: var(--Dark-grises);
+            line-height: .8;
+            font-weight: 700;
+            font-family: var(--Font-type);
+        }
+
+    .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle .sectionMiProgreso__porcentaje {
+        min-width: 130px;
+        max-width: 130px;
+        display: flex;
+    }
+
+
+    .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody {
+        display: flex;
+        justify-content: center;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        flex-wrap: wrap;
+    }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle {
+            display: flex;
+            align-items: center;
+            grid-column-gap: 15px;
+            width: 305px;
+            height: 160px;
+        }
+
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle > div:nth-child(1) > svg > text {
+                font-size: 16px;
+            }
+
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle > div:nth-child(3) {
+                grid-row-gap: 11px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+                .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle > div:nth-child(3) > p {
+                    margin: 0;
+                    line-height: 1;
+                }
+
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle.actividad > div:nth-child(3) > p:nth-child(1), .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle.activos > div:nth-child(3) > p:nth-child(1) {
+                color: #000;
+                font-weight: 400;
+                font-size: 14px;
+            }
+
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle.actividad > div:nth-child(3) > .title, .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle.activos > div:nth-child(3) > .title {
+                color: #000;
+                font-weight: 500;
+                font-size: 18px;
+            }
+
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle.actividad > div:nth-child(3) > .desc, .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle.activos > div:nth-child(3) > .desc {
+                color: #6D6D6D;
+                font-weight: 400;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle .myBtn {
+                font-size: 12px;
+                color: #153285;
+                font-weight: 400;
+                text-align: center;
+                border-radius: 8px;
+                border: 1px solid #153285;
+                padding: 10px 18px;
+                line-height: .8;
+                transition: .3s background, .3s color, .3s border;
+                width: fit-content;
+            }
+
+                .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle .myBtn:hover {
+                    background: #D9D9D9;
+                    border: 1px solid #153285;
+                }
+
+                .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle .myBtn:focus {
+                    background: #F1EFEF;
+                    outline: none;
+                    border: 1px solid #153285;
+                }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__txtVenta {
+            width: 189px;
+            height: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-row-gap: 8px;
+        }
+
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__txtVenta > div {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                align-items: center;
+            }
+
+                .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__txtVenta div > p:nth-child(1) {
+                    color: #000;
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin: 0;
+                    text-align: center;
+                    line-height: 1;
+                }
+
+                .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__txtVenta div > p:nth-child(2) {
+                    color: #6D6D6D;
+                    font-weight: normal;
+                    font-size: 18px;
+                    margin: 0;
+                    text-align: center;
+                    line-height: 1;
+                }
+
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__txtVenta div:nth-child(2) p:nth-child(1) {
+                width: 80%;
+                margin: auto;
+            }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody .sectionCircleBody__circle .sectionMiProgreso__porcentaje {
+            min-width: 130px;
+            max-width: 130px;
+            display: flex;
+        }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody > div {
+            background: #F9F9F9;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 26px;
+        }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody > .sectionCircleBody__circle.actividad {
+            padding: 16px 30px 16px 30px;
+        }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody > .sectionCircleBody__circle.activos {
+            padding: 16px 30px 16px 30px;
+            grid-column-gap: 15px;
+        }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody > .sectionCircleBody__circle.capitalizacion {
+            padding: 16px 30px 16px 30px;
+            grid-column-gap: 15px;
+        }
+
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody > .sectionCircleBody__circle.capitalizacion > div:nth-child(2) {
+                grid-row-gap: 7px;
+            }
+
+                .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody > .sectionCircleBody__circle.capitalizacion > div:nth-child(2) > ul {
+                    margin-bottom: 0;
+                }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionCircleBody > .sectionCircleBody__txtVenta {
+            grid-row-gap: 8px;
+        }
+
+
+
+
+    .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .bloqueTabla__top {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .bloqueTabla__top > p {
+            font-weight: 500;
+            font-size: 20px;
+            margin: 0;
+            line-height: .8;
+            color: #153285;
+        }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .bloqueTabla__top > select {
+            background-color: #f4f4f4;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border: none;
+            color: #000;
+            padding: 1vh 15px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 140px;
+            outline: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%231B2C5E;" /></svg>  ');
+            background-position: right 15px top 50%;
+            background-repeat: no-repeat;
+            background-size: 15px;
+            font-size: 1em;
+            margin-left: 5px;
+        }
+
+    .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionHistoricoResumenVentas__body {
+        margin-top: 50px;
+    }
+    
+
+    .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas .sectionHistoricoResumenVentas__body div.dataTables_wrapper {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 29px;
+    }
+
+/*-------------------------------------PARA LA TABLA-------------------------------------*/
+table.dataTable.nowrap > thead > tr > th {
+    background-color: var(--Light-primary);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 23px;
+    text-align: center;
+}
+
+table.dataTable.nowrap > tbody > tr > td {
+    font-weight: 400;
+    color: #6D6D6D;
+    font-size: 12px;
+    text-align: center;
+}
+
+table.nowrap > thead > tr > th {
+    background-color: var(--Light-primary);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+    table.nowrap > thead > tr > th:nth-child(1) {
+        background-color: #fff;
+        border-bottom: 0px solid #ddd;
+    }
+
+
+/*---------------Para el circle progress bar-----------------*/
+svg.radial-progress1 {
+    height: auto;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+    svg.radial-progress1 circle {
+        fill: rgba(0,0,0,0);
+        stroke: #fff;
+        stroke-dashoffset: 219.91148575129;
+        stroke-width: 10;
+    }
+
+        svg.radial-progress1 circle.incomplete {
+            opacity: 0.05;
+        }
+
+        svg.radial-progress1 circle.complete1 {
+            stroke-dasharray: 219.91148575129;
+        }
+
+    svg.radial-progress1 text {
+        fill: var(--Medium-primary);
+        font: 400 1em/1 'Oswald', sans-serif;
+        text-anchor: middle;
+    }
+
+    svg.radial-progress1:nth-of-type(6n+1) circle {
+        stroke: var(--Light-primary);
+    }
+
+    svg.radial-progress1:nth-of-type(6n+2) circle {
+        stroke: #83e4e2;
+    }
+
+    svg.radial-progress1:nth-of-type(6n+3) circle {
+        stroke: #fd6470;
+    }
+
+    svg.radial-progress1:nth-of-type(6n+4) circle {
+        stroke: #fca858;
+    }
+
+    svg.radial-progress1:nth-of-type(6n+5) circle {
+        stroke: #fddc32;
+    }
+
+svg.radial-progress2 {
+    height: auto;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+    svg.radial-progress2 circle {
+        fill: rgba(0,0,0,0);
+        stroke: #fff;
+        stroke-dashoffset: 219.91148575129;
+        stroke-width: 10;
+    }
+
+        svg.radial-progress2 circle.incomplete {
+            opacity: 0.05;
+        }
+
+        svg.radial-progress2 circle.complete2 {
+            stroke-dasharray: 219.91148575129;
+        }
+
+    svg.radial-progress2 text {
+        fill: var(--Medium-primary);
+        font: 400 1em/1 'Oswald', sans-serif;
+        text-anchor: middle;
+    }
+
+    svg.radial-progress2:nth-of-type(6n+1) circle {
+        stroke: var(--Darkest2-primary);
+    }
+
+    svg.radial-progress2:nth-of-type(6n+2) circle {
+        stroke: #83e4e2;
+    }
+
+    svg.radial-progress2:nth-of-type(6n+3) circle {
+        stroke: #fd6470;
+    }
+
+    svg.radial-progress2:nth-of-type(6n+4) circle {
+        stroke: #fca858;
+    }
+
+    svg.radial-progress2:nth-of-type(6n+5) circle {
+        stroke: #fddc32;
+    }
+
+svg.radial-progress3 {
+    height: auto;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+    svg.radial-progress3 circle {
+        fill: rgba(0,0,0,0);
+        stroke: #fff;
+        stroke-dashoffset: 219.91148575129;
+        stroke-width: 10;
+    }
+
+        svg.radial-progress3 circle.incomplete {
+            opacity: 0.05;
+        }
+
+        svg.radial-progress3 circle.complete3 {
+            stroke-dasharray: 219.91148575129;
+        }
+
+    svg.radial-progress3 text {
+        fill: var(--Medium-primary);
+        font: 400 1em/1 'Oswald', sans-serif;
+        text-anchor: middle;
+    }
+
+    svg.radial-progress3:nth-of-type(6n+1) circle {
+        stroke: var(--Light-primary);
+    }
+
+    svg.radial-progress3:nth-of-type(6n+2) circle {
+        stroke: #83e4e2;
+    }
+
+    svg.radial-progress3:nth-of-type(6n+3) circle {
+        stroke: #fd6470;
+    }
+
+    svg.radial-progress3:nth-of-type(6n+4) circle {
+        stroke: #fca858;
+    }
+
+    svg.radial-progress3:nth-of-type(6n+5) circle {
+        stroke: #fddc32;
+    }
+/*-------------------------------------------------------------------------*/
+
+.sectionCircleBody .number {
+    position: relative;
+    display: block;
+    background: #d9d9d9;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100px;
+    height: 15px;
+    margin-bottom: 1rem;
+}
+
+.sectionCircleBody .number2 {
+    position: relative;
+    display: inline-block;
+    background: #d9d9d9;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 50px;
+    height: 15px;
+    margin-bottom: 0;
+}
+.img {
+    position: relative;
+    min-width: 130px;
+    height: 130px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+    .img::before,
+    .sectionCircleBody .number::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient( to right, #d9d9d9 0%, #888b94 20%, #d9d9d9 40%, #d9d9d9 100% );
+        background-size: 450px 400px;
+        background-repeat: no-repeat;
+        animation: shimmer 1.4s linear infinite;
+    }
+
+.sectionCircleBody .number::before {
+    animation-delay: 0.29s;
+}
+
+.img::before,
+.sectionCircleBody .number2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to right, #d9d9d9 0%, #888b94 20%, #d9d9d9 40%, #d9d9d9 100% );
+    background-size: 450px 400px;
+    background-repeat: no-repeat;
+    animation: shimmer 1.4s linear infinite;
+}
+
+.sectionCircleBody .number2::before {
+    animation-delay: 0.29s;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -450px 0px;
+    }
+
+    100% {
+        background-position: 450px 0px;
+    }
+}
+
+/*-------------------------------------PARA LA TABLA-------------------------------------*/
+/*table.dataTable.nowrap > thead > tr > th {
+    background-color: var(--Light-primary);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 23px;
+    text-align: center;
+}
+
+table.dataTable.nowrap > tbody > tr > td {
+    font-weight: 400;
+    color: #6D6D6D;
+    font-size: 12px;
+    text-align: center;
+}
+
+table.nowrap > thead > tr > th {
+    background-color: var(--Light-primary);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+    table.nowrap > thead > tr > th:nth-child(1) {
+        background-color: #fff;
+        border-bottom: 0px solid #ddd;
+    }*/
+
+/*---------------------------------PARA EL INPUT DE BUSCAR----------------------------------*/
+/*#table_id_wrapper > div:nth-child(1) > div:nth-child(2) > div > label > input::placeholder {
+    background-image: url('../../img/Buscar.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 17px;
+    color: #C4C4C4;
+    font-size: 12px;
+    word-spacing: 17px;
+}
+
+#table_id_filter > label {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#table_id_filter > label, #table_id_length > label {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+    #table_id_filter > label > input {
+        border: 1px solid var(--Medium-primary);
+        border-radius: 8px;
+        padding: 0 13px;
+        width: 189px;
+        height: 36px;
+    }
+
+        #table_id_filter > label > input:focus {
+            outline: none;
+        }
+
+        #table_id_filter > label > input:active {
+            outline: none;
+        }*/
+
+/*-------------------------------PARA LA PAGINACION------------------------------*/
+/*.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: none;
+    border: 1px solid transparent;
+    cursor: auto;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0 !important;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid var(--Medium-primary) !important;
+}
+
+#table_id_paginate .pagination {
+    grid-gap: 8px;
+    margin: 0 !important;
+}
+
+.pagination > .disabled > a {
+    border: 0px solid #ddd !important;
+    color: #A6A6A6 !important
+}
+
+ul.pagination > .paginate_button:nth-last-child(1) > a {
+    border: 0px solid #ddd !important;
+    padding: 6px 0 !important;
+}
+
+.pagination > li > a {
+    border-radius: 4px;
+    line-height: .8 !important;
+    padding: 6.5px 8.5px !important;
+    color: #3A3A3A !important;
+    font-weight: 500;
+}
+
+.pagination > li:first-child > a {
+    border: 0px solid #ddd;
+    padding: 6px 0 !important;
+}
+
+.pagination > .active > a {
+    color: #fff !important;
+}
+
+.pagination > li:not(.previous, .disabled, .next) > a {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}*/
+
+@media (min-width: 1400px) {
+    .bloqueHistoricoResumenVentas {
+        padding: 40px 15%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 541px) {
+    .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .sectionHistoricoResumenVentas__top > span,
+    .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .sectionHistoricoResumenVentas__top > a > i {
+        font-size: 21px;
+    }
+    .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .bloqueTabla__top {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 540px) {
+    .bloqueHistoricoResumenVentas {
+        padding: 24px;
+        margin-top: 73px;
+    }
+
+        .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .sectionHistoricoResumenVentas__top {
+            margin-bottom: 25px;
+        }
+
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .sectionHistoricoResumenVentas__top > span,
+            .bloqueHistoricoResumenVentas .sectionHistoricoResumenVentas > .sectionHistoricoResumenVentas__top > a > i {
+                font-size: 16px;
+            }
+}
+
+@media (max-width: 499px) {
+    .bloqueHistoricoResumenVentas {
+        margin-top: 46px;
+        padding: 24px;
+    }
+}

@@ -1,0 +1,433 @@
+﻿.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+    .content-table thead tr {
+        background-color: var(--Light-purple);
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .content-table th, .content-table td {
+        padding: 12px 15px !important;
+    }
+
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+        .content-table tbody tr:nth-of-type(even) {
+        }
+
+        .content-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009897;
+        }
+
+        .content-table tbody tr.active-row {
+            font-weight: bold;
+            color: #009897;
+        }
+
+.ddlMapaDeRed {
+    border-radius: 4px 5px;
+}
+
+.lblMedioDePago {
+    margin-left: auto;
+}
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(img/loadingPageSantanatura.gif) center no-repeat #fff;
+}
+
+.style-button-red {
+    background-color: transparent !important;
+    color: black !important;
+    border-color: transparent !important;
+}
+
+div.centerTable {
+    text-align: center;
+}
+
+    div.centerTable table {
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 70px;
+    }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+.bloqueMapaDePatrocinio {
+    margin: 70px auto 0;
+    max-width: 1440px;
+}
+
+div.centerTable {
+    padding: 0;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px 0px lightgrey;
+    border-left: 0px solid #ddd !important;
+    border-bottom: 0px solid !important;
+    border-right: 0px solid #ddd !important;
+}
+
+    .content-table thead tr {
+        background-color: var(--Light-purple);
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > td {
+    display: table-cell;
+    vertical-align: middle !important;
+    text-align: center;
+    border-bottom-width: 0 !important;
+}
+
+    .table-bordered > thead > tr > th:not(:last-child) {
+        border-right: 2px solid var(--Lightest-primary) !important;
+    }
+
+.table-bordered > tbody > tr > td {
+    border: 0px solid #ddd !important;
+}
+
+.table-bordered > tbody {
+    border: 1.3px solid var(--Lightest-primary);
+}
+
+    .table-bordered > tbody > tr > td:not(:last-child) {
+        border-right: 2px solid var(--Lightest-primary) !important;
+    }
+
+    .table-bordered > tbody > tr:not(:last-child) {
+        border-bottom: 1px solid var(--Lightest-primary);
+    }
+
+.content-table thead tr th label {
+    margin-bottom: 0;
+}
+
+.content-table th, .content-table td {
+    padding: 12px 15px !important;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+    .content-table tbody tr:nth-of-type(even) {
+    }
+
+    .content-table tbody tr:last-of-type {
+        /*border-bottom: 2px solid #009897;*/
+    }
+
+    .content-table tbody tr.active-row {
+        font-weight: bold;
+        color: #009897;
+    }
+
+.content-table > tbody > tr > td > button > label {
+    color: var(--Dark-primary)
+}
+
+.content-table > tbody > tr > td > label {
+    font-weight: 500;
+}
+
+.titulo {
+    font-weight: bold;
+    text-align: start;
+    margin: 0 82px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: var(--Dark-grises);
+    font-family: system-ui;
+    font-size: 25px;
+}
+
+.bloqueFiltrado {
+    margin: 0 82px;
+    padding: 0 88px 0 0;
+}
+
+.filtrar {
+    display: flex;
+    align-items: center;
+    grid-gap: 19px;
+}
+
+.combito select {
+    /* Reset Select */
+    appearance: none;
+    outline: 0;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: black;
+    background-color: white;
+    background-image: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    height: 48px;
+}
+    /* Remove IE arrow */
+    .combito select::-ms-expand {
+        display: none;
+    }
+
+
+.combito {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 20em;
+    height: 69px;
+    border-radius: .25em;
+    overflow: hidden;
+}
+
+    /* Arrow */
+    .combito::after {
+        content: '\25BC';
+        position: absolute;
+        right: 0;
+        padding: 1.5em 1em;
+        background-color: var(--Primary-purple);
+        transition: .25s all ease;
+        pointer-events: none;
+        color: white;
+        border-radius: 0 6px 6px 0;
+        height: 48px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .combito:hover::after {
+        background-color: var(--Intense-purple);
+    }
+
+.botonFiltrar {
+    background-color: var(--Primary-purple);
+    transition: all .3s;
+    border-radius: 16px;
+    height: 48px;
+    width: 135px;
+    font-size: 14px;
+    border: none;
+    color: white;
+    font-family: system-ui;
+}
+
+    .botonFiltrar:hover {
+        background-color: var(--Intense-purple);
+    }
+
+    .botonFiltrar:active {
+        background-color: var(--Intense-purple);
+    }
+
+.box {
+    box-shadow: none !important;
+}
+
+.bloqueTablaMapaDePatrocinio {
+    margin: 0 82px;
+}
+
+/*-------------------------------------------------------------------------------*/
+@media (max-device-width: 823px) {
+    .bloqueFiltrado {
+        padding: 16px 54px;
+        width: auto;
+        grid-column-gap: 40px;
+        margin: 0 40px;
+    }
+}
+
+@media (max-device-width: 812px) {
+    div.centerTable {
+        padding: 0 40px;
+    }
+    .bloqueTablaMapaDePatrocinio {
+        margin: 0;
+    }
+}
+
+@media screen and (max-device-width: 540px) and (orientation: portrait) {
+    .titulo {
+        margin: 0 50px;
+    }
+    .bloqueFiltrado {
+        margin: 0 50px;
+        width: auto;
+        padding: 20px 40px;
+        grid-row-gap: 15px;
+    }
+    .filtrar {
+        flex-direction: row;
+        grid-gap: 10px;
+        justify-content: space-between;
+    }
+    .content-table th {
+        padding: 5px 15px !important;
+    }
+}
+
+@media screen and (max-device-width: 499px) and (orientation: portrait) {
+    .bloqueMapaDePatrocinio {
+        margin: 45px auto 0;
+    }
+
+    .titulo {
+        justify-content: start;
+        font-size: 18px;
+        height: auto;
+        padding: 25px 0 22px;
+        margin: 0 40px;
+    }
+
+    .bloqueFiltrado {
+        border-radius: 10px;
+        grid-gap: 17px;
+        margin: 0 40px;
+        padding: 17px 20px 25px 20px;
+    }
+
+    .bloqueTablaMapaDePatrocinio {
+        margin: 0;
+    }
+
+    .datosUsuario p {
+        font-size: 16px
+    }
+
+    .combito {
+        width: 158px;
+        height: auto;
+    }
+
+        .combito select {
+            font-size: 12px;
+            height: 35px;
+        }
+
+        .combito::after {
+            width: 33px;
+            height: 35px;
+            font-size: 10px;
+        }
+
+
+    .botonFiltrar {
+        font-size: 12px;
+        padding: 9px 19px;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    div.centerTable {
+        padding: 0 40px;
+    }
+
+
+    .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+        font-size: 12px;
+    }
+
+    .table > thead:first-child > tr:first-child > th:nth-child(2) {
+        min-width: 190px;
+        padding: 0 !important;
+    }
+
+    .table > thead:first-child > tr:first-child > th:nth-child(11) {
+        min-width: 100px;
+        padding: 0 !important;
+    }
+
+    .table-bordered > tbody > tr > td:nth-child(1) {
+        padding: 8px !important;
+    }
+}
+
+@media screen and (max-device-width: 360px) {
+    .titulo {
+        font-size: 16px;
+    }
+
+    .bloqueFiltrado {
+        margin: 0 30px;
+    }
+
+}
+
+@media screen and (max-device-width: 320px) {
+    div.centerTable {
+        padding: 0 20px;
+    }
+    .bloqueFiltrado, .bloqueTablaMapaDePatrocinio {
+        margin: 0;
+    }
+
+    .titulo {
+        margin: 0 20px;
+    }
+
+    .bloqueFiltrado {
+        padding: 17px 20px 25px 20px;
+    }
+}
+
+@media screen and (max-device-width: 280px) {
+    .titulo {
+        margin: 0 20px;
+    }
+
+    .bloqueFiltrado {
+        margin: 0px 20px;
+        padding: 17px 14px 25px 10px;
+    }
+}

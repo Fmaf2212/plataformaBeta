@@ -1,0 +1,272 @@
+﻿/*Para la clase colorlib-hero*/
+.breadcrumbs {
+    height: 150px;
+    width: 100%;
+    float: left;
+    z-index: 0;
+    margin-bottom: 6em;
+    margin-top: 30px;
+}
+
+    .breadcrumbs .btn {
+        font-size: 24px;
+    }
+
+        .breadcrumbs .btn.btn-primary {
+            padding: 14px 30px !important;
+        }
+
+    .breadcrumbs .flexslider {
+        border: none;
+        z-index: 1;
+        margin-bottom: 0;
+    }
+
+        .breadcrumbs .flexslider .slides {
+            position: relative;
+            overflow: hidden;
+        }
+
+            .breadcrumbs .flexslider .slides li {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                height: 650px;
+                position: relative;
+            }
+
+                .breadcrumbs .flexslider .slides li .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+
+        .breadcrumbs .flexslider .flex-control-nav {
+            bottom: 5em;
+            z-index: 1000;
+            width: 0 auto;
+        }
+
+@media screen and (max-width: 768px) {
+    .breadcrumbs .flexslider .flex-control-nav {
+        bottom: 6em;
+    }
+}
+
+.breadcrumbs .flexslider .flex-control-nav li a {
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+    .breadcrumbs .flexslider .flex-control-nav li a.flex-active {
+        cursor: pointer;
+        background: transparent;
+        background: #FFC300;
+    }
+
+.breadcrumbs .flexslider .flex-direction-nav {
+    display: none;
+}
+
+.breadcrumbs .flexslider .slider-text {
+    display: table;
+    opacity: 0;
+    height: 650px;
+    z-index: 9;
+}
+
+    .breadcrumbs .flexslider .slider-text > .slider-text-inner {
+        /*display: table-cell;
+        vertical-align: middle;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 450px;
+    }
+
+@media screen and (max-width: 768px) {
+    .breadcrumbs .flexslider .slider-text > .slider-text-inner {
+        text-align: center;
+    }
+}
+
+.breadcrumbs .flexslider .slider-text > .slider-text-inner .desc {
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+
+    .breadcrumbs .flexslider .slider-text > .slider-text-inner .desc:after {
+        position: absolute;
+        top: -3em;
+        left: -3em;
+        right: 0;
+        bottom: 0;
+        width: 310px;
+        height: 310px;
+        content: '';
+        background: #fff;
+        z-index: -1;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+.breadcrumbs .flexslider .slider-text > .slider-text-inner h1, .breadcrumbs .flexslider .slider-text > .slider-text-inner h2 {
+    display: flex;
+    padding: 35px 10px;
+    text-transform: uppercase;
+    /*background-color: rgba(255,255,255,.5);
+    margin: auto;*/
+    border-radius: 10px;
+}
+    .breadcrumbs .flexslider .slider-text > .slider-text-inner h1, .breadcrumbs .flexslider .slider-text > .slider-text-inner h2 .enlaceRetroceder:hover {
+        color: #008100 !important;
+    }
+    .breadcrumbs .flexslider .slider-text > .slider-text-inner h1, .breadcrumbs .flexslider .slider-text > .slider-text-inner h2 .enlaceActual {
+        font-weight: bold;
+        transition: .3s ease color;
+    }
+/*        .breadcrumbs .flexslider .slider-text > .slider-text-inner h1, .breadcrumbs .flexslider .slider-text > .slider-text-inner h2 .enlaceActual:hover {
+            color: #fa6100 !important;
+        }*/
+
+.breadcrumbs .flexslider .slider-text > .slider-text-inner h1 {
+    color: #000;
+}
+
+.breadcrumbs .flexslider .slider-text > .slider-text-inner .head-1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+.breadcrumbs .flexslider .slider-text > .slider-text-inner .head-2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.breadcrumbs .flexslider .slider-text > .slider-text-inner .head-3 {
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.breadcrumbs .flexslider .slider-text > .slider-text-inner .category {
+    margin-bottom: 30px;
+}
+
+    .breadcrumbs .flexslider .slider-text > .slider-text-inner .category span {
+        font-weight: 100;
+        font-size: 20px;
+        color: gray;
+    }
+
+.breadcrumbs .flexslider .slider-text > .slider-text-inner .btn {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 20px 30px !important;
+    border: none;
+}
+
+    .breadcrumbs .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
+        background: #FFC300;
+        color: #fff;
+    }
+
+    .breadcrumbs .flexslider .slider-text > .slider-text-inner .btn:hover {
+        background: #000 !important;
+    }
+
+@media screen and (max-device-width: 480px) {
+    .breadcrumbs {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    .breadcrumbs .flexslider .slider-text > .slider-text-inner .btn {
+        width: 100%;
+    }
+}
+#ContenidoFluido .process-wrap {
+    display: flex;
+    justify-content: center;
+}
+/*Para la clase breadcrumbs*/
+/*.breadcrumbs {
+    height: 300px !important;
+}*/
+.breadcrumbs .slides li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 150px !important;
+    position: relative;
+}
+
+        .breadcrumbs .slides li .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            background: -moz-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+            background: -webkit-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+            background: -o-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+            background: -ms-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+            background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+            background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+        }
+
+    .breadcrumbs .slider-text {
+        height: 150px !important;
+    }
+
+        .breadcrumbs .slider-text > .slider-text-inner {
+            height: 150px !important;
+        }
+
+@media screen and (max-width: 768px) {
+    .breadcrumbs .slider-text > .slider-text-inner {
+        text-align: center;
+    }
+}
+
+.breadcrumbs .slider-text > .slider-text-inner h1 {
+    font-size: 28px;
+}
+
+.breadcrumbs .slider-text > .slider-text-inner .bread span {
+    font-size: calc(1.4vw + 1vh);
+    letter-spacing: 1px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+    .breadcrumbs .slider-text > .slider-text-inner .bread span:nth-child(2n) {
+        font-size: calc(0.6vw + 1vh);
+        display: flex;
+        align-items: center;
+    }
+
+        .breadcrumbs .slider-text > .slider-text-inner .bread span:nth-child(2n) > a {
+            color: rgba(0, 0, 0, .5);
+        }
+
+    .breadcrumbs .slider-text > .slider-text-inner .bread span:first-child {
+        margin-left: 0;
+    }

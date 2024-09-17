@@ -1,0 +1,32 @@
+﻿/*@media (min-width: 1200px) {
+    #imgFondoIndexBody {
+        height: 1378px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 1200px) {
+    .fondoCuerpo {
+        height: 1378px;
+    }
+    #imgFondoIndexBody {
+        height: 1372px;
+    }
+}*/
+
+.fondoCuerpo {
+    /*background-image: url('img/fondo-index-body.png');
+    border:2px solid yellow;*/
+}
+
+/*@media (max-width: 768px) {
+    .fondoCuerpo {
+        width: 70px;
+    }
+}
+
+@media (min-width: 769px) {
+    .fondoCuerpo {
+        display: block;
+    }
+}*/

@@ -1,0 +1,418 @@
+﻿.sectionDatosNetwork {
+    background-color: var(--Light-orange);
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.sectionDatosNetwork__porcentaje {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 36px;
+    align-items: center;
+    padding: 36px 0;
+    flex-grow: 4;
+    flex-wrap: wrap;
+}
+
+    .sectionDatosNetwork__porcentaje .descRango {
+        color: #333;
+        font-weight: 400;
+        font-size: 25px;
+        text-align: start;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+
+    .sectionDatosNetwork__porcentaje .valorRango {
+        color: var(--Primary-orange);
+        font-weight: 500;
+        font-size: 30px;
+        text-align: start;
+        line-height: 1;
+        margin-bottom: 0;
+        font-family: var(--Font-type);
+    }
+
+    .sectionDatosNetwork__porcentaje .valorComiTotal {
+        font-size: 35px;
+        color: var(--Primary-orange);
+        font-weight: 500;
+        text-align: center;
+        line-height: 1;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+        .sectionDatosNetwork__porcentaje .valorComiTotal .moneda {
+            font-size: 45px;            
+            font-weight: 400;
+            text-align: center;
+        }
+
+    .sectionDatosNetwork__porcentaje .botonComisiones {
+        border-radius: 25px;
+        font-size: 25px;
+        font-weight: normal;
+        text-align: center;
+        color: #fff;
+        padding: 10px 48px;
+        background-color: var(--Medium-primary);
+        border: none;
+        transition: .3s background-color ease;
+        font-family: var(--Font-type)
+    }
+        .sectionDatosNetwork__porcentaje .botonComisiones:hover {
+            background-color: #304d9e;
+            border: none;
+        }
+    .sectionDatosNetwork__porcentaje .botonComisiones:focus {
+        background-color: var(--Light-primary);
+        border: none;
+    }
+
+.sectionMiProgreso {
+    display: flex;
+    justify-content: center;
+    padding: 35px 46px;
+    grid-gap: 0;
+    width: 618px;
+}
+.sectionMiProgreso__Rangos {
+    font-size: 14px;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-gap: 46px;
+}
+.sectionMiProgreso__porcentaje {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.sectionTotComisiones {
+    padding: 69px 63px;
+    width: 456px;
+}
+.totComisiones {
+    font-size: 25px;
+    margin: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.bloqueSectionMiProgreso {
+    background: var(--Light-orange);
+    border-radius: 40px;
+    filter: drop-shadow(0px 5px 2px rgba(0, 0, 0, 0.45));
+}
+
+.sectionDatosNetwork__red{
+    display: flex;
+}
+    
+
+.sectionDatosNetwork__cuadros {
+    padding: 53.5px;
+    display: flex;
+    grid-gap: 54px;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    width: 53%;
+}
+
+    .sectionDatosNetwork__cuadros .cuadrosDerecha, .sectionDatosNetwork .cuadrosIzquierda {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px
+    }
+
+        .sectionDatosNetwork__cuadros .cuadrosDerecha div, .sectionDatosNetwork .cuadrosIzquierda div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-gap: 10px;
+        }
+
+        .sectionDatosNetwork__cuadros .cuadrosDerecha div, .sectionDatosNetwork__cuadros .cuadrosIzquierda div {
+            background-color: #fff;
+            width: 280px;
+            height: 103px;
+            border-radius: 7px;
+        }
+
+        .sectionDatosNetwork__cuadros .cuadrosDerecha .paquete {
+            color: var(--Primary-orange);
+            font-weight: 500;
+            font-size: 25px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .sectionDatosNetwork__cuadros .cuadrosDerecha .valor, .sectionDatosNetwork__cuadros .cuadrosIzquierda .valor {
+            color: #444;
+            font-weight: bold;
+            font-size: 25px;
+            margin: 0;
+            line-height: 1;
+        }
+
+        .sectionDatosNetwork__cuadros .cuadrosDerecha .desc, .sectionDatosNetwork__cuadros .cuadrosIzquierda .desc {
+            color: var(--Primary-orange);
+            font-weight: 500;
+            font-size: 18px;
+            margin: 0;
+            line-height: 1;
+            font-family: var(--Font-type);
+            text-align: center;
+            width: 80%;
+        }
+
+.textoProgresoPorcentaje {
+    font-size: 16px;
+    position: absolute;
+    bottom: 135px;
+    width: 130px;
+    text-align: center;
+    margin: 0;
+    z-index: 999999999999;
+    color: white;
+    right: 122px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------*/
+.bloqueMiRed {
+    margin: 46px auto;
+    width: 47%;
+}
+
+.bloqueMiRed__section {
+    max-width: 100%;
+    margin: auto 20px;
+}
+
+.bloqueMiRed__titulo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 23px;
+    padding-left: 74px;
+}
+
+    .bloqueMiRed__titulo p {
+        font-family: var(--Font-type);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 33px;
+        color: #444;
+        margin-bottom: 0px;
+        line-height: 1;
+    }
+
+.bloqueMiRed__irMapaRed {
+    display: flex;
+    justify-content: center;
+    margin-top: 41px
+}
+    .bloqueMiRed__irMapaRed a {
+        border: 1px solid var(--Primary-orange);
+        border-radius: 40px;
+        color: #Fff;
+        font-family: var(--Font-type);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        padding: 14px 46.5px;
+        transition: .3s background-color;
+        background: var(--Primary-orange);
+    }
+    .bloqueMiRed__irMapaRed a:hover {
+        color: var(--Primary-orange);
+        font-family: var(--Font-type);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        padding: 14px 46.5px;
+        transition: .3s background-color;
+        background: white;
+    }
+
+    .bloqueMiRed__titulo a:hover {
+        color: var(--Medium-primary);
+    }
+
+    .bloqueMiRed__titulo a:focus {
+        color: var(--Medium-primary);
+        background-color: var(--Light-primary);
+        border: 1px solid var(--Medium-primary);
+    }
+
+    .bloqueMiRed__titulo a:active {
+        color: var(--Medium-primary);
+        background-color: var(--Light-primary);
+        border: 1px solid var(--Medium-primary);
+    }
+
+.bloqueMiRed__circulos {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    row-gap: 8px;
+    column-gap: 50px;
+    padding-left: 20px;
+}
+    .bloqueMiRed__circulos article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 8px;
+    }
+
+.articleCirculos__img {
+    position: relative
+}
+
+    .articleCirculos__img .valorCirculo {
+        font-size: 26px;
+        font-weight: 400;
+        color: white;
+        position: absolute;
+        top: 0;
+        margin: 0;
+        line-height: 145px;
+        width: 150px;
+        text-align: center;
+    }
+
+.articleCirculos__nombre p {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--Primary-orange);
+    text-align: center;
+    font-family: var(--Font-type);
+}
+
+@media (max-width: 1680px) {
+    .sectionDatosNetwork__porcentaje {
+        padding: 36px 56px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .sectionDatosNetwork__cuadros {
+        padding: 31.5px 86px;
+        grid-gap: 58px;
+    }
+    .nextt {
+        right: 19.7% !important;
+    }
+    .slider_div .owl-item.active {
+        left: -230px;
+    }
+    .slider_div .owl-item.center .item img {
+        transform: scale(.95);
+    }
+}
+/*@media (max-width: 1320px) {
+    .bloqueMiRed__section {
+        margin: auto 50px;
+    }
+}*/
+/*@media (max-width: 1349px) {
+    .slider_div .owl-item.active {
+        left: 480px;
+    }
+}*/
+
+
+@media (max-width: 1320px) {
+    .slider_div .owl-item.active {
+        left: -240px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .sectionDatosNetwork__cuadros {
+        padding: 31.5px 70px;
+        grid-gap: 28px;
+    }
+
+    .slider_div .owl-item.center .item img {
+        transform: scale(.85);
+    }
+
+    .slider_div .owl-item.active {
+        left: -250px;
+    }
+}
+@media (max-width: 1199px) {
+    .sectionDatosNetwork__cuadros {
+        padding: 31.5px 30px;
+        grid-gap: 18px;
+        justify-content: center;
+    }
+
+    .bloqueMiRed__section {
+        margin: auto 10px;
+    }
+    .bloqueMiRed__circulos {
+        grid-gap: 0;
+    }
+
+
+    /*Para el slider inferior del INDEX*/
+    .slider_div .owl-item.active.center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider_div .owl-item.active {
+        left: 200px;
+    }
+
+    .owl-item .item {
+        width: min-content;
+    }
+}
+@media (max-width: 1130px) {
+    .sectionDatosNetwork__cuadros .cuadrosDerecha div, .sectionDatosNetwork__cuadros .cuadrosIzquierda div {
+        width: 250px;
+    }
+    .sectionDatosNetwork__porcentaje {
+        width: 100%;
+    }
+}
+@media (max-width: 998px) {
+    .sectionDatosNetwork__cuadros .cuadrosDerecha div, .sectionDatosNetwork__cuadros .cuadrosIzquierda div {
+        width: 127px;
+    }
+    .bloqueMiRed__circulos{
+        padding: 0
+    }
+}
+@media (max-width: 887px) {
+    .sectionDatosNetwork{
+        flex-direction: column;
+    }
+    .sectionDatosNetwork__porcentaje {
+        width: 100%;
+        padding: 20px 60px;
+    }
+    .bloqueMiRed__circulos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-device-width: 500px){
+    .circleProgressBarPequeño {
+        display: flex;
+    }
+
+}

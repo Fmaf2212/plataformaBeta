@@ -1,0 +1,142 @@
+﻿@import url("fonts-v2.css");
+
+.datosPersoCDR {
+    font-family: 'HurmeGeometricSans1 Bold';
+    height: 100vh;
+    background-image: url('../../img/fondoPagDatosPersonales.png');
+    background-size: 100% 100%;
+    padding: 20px 40px;
+}
+
+    .datosPersoCDR .content-header h1 {
+        color: #1c1c72;
+        text-align: center;
+        text-decoration-color: #79b729;
+        text-decoration-line: underline;
+        margin-top: 50px
+    }
+
+.datosPersonales {
+    margin-top: 50px;
+    background: transparent !important;
+    padding: 30px 100px !important;
+}
+
+    .datosPersonales label {
+        color: #1c1c72;
+    }
+
+.titleDatCompraExt {
+    color: #1c1c72;
+    text-align: center;
+    text-decoration-color: #79b729;
+    text-decoration-line: underline;
+
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+    font-size: 26px;
+    font-weight: 400;
+    float: left;
+    cursor: default;
+}
+
+.btnActualizar {
+    background-color: #1c1c72;
+    color: white
+}
+
+.bloqueBtnActualizar {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.btnActualizar:hover {
+    background-color: #1c1c92;
+    color: white !important
+}
+
+.cajita {
+    height: 50px !important;
+    filter: drop-shadow(0px 3px 5px #999);
+}
+
+.espaciado div:nth-child(2n+1) {
+    margin-bottom: 5px
+}
+
+.espaciado div:nth-child(2n+2) {
+    margin-bottom: 30px
+}
+
+.bloqueIzquierda {
+    border-right: thick solid #1C1C72;
+    padding-right: 50px;
+}
+
+.bloqueDerecha {
+    padding-left: 50px;
+}
+
+@media (max-device-width: 1024px) {
+    .datosPersoCDR {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .bloqueIzquierda {
+        border-right: none;
+        padding-right: 0;
+    }
+}
+
+@media (max-device-width: 768px) {
+    .datosPersoCDR {
+        height: 100%;
+    }
+}
+
+@media (max-device-width: 500px) {
+    .page-wrapper .page-content {
+        overflow-x: hidden
+    }
+
+    .datosPersoCDR {
+        padding: 20px 20px;
+        background-image: none;
+    }
+
+        .datosPersoCDR .content-header h1 {
+            font-size: 26px;
+            padding: 0 10px;
+            margin-top: 20px;
+        }
+
+    .datosPersonales {
+        margin-top: 25px;
+        padding: 20px !important;
+    }
+
+    .datosPersonales {
+        padding: 0 !important;
+        overflow: hidden !important
+    }
+
+    .bloqueIzquierda {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .bloqueDerecha {
+        padding-left: 0;
+    }
+
+    .bloqueBtnActualizar {
+        margin: 50px 0;
+    }
+}

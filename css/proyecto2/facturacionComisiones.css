@@ -1,0 +1,237 @@
+﻿.contenidoFacturaciónComisiones {
+    padding: 34px 20px !important;
+}
+
+    .contenidoFacturaciónComisiones > div {
+        margin: 0;
+    }
+
+        .contenidoFacturaciónComisiones > div > div {
+            padding: 0;
+        }
+
+.divFacturaciónComisiones {
+    border-top: 0 !important;
+    box-shadow: none !important;
+}
+
+.divFacturaciónComisiones__bloqueSuperior {
+    margin-bottom: 28px;
+    display: flex;
+    grid-column-gap: 10px;
+}
+
+    .divFacturaciónComisiones__bloqueSuperior #bloqueSuperior__izquierda {
+        display: flex;
+        grid-column-gap: 9px;
+    }
+
+    .divFacturaciónComisiones__bloqueSuperior .spanTituloFacturaciónComisiones {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .divFacturaciónComisiones__bloqueSuperior .btnExportar {
+        color: var(--Medium-primary);
+        border: 1px solid #153285;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 6px 5px;
+        line-height: .8;
+        background: white;
+        font-size: var(--tamaño-texto);
+        display: flex;
+        align-items: center;
+        height: 28px;
+        transition: .2s ease;
+    }
+        .divFacturaciónComisiones__bloqueSuperior .btnExportar:hover {
+            color: white;
+            border: 1px solid var(--Light-primary);
+            background-color: var(--Light-primary);
+        }
+        .divFacturaciónComisiones__bloqueSuperior .btnExportar:active {
+            color: white;
+            border: 1px solid var(--Lightest-primary);
+            background-color: var(--Lightest-primary);
+        }
+
+        .divFacturaciónComisiones__bloqueSuperior .btnExportar img {
+            transition: .2s ease;
+        }
+        .divFacturaciónComisiones__bloqueSuperior .btnExportar:hover img {
+            content: url("../../img/imgExportWhite.png");
+        }
+        .divFacturaciónComisiones__bloqueSuperior .btnExportar:active img {
+            content: url("../../img/imgExportWhite.png");
+        }
+
+.bloqueInferior__izquierda {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 12px;
+}
+
+    .bloqueInferior__izquierda .cboEnviarAPeruShop {
+        color: var(--Medium-primary);
+        border: 1px solid #153285;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 7px 7px;
+        font-size: var(--tamaño-texto);
+    }
+        .bloqueInferior__izquierda .cboEnviarAPeruShop:focus-visible {
+            outline: none
+        }
+
+    .bloqueInferior__izquierda .btnEnviar {
+        color: white;
+        border: 1px solid #153285;
+        background-color: var(--Medium-primary);
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 10px 11px;
+        line-height: 1;
+        font-size: var(--tamaño-texto);
+        transition: .2s ease;
+    }
+        .bloqueInferior__izquierda .btnEnviar:hover {
+            border: 1px solid var(--Darkest2-primary);
+            background-color: var(--Darkest2-primary);
+        }
+        .bloqueInferior__izquierda .btnEnviar:active {
+            border: 1px solid var(--Dark2-primary);
+            background-color: var(--Dark2-primary);
+        }
+
+.bloqueInferior__derecha {
+    display: flex;
+    grid-column-gap: 12px;
+}
+    .bloqueInferior__derecha > select {
+        background-image: url(../../img/FiltroPeriodoIcon.png);
+        background-repeat: no-repeat;
+        background-position: 7px 8px;
+        border: 1px solid #153285;
+        color: var(--Medium-primary);
+        border-radius: 8px !important;
+        padding-left: 27px;
+        font-size: var(--tamaño-texto);
+    }
+
+    .bloqueInferior__derecha > button#btnFiltrar {
+        background-color: white;
+        border-radius: 8px;
+        font-size: var(--tamaño-texto);
+        font-weight: normal !important;
+        color: var(--Medium-primary) !important;
+        border: 1px solid #153285;
+        transition: .2s ease;
+    }
+
+    .bloqueInferior__derecha > button#btnValidacionSunat {
+        background-color: var(--Medium-primary);
+        border-radius: 8px;
+        font-size: var(--tamaño-texto);
+        font-weight: normal !important;
+        color: white !important;
+        border: 1px solid #153285;
+        transition: .2s ease;
+    }
+
+    .bloqueInferior__derecha > button#btnFiltrar:hover {
+        color: white !important;
+        border: 1px solid var(--Light-primary) !important;
+        background-color: var(--Light-primary) !important;
+    }
+
+    .bloqueInferior__derecha > button#btnFiltrar:active {
+        color: white !important;
+        border: 1px solid var(--Lightest-primary) !important;
+        background-color: var(--Lightest-primary) !important;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .bloqueInferior__derecha > button#btnValidacionSunat:hover {
+        color: white !important;
+        border: 1px solid var(--Darkest2-primary) !important;
+        background-color: var(--Darkest2-primary) !important;
+    }
+
+    .bloqueInferior__derecha > button#btnValidacionSunat:active {
+        color: white !important;
+        border: 1px solid var(--Dark2-primary) !important;
+        background-color: var(--Dark2-primary) !important;
+        outline: none;
+        box-shadow: none;
+    }
+
+.contenidoFacturaciónComisiones{
+    overflow: unset !important;
+}
+
+#tbl_facturacion_wrapper > div:nth-child(1) > div:nth-child(2) > div > label > input {
+    font-size: 12px
+}
+#tbl_facturacion_wrapper > div:nth-child(1) > div:nth-child(2) > div > label > input::placeholder {
+    /*font-family: "Font Awesome 5 Free";*/
+    /*font-weight: 900;*/
+    background-image: url('../../img/Buscar.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 17px;
+    color: #C4C4C4;
+    font-size: 12px;
+    word-spacing: 17px;
+}
+
+#tbl_facturacion_filter > label > input {
+    border: 1px solid var(--Medium-primary);
+    border-radius: 8px;
+    padding: 0 13px;
+    width: 165px;
+    height: 32px;
+}
+#tbl_facturacion_filter > label > input:focus {
+    outline: none
+}
+
+#tbl_facturacion_length > label {
+    font-size: 12px
+}
+
+#tbl_facturacion_length > label > select {
+    border: 1px solid var(--Medium-primary);
+    border-radius: 4px;
+    width: 50px;
+    height: 22px;
+}
+    #tbl_facturacion_length > label > select:focus-visible {
+        outline: none
+    }
+
+.table-bordered > thead > tr > th {
+    border: 0px solid !important;
+}
+
+.table > thead:first-child > tr:first-child > th {
+    background: var(--Lightest-primary);
+    white-space: nowrap;
+    padding: 8px 12px;
+    font-size: 11px;
+}
+    .table > thead:first-child > tr:first-child > th:nth-child(1) {
+        border-radius: 7px 0 0 0;
+    }
+    .table > thead:first-child > tr:first-child > th:nth-last-child(1) {
+        border-radius: 0 7px 0 0;
+    }
+
+.table-bordered {
+    border: 0px solid #ddd !important; 
+}
+#tbl_facturacion {
+    margin-top: 23px !important;
+}

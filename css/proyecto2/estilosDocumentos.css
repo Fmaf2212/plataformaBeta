@@ -1,0 +1,221 @@
+﻿.shape {
+    border-style: solid;
+    border-width: 0 80px 50px 0;
+    float: right;
+    height: 0px;
+    width: 0px;
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -o-transform: rotate(360deg); /* Opera 10.5 */
+    -webkit-transform: rotate(360deg); /* Safari and Chrome */
+    transform: rotate(360deg);
+}
+
+.shape2 {
+    border-style: solid;
+    border-width: 0 80px 50px 0;
+    float: right;
+    height: 0px;
+    width: 0px;
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -o-transform: rotate(360deg); /* Opera 10.5 */
+    -webkit-transform: rotate(360deg); /* Safari and Chrome */
+    transform: rotate(360deg);
+}
+
+.offer {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    overflow: hidden;
+    /*Para que se muestren los cuadritos adelante del footer*/
+    position: relative;
+    z-index: 1029; /*tiene que ser menos que 1030 (valor del z-index del navbar)*/
+}
+
+    .offer:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+
+.shape {
+    border-color: rgba(255,255,255,0) #d9534f rgba(255,255,255,0) rgba(255,255,255,0);
+}
+
+.shape2 {
+    border-color: rgba(255,255,255,0) #d9534f rgba(255,255,255,0) rgba(255,255,255,0);
+}
+
+.offer-radius {
+    border-radius: 7px;
+}
+
+.offer-danger {
+    border-color: #d9534f;
+}
+
+    .offer-danger .shape {
+        border-color: transparent #FF6307 transparent transparent;
+    }
+
+    .offer-danger .shape2 {
+        border-color: transparent #51c3eb transparent transparent;
+    }
+
+.offer-success {
+    border-color: #5cb85c;
+}
+
+    .offer-success .shape {
+        border-color: transparent #5cb85c transparent transparent;
+    }
+
+.offer-default {
+    border-color: #999999;
+}
+
+    .offer-default .shape {
+        border-color: transparent #999999 transparent transparent;
+    }
+
+.offer-primary {
+    border-color: #428bca;
+}
+
+    .offer-primary .shape {
+        border-color: transparent #428bca transparent transparent;
+    }
+
+.offer-info {
+    border-color: #5bc0de;
+}
+
+    .offer-info .shape {
+        border-color: transparent #5bc0de transparent transparent;
+    }
+
+.offer-warning {
+    border-color: #f0ad4e;
+}
+
+    .offer-warning .shape {
+        border-color: transparent #f0ad4e transparent transparent;
+    }
+
+.shape-text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    right: -40px;
+    top: 2px;
+    white-space: nowrap;
+    -ms-transform: rotate(30deg); /* IE 9 */
+    -o-transform: rotate(360deg); /* Opera 10.5 */
+    -webkit-transform: rotate(30deg); /* Safari and Chrome */
+    transform: rotate(30deg);
+}
+
+.offer-content {
+    padding: 0 20px 10px;
+}
+
+@media (min-width: 487px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        max-width: 970px;
+    }
+
+    .col-md-4 {
+        width: 33.33333333333333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+}
+
+@media (max-width: 499px) {
+    .leadDocumentos {
+        font-size: 10px !important;
+    }
+}
+
+
+
+
+/* lo que se necesita del link de bootstrap //netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css */
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    *margin-right: .3em;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url("../img/glyphicons-halflings.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+
+
+.icon-white,
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:focus > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > li > a:focus > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"],
+.dropdown-submenu:hover > a > [class^="icon-"],
+.dropdown-submenu:focus > a > [class^="icon-"],
+.dropdown-submenu:hover > a > [class*=" icon-"],
+.dropdown-submenu:focus > a > [class*=" icon-"] {
+    background-image: url('../../img/glyphicons-halflings-white.png');
+}
+
+
+
+
+
+.icon-plus {
+    background-position: -408px -96px;
+}
+
+
+
+
+
+.icon-minus {
+    background-position: -433px -96px;
+}

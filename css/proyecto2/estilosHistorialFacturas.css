@@ -1,0 +1,1188 @@
+﻿.box-success {
+    padding: 0 117px;
+}
+
+    .box-success > h1 {
+        text-align: start;
+        font-size: 25px;
+        margin-bottom: 25px;
+        margin-top: 143px;
+        font-weight: bold;
+        line-height: .8;
+    }
+
+
+.seccionAdjuntarPDF {
+    padding: 0 95.5px
+}
+
+.bloqueAdjuntarPDF {
+    border: 1px solid #7EE0FF;
+    border-radius: 26px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    padding: 35.5px 53.5px;
+    grid-gap: 60px;
+}
+
+    .bloqueAdjuntarPDF .cboPais {
+        width: 280px;
+        height: 69px
+    }
+
+    .bloqueAdjuntarPDF .cboPeriodo {
+        width: 280px;
+        height: 69px
+    }
+
+    .bloqueAdjuntarPDF .btnAdjuntar {
+        display: flex;
+        align-items: center;
+    }
+
+        .bloqueAdjuntarPDF .btnAdjuntar button {
+            border: 1px solid #153285;
+            border-radius: 31px;
+            background: white;
+            color: var(--Medium-primary);
+            font-size: 19px;
+            padding: 14px 56px;
+            line-height: 1;
+            transition: .3s background-color, .3s color;
+        }
+
+            .bloqueAdjuntarPDF .btnAdjuntar button:hover {
+                outline: none;
+                border: 1px solid var(--Darkest2-primary);
+                background-color: var(--Darkest2-primary);
+                color: white
+            }
+
+            .bloqueAdjuntarPDF .btnAdjuntar button:focus {
+                outline: none;
+                border: 1px solid var(--Dark2-primary);
+                background-color: var(--Dark2-primary);
+                color: white
+            }
+
+.combito select {
+    /* Reset Select */
+    appearance: none;
+    outline: 0;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: black;
+    background-color: white;
+    background-image: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+}
+    /* Remove IE arrow */
+    .combito select::-ms-expand {
+        display: none;
+    }
+
+
+.combito {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 69px;
+    border-radius: .25em;
+    overflow: hidden;
+}
+
+    /* Arrow */
+    .combito::after {
+        /*content: '\25BC';*/
+        content: '\2B9F';
+        position: absolute;
+        right: 0;
+        padding: 1.5em 1em;
+        background-color: var(--Medium-primary);
+        transition: .25s all ease;
+        pointer-events: none;
+        color: white;
+        border-radius: 0 6px 6px 0;
+        height: 100%;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+    }
+
+    .combito:hover::after {
+        background-color: var(--Darkest2-primary);
+    }
+
+
+.bloqueHeaderImagenes {
+    border-bottom: 0px solid !important;
+    padding: 39px 45px 0 !important;
+}
+
+.bloqueHeaderImagenes__title {
+    font-size: 16px;
+    line-height: 1.1;
+    color: #000;
+    font-weight: normal;
+}
+
+/*.input-file {
+    position: absolute;
+    width: 130px;
+    height: 154px;
+    left: 0;
+}*/
+.input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+label[for="archivoEXCEL"] {
+    background-image: url(../../img/xml-Img.png);
+    background-size: 130px 154px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 64px !important;
+    height: 100%;
+}
+
+label[for="archivoPDF"] {
+    background-image: url(../../img/pdf-Img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 64px !important;
+    height: 100%;
+}
+
+/*.input-file::-webkit-file-upload-button {
+        visibility: hidden;
+    }*/
+.bloqueModal.show {
+    padding-right: 0 !important;
+    display: flex !important;
+    align-items: center;
+}
+
+.contenidoModal {
+    width: 688px;
+    height: 450px;
+    border-radius: 17px !important;
+    margin: auto;
+}
+
+.modal-header .close:focus {
+    outline: none;
+}
+
+.bloqueBodyImagenes {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bodyImagenes {
+    display: flex;
+    /*grid-template-columns: repeat(2, 1fr);
+    display: grid;*/
+    grid-gap: 138px;
+    margin-bottom: 0 !important;
+    position: relative;
+}
+
+    .bodyImagenes > div {
+        width: 128px;
+        height: 154px;
+    }
+
+    .bodyImagenes img {
+        width: 130px;
+        height: 154px;
+    }
+
+.bloqueFooterImagenes {
+    justify-content: center !important;
+    border-top: 0px solid !important;
+    padding: 0 39px 13px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenidoModalValidadoCorrectamente .bloqueFooterImagenes {
+    padding: 0 40px 40px !important;
+}
+
+.mensajeErrorValidacion {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: .8;
+    color: var(--Medium-error);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    visibility: hidden;
+    line-height: 1.1;
+}
+.mensajeErrorValidacion2 {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: .8;
+    color: var(--Medium-error);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: none;
+    line-height: 1.1;
+}
+
+.btnValidar {
+    color: var(--Medium-primary);
+    background-color: white;
+    padding: 14px 45.67px;
+    border: 1px solid #153285;
+    box-sizing: border-box;
+    border-radius: 16px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: .8;
+    transition: .3s background-color, .3s color;
+}
+
+    .btnValidar:hover {
+        background-color: var(--Darkest2-primary);
+        outline: none;
+        color: white;
+        border: 1px solid var(--Darkest2-primary);
+    }
+
+    .btnValidar:focus {
+        background-color: var(--Dark2-primary);
+        outline: none;
+        color: white;
+        border: 1px solid var(--Dark2-primary);
+    }
+
+.modal-backdrop {
+    transition: .3s ease all !important;
+}
+
+.table-responsive > .col-md-12 {
+    padding: 0 !important;
+}
+/*MODAL DATOS CORREGIDOS*/
+.modal-open .modal {
+    overflow-y: hidden !important;
+}
+.contenidoModalDatosCorregidos {
+    max-width: 688px;
+    height: 579px;
+    border-radius: 17px !important;
+    margin: auto;
+}
+.bloqueHeaderDatosCorregidos {
+    border-bottom: 0px solid !important;
+    padding: 39px 45px 0 !important;
+}
+
+.bloqueHeaderDatosCorregidos__title {
+    font-size: 16px;
+    line-height: 1;
+    color: #000;
+    font-weight: normal;
+}
+
+.bloqueBodyDatosCorregidos {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px !important;
+    max-height: 350px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+.bloqueBodyDatosCorregidos > .modal-body1 {
+    width: 90%;
+}
+    .bloqueBodyDatosCorregidos .green {
+        color: var(--Medium-success);
+    }
+    .bloqueBodyDatosCorregidos .red {
+        color: var(--Medium-error);
+    }
+
+
+
+.contenidoModalDatosCorregidos .btnValidar {
+    padding: 14px 40.391px;
+}
+
+
+/*Tabla Datos Corregidos*/
+.table-fill {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 350px;
+    margin: auto;
+    padding: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    animation: float 5s infinite;
+    overflow-x: auto !important;
+}
+
+    .table-fill th {
+        color: #fff;
+        background-color: var(--Medium-primary);
+        border-bottom: 4px solid #9ea7af;
+        border-right: 1px solid #343a45;
+        font-size: 23px;
+        font-weight: 100;
+        padding: 12.58px 24px;
+        text-align: left;
+        text-shadow: 0 1px 1px rgba(0,0,0,.1);
+        vertical-align: middle;
+        width: 31%;
+    }
+
+        .table-fill th:first-child {
+            border-top-left-radius: 3px;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .table-fill th:last-child {
+            border-top-right-radius: 3px;
+            border-right: none;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+    .table-fill tr {
+        border-top: 1px solid #C1C3d1;
+        border-bottom: 1px solid #C1C3d1;
+        color: #666b85;
+        font-size: 16px;
+        font-weight: normal;
+        text-shadow: 0 1px 1px rgba(256, 256, 256, .1);
+    }
+
+        .table-fill tr:hover td {
+            background-color: var(--Darkest2-primary);
+            color: #fff;
+            border-top: 1px solid #22262e;
+        }
+
+        .table-fill tr:first-child {
+            border-top: none;
+        }
+
+        .table-fill tr:last-child {
+            border-bottom: none;
+        }
+
+        .table-fill tr:nth-child(odd) td {
+            background: #ebebeb;
+        }
+
+        .table-fill tr:nth-child(odd):hover td {
+            background: var(--Darkest2-primary);
+        }
+
+        .table-fill tr:last-child td:first-child {
+            border-bottom-left-radius: 3px;
+        }
+
+        .table-fill tr:last-child td:last-child {
+            border-bottom-right-radius: 3px;
+        }
+
+    .table-fill td {
+        color: #000;
+        background: #fff;
+        padding: 14px 20px;
+        text-align: left;
+        vertical-align: middle;
+        font-weight: 400;
+        font-size: 16px;
+        text-shadow: -1px -1px 1px rgba(0,0,0,.1);
+        /*border-right: 1px solid #c1c3d1;*/
+    }
+
+tbody tr td:nth-child(1) {
+    border-right: 1px solid #c1c3d1;
+}
+
+/*MODAL VALIDADO PERFECTAMENTE*/
+
+.contenidoModalValidadoCorrectamente {
+    width: 100%;
+    max-width: 510px;
+    height: 332px;
+    border-radius: 17px !important;
+    margin: auto;
+}
+.bloqueBodyValidadoCorrectamente {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bodyValidadoCorrectamente {
+    display: flex;
+    flex-direction: column;
+    /*grid-template-columns: repeat(2, 1fr);
+    display: grid;*/
+    grid-gap: 20px;
+    margin-bottom: 0 !important;
+    position: relative;
+}
+    .bodyValidadoCorrectamente .imgValidadoCorrectamente {
+        display: flex;
+        justify-content: center;
+    }
+    .bodyValidadoCorrectamente .tituloValidadoCorrectamente {
+        text-align: center;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 1;
+        color: var(--Medium-primary)
+    }
+    .bodyValidadoCorrectamente .descripcionValidadoCorrectamente {
+        text-align: center;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 1;
+        color: var(--Medium-primary)
+    }
+
+.contenidoModalValidadoCorrectamente .btnValidar {
+    font-size: 21px;
+    border-radius: 7px;
+    padding: 10.16px 26.67px;
+}
+/*Para la tabla de la pantalla principal*/
+.dataTables_wrapper > div:nth-child(1) {
+    display: none;
+}
+
+.dataTables_wrapper > div:nth-last-child(1) {
+    display: none;
+}
+
+.swal2-title{
+    color: blue;
+}
+/*--------------------------RESPONSIVE----------------------------------------*/
+@media (min-width: 1367px) {
+    .seccionAdjuntarPDF {
+        padding: 0 13%;
+    }
+    .box-success > h1 {
+        margin-bottom: 50px;
+    }
+    .table-responsive > .col-md-4 > .box-body > .form-group {
+        margin-bottom: 30px ;
+    }
+}
+@media(max-width: 1330px) {
+    .bloqueAdjuntarPDF {
+        grid-gap: 30px;
+    }
+}
+@media(max-width: 1280px){
+    .seccionAdjuntarPDF {
+        padding: 0 65.5px;
+    }
+}
+@media(max-width: 1220px){
+    .seccionAdjuntarPDF {
+        padding: 0 35.5px;
+    }
+}
+@media(max-width: 1160px){
+    .seccionAdjuntarPDF {
+        padding: 0;
+    }
+}
+@media(max-width: 1080px){
+    .box-success {
+        padding: 0 67px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .box-success > h1 {
+        margin-top: 95px;
+        margin-bottom: 32px;
+        font-size: 20px;
+        color: #000;
+    }
+
+    .bloqueAdjuntarPDF .cboPais, .bloqueAdjuntarPDF .cboPeriodo {
+        width: 209px;
+        height: 51px;
+    }
+
+    .combito::after {
+        width: 44px;
+    }
+
+    .seccionAdjuntarPDF {
+        padding: 0 67px;
+    }
+
+    .bloqueAdjuntarPDF {
+        padding: 26px 46px;
+    }
+
+        .bloqueAdjuntarPDF .btnAdjuntar button {
+            padding: 10px 41px;
+            font-size: 14px;
+        }
+
+    /*Para el espaciado entre el bloque de Adjuntar Factura con la Tabla*/
+    .form-group {
+        margin-bottom: 10px !important;
+    }
+
+    /*Para la Tabla*/
+    .content-table thead tr {
+        font-size: 14px;
+    }
+
+    /*Para el primer modal*/
+    .bodyImagenes > div {
+        width: 109px;
+        height: 133px;
+    }
+    .centrarSpan {
+        overflow: unset;
+        white-space: nowrap;
+    }
+
+    label[for="archivoEXCEL"], label[for="archivoPDF"] {
+        background-size: 109px 130px;
+        padding: 56px !important;
+    }
+
+    .contenidoModal {
+        width: 581px;
+        height: 380px;
+    }
+
+    .bloqueHeaderImagenes {
+        padding: 33px 38px 0 !important;
+    }
+
+    .modal-body {
+        padding-top: 10px !important;
+    }
+
+    .btnValidar {
+        padding: 14px 39.67px;
+        font-size: 15px;
+    }
+
+    .modal-footer > :not(:last-child) {
+        margin-right: 0;
+    }
+
+    .mensajeErrorValidacion, .mensajeErrorValidacion2 {
+        font-size: 14px;
+    }
+
+    .mensajeErrorValidacion {
+        margin-top: 20px;
+    }
+}
+
+/*PARA TABLET iPad Pro*/
+@media(max-device-width: 1024px){
+    .box-success > h1 {
+        margin-top: 95px;
+        margin-bottom: 32px;
+        font-size: 20px;
+        color: #000;
+    }
+    .bloqueAdjuntarPDF .cboPais, .bloqueAdjuntarPDF .cboPeriodo {
+        width: 209px;
+        height: 51px;
+    }
+    .combito::after {
+        width: 44px;
+    }
+    .seccionAdjuntarPDF {
+        padding: 0 67px;
+    }
+    .bloqueAdjuntarPDF {
+        padding: 26px 46px;
+    }
+    .bloqueAdjuntarPDF .btnAdjuntar button {
+        padding: 10px 41px;
+        font-size: 14px;
+    }
+
+    /*Para el espaciado entre el bloque de Adjuntar Factura con la Tabla*/
+    .form-group {
+        margin-bottom: 10px !important;
+    }
+
+    /*Para la Tabla*/
+    .content-table thead tr {
+        font-size: 14px;
+    }
+
+    /*Para el primero modal*/
+    .bodyImagenes > div {
+        width: 109px;
+        height: 133px;
+    }
+    label[for="archivoEXCEL"], label[for="archivoPDF"] {
+        background-size: 109px 130px;
+        padding: 56px !important;
+    }
+    .contenidoModal {
+        width: 581px;
+        height: 380px;
+    }
+    .bloqueHeaderImagenes {
+        padding: 33px 38px 0 !important;
+    }
+    .modal-body {
+        padding-top: 43px !important;
+    }
+    .btnValidar {
+        padding: 14px 39.67px;
+        font-size: 15px;
+    }
+    .modal-footer > :not(:last-child) {
+        margin-right: 0;
+    }
+    .mensajeErrorValidacion, .mensajeErrorValidacion2 {
+        font-size: 14px;
+    }
+    .mensajeErrorValidacion {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 980px){
+    .box-success {
+        padding: 0 37px;
+    }
+}
+@media(max-width: 920px){
+    .bloqueAdjuntarPDF {
+        padding: 35.5px 23.5px;
+    }
+}
+/*@media(max-width: 860px){
+    .bloqueAdjuntarPDF {
+        flex-direction: column;
+        align-items: center;
+    }
+}*/
+@media(max-width: 822px) {
+
+    .seccionAdjuntarPDF {
+        padding: 0px 37px;
+    }
+
+    .box-body > .col-md-12 {
+        padding: 0 !important;
+    }
+}
+
+@media(max-width: 768px) {
+    .seccionAdjuntarPDF {
+        padding: 0px 17px;
+    }
+    .table-responsive {
+        overflow-y: auto !important;
+    }
+
+
+    /*PARA EL TERCER MODAL*/
+    .contenidoModalValidadoCorrectamente {
+        height: auto;
+        width: 416px;
+    }
+
+    .bloqueBodyValidadoCorrectamente {
+        padding-top: 30px !important;
+        padding-bottom: 26px !important;
+    }
+
+    .bodyValidadoCorrectamente {
+        grid-gap: 14px;
+        margin-bottom: 0 !important;
+    }
+
+        .bodyValidadoCorrectamente .imgValidadoCorrectamente img {
+            width: 73px;
+        }
+
+        .bodyValidadoCorrectamente .tituloValidadoCorrectamente {
+            font-size: 14px;
+        }
+
+        .bodyValidadoCorrectamente .descripcionValidadoCorrectamente {
+            margin: 9px auto 0;
+            font-size: 14px;
+        }
+
+    .contenidoModalValidadoCorrectamente .bloqueFooterImagenes {
+        padding: 0 40px 29px !important;
+    }
+
+        .contenidoModalValidadoCorrectamente .bloqueFooterImagenes .btnValidar {
+            font-size: 14px;
+            padding: 9px 22px;
+        }
+}
+/*PARA TABLET iPad*/
+@media(max-device-width: 768px){
+
+    .seccionAdjuntarPDF {
+        padding: 0px 37px;
+    }
+
+    .box-body > .col-md-12{
+        padding: 0 !important;
+    }
+
+
+    /*PARA EL TERCER MODAL*/
+    .contenidoModalValidadoCorrectamente {
+        height: auto;
+        width: 416px;
+    }
+
+    .bloqueBodyValidadoCorrectamente {
+        padding-top: 30px !important;
+        padding-bottom: 26px !important;
+    }
+
+    .bodyValidadoCorrectamente {
+        grid-gap: 14px;
+        margin-bottom: 0 !important;
+    }
+
+        .bodyValidadoCorrectamente .imgValidadoCorrectamente img {
+            width: 73px;
+        }
+
+        .bodyValidadoCorrectamente .tituloValidadoCorrectamente {
+            font-size: 14px;
+        }
+
+        .bodyValidadoCorrectamente .descripcionValidadoCorrectamente {
+            margin: 9px auto 0;
+            font-size: 14px;
+        }
+
+    .contenidoModalValidadoCorrectamente .bloqueFooterImagenes {
+        padding: 0 40px 29px !important;
+    }
+
+        .contenidoModalValidadoCorrectamente .bloqueFooterImagenes .btnValidar {
+            font-size: 14px;
+            padding: 9px 22px;
+        }
+}
+
+@media(max-width: 730px){
+    .seccionAdjuntarPDF {
+        padding: 0;
+    }
+    .container2 {
+        max-width: 90% !important;
+        width: auto !important;
+    }
+    .contenidoModal {
+        width: 100%;
+        margin: auto;
+    }
+    .bodyImagenes {
+        grid-gap: 69px;
+    }
+    .centrarSpan {
+        width: 100%;
+        margin: auto;
+    }
+}
+@media(max-width: 690px) {
+    .bloqueAdjuntarPDF {
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccionAdjuntarPDF {
+        padding: 0 100px;
+    }
+}
+@media(max-width: 562px){
+    .seccionAdjuntarPDF {
+        padding: 0 50px;
+    }
+
+    .container2 {
+        max-width: 100% !important;
+    }
+    .box-success > h1 {
+        line-height: 1;
+    }
+    .combito select {
+        height: 70%;
+    }
+    .combito::after {
+        padding: 0;
+        height: 70%;
+        font-size: 18px;
+    }
+
+    .bodyImagenes {
+        grid-gap: 0;
+    }
+    .bodyImagenes > div {
+        width: 216px;
+    }
+
+
+    .centrarSpan {
+        width: 60%;
+    }
+}
+
+@media(max-width: 540px) {
+    .modal-body {
+        padding-top: 22px !important;
+    }
+    .bloqueAdjuntarPDF {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table-fill td {
+        max-width: 120px;
+        overflow-wrap: break-word;
+    }
+}
+
+/*PARA DIMENSION Surface Duo*/
+@media(max-device-width: 540px){
+    .contenidoModalDatosCorregidos .bloqueBodyDatosCorregidos {
+        padding-top: 10px !important;
+    }
+    .bloqueAdjuntarPDF {
+        flex-direction: column;
+        align-items: center;
+    }
+    .table-fill td {
+        max-width: 120px;
+        overflow-wrap: break-word;
+    }
+}
+
+/*PARA TODAS LAS DIMENSIONES MENORES A 500*/
+@media (max-device-width: 500px){
+    .box-success {
+        padding: 0px 43px;
+    }
+        .box-success > h1 {
+            margin-top: 68px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+    .seccionAdjuntarPDF {
+        padding: 0;
+    }
+    .bloqueAdjuntarPDF {
+        padding: 21px 23.5px;
+        grid-gap: 19px;
+        border-radius: 10px;
+    }
+        .bloqueAdjuntarPDF .btnAdjuntar button {
+            padding: 8px 18px;
+            font-size: 12px;
+        }
+        .bloqueAdjuntarPDF .cboPais, .bloqueAdjuntarPDF .cboPeriodo {
+            width: 158px;
+            height: 35px;
+        }
+    .combito select {
+        font-size: 12px;
+        height: 100%;
+    }
+    .combito::after {
+        width: 33px;
+        height: 100%;
+    }
+
+    /*Para la tabla principal*/
+    .content-table thead tr {
+        font-size: 12px;
+    }
+    .content-table > thead > tr > th:nth-child(1) {
+        white-space: nowrap;
+    }
+    .box-body > .col-md-12 {
+        padding: 0;
+    }
+
+    /*------------------PARA EL PRIMER MODAL---------------------*/
+    .contenidoModal{
+        height: 216px;
+    }
+    .bloqueHeaderImagenes__title {
+        font-size: 12px;
+    }
+    .modal-header .close {
+        padding: 10px 5px !important;
+    }
+        .modal-header .close .fa-times-circle {
+            font-size: 17px;
+        }
+    .bodyImagenes > div {
+        width: 62px;
+        height: 73px;
+    }
+    .bloqueHeaderImagenes {
+        border-bottom: 0px solid !important;
+        padding: 19px 30px 0 !important;
+    }
+    .modal-header .close {
+        margin: -15px -15px -20px auto !important;
+    }
+    .modal-body {
+        padding-top: 10px !important;
+        max-height: 123px;
+        padding-bottom: 7px !important;
+    }
+    .bodyImagenes {
+        grid-gap: 70px;
+    }
+    label[for="archivoEXCEL"], label[for="archivoPDF"] {
+        background-size: 62px 73px;
+        padding: 32px !important;
+    }
+    .nombreDelArchivo{
+        font-size: 9px
+    }
+    .centrarSpan {
+        font-size: 9px;
+        width: 100%;
+    }
+    .bloqueFooterImagenes {
+        padding: 10px 25px 10px !important;
+    }
+    .btnValidar {
+        padding: 8px 21px;
+        font-size: 12px;
+    }
+    .mensajeErrorValidacion {
+        text-align: justify;
+        margin-top: 7px;
+    }
+    .mensajeErrorValidacion2 {
+        margin-top: 13px;
+    }
+    .mensajeErrorValidacion, .mensajeErrorValidacion2 {
+        font-size: 11px;
+    }
+    .swal2-popup {
+        width: 260px !important;
+    }
+
+    /*PARA EL SEGUNDO MODAL*/
+    .contenidoModalDatosCorregidos {
+        height: 321px;
+    }
+        .contenidoModalDatosCorregidos .bloqueHeaderDatosCorregidos {
+            padding: 18px 27px 0 !important;
+        }
+        .contenidoModalDatosCorregidos .bloqueBodyDatosCorregidos {
+            max-height: initial !important;
+            margin-top: 0;
+            margin-bottom: 7px;
+        }
+            .contenidoModalDatosCorregidos .bloqueBodyDatosCorregidos > .modal-body1 {
+                width: 95.5%;
+            }
+    .contenidoModalDatosCorregidos .bloqueBodyDatosCorregidos .bodyImagenes {
+        margin-bottom: 0 !important;
+    }
+            .contenidoModalDatosCorregidos .bloqueBodyDatosCorregidos .bodyImagenes .table-responsive {
+                margin-bottom: 0;
+            }
+        .contenidoModalDatosCorregidos .bloqueFooterImagenes {
+            padding: 4px 25px 15px !important
+        }
+        .contenidoModalDatosCorregidos .bloqueFooterImagenes .btnValidar {
+            padding: 8px 22px;
+        }
+
+    .table-fill {
+        height: 181px;
+    }
+        .table-fill th {
+            font-size: 11px !important;
+            white-space: nowrap;
+        }
+    .table-fill td {
+        font-size: 11px;
+    }
+
+    /*PARA EL TERCER MODAL*/
+    .contenidoModalValidadoCorrectamente {
+        height: auto;
+        width: auto;
+    }
+
+    .bloqueBodyValidadoCorrectamente {
+        padding-top: 23px !important;
+    }
+
+    .bodyValidadoCorrectamente {
+        grid-gap: 6px;
+        margin-bottom: 0 !important;
+    }
+
+        .bodyValidadoCorrectamente .imgValidadoCorrectamente img {
+            width: 53px;
+        }
+
+        .bodyValidadoCorrectamente .tituloValidadoCorrectamente {
+            font-size: 12px;
+        }
+
+        .bodyValidadoCorrectamente .descripcionValidadoCorrectamente {
+            width: 80%;
+            margin: 5px auto 0;
+            font-size: 12px;
+        }
+
+    .contenidoModalValidadoCorrectamente .bloqueFooterImagenes {
+        padding: 14px 40px 24px !important;
+    }
+
+        .contenidoModalValidadoCorrectamente .bloqueFooterImagenes .btnValidar {
+            font-size: 12px;
+            padding: 5.16px 15.67px;
+        }
+}
+@media(max-device-width: 320px){
+    .box-success {
+        padding: 0px 23px;
+    }
+    /*------------------PARA EL PRIMER MODAL---------------------*/
+    .bloqueAdjuntarPDF .cboPais {
+        width: 215px;
+    }
+    .bloqueAdjuntarPDF .cboPeriodo {
+        width: 215px;
+    }
+    .bodyImagenes > div {
+        width: 63px;
+    }
+    .btnValidar {
+        font-size: 12px;
+    }
+
+    /*PARA EL SEGUNDO MODAL*/
+    .table-fill {
+        height: 173px;
+    }
+    .table-fill th {
+        padding: 12.58px 20px;
+    }
+}
+@media (max-device-width: 280px) {
+    .box-success {
+        padding: 0 20px;
+    }
+    .bloqueAdjuntarPDF {
+        grid-gap: 23.5px;
+        padding: 23.5px 23.5px;
+    }
+
+    /*PARA EL PRIMER MODAL*/
+    .contenidoModal {
+        height: 255px;
+    }
+    .modal-header .close {
+        margin: -15px -7px -20px auto !important;
+    }
+    .bloqueHeaderImagenes {
+        padding: 19px 19px 0 !important;
+    }
+    .bloqueHeaderImagenes__title {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+    .bloqueBodyImagenes {
+        margin-top: 10px;
+    }
+    .bodyImagenes {
+        grid-gap: 15px;
+    }
+    .bodyImagenes > div {
+        width: 109px;
+        height: 93px;
+    }
+    label[for="archivoEXCEL"] {
+        background-size: 70%;
+        padding: 0px !important;
+    }
+    label[for="archivoPDF"] {
+        background-size: 70%;
+        padding: 0px !important;
+    }
+    .centrarSpan {
+        width: 100%;
+    }
+    .bloqueFooterImagenes {
+        padding: 10px 25px 25px !important;
+    }
+    .btnValidar {
+        font-size: 12px;
+    }
+    .mensajeErrorValidacion, .mensajeErrorValidacion2 {
+        font-size: 10px;
+    }
+    /*.contenidoModal {
+        height: 610px;
+    }
+    .bodyImagenes {
+        flex-direction: column;
+        row-gap: 50px !important;
+    }
+    .bloqueFooterImagenes {
+        padding: 30px 25px 10px !important;
+    }
+    .mensajeErrorValidacion {
+        margin-top: 5px;
+    }
+
+    .swal2-popup {
+        width: 220px !important;
+    }*/
+}

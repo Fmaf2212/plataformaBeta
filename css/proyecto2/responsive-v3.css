@@ -1,0 +1,2321 @@
+@media (min-width: 1400px) {
+    /*Para la sección de Progreso Rango y Comisiones*/
+    .sectionTotComisiones {
+        padding: 59px 63px;
+    }
+
+    .totComisiones {
+        margin-bottom: 30px;
+        color: #333;
+    }
+    /*Para la sección de Mi Red - Circulos*/
+    .sectionDatosNetwork__red {
+        padding: 0 101px;
+    }
+
+    .bloqueMiRed__section {
+        margin: auto 0;
+    }
+
+    .bloqueMiRed__titulo {
+        padding-left: 25px;
+        margin-bottom: 48px;
+    }
+
+    .bloqueMiRed__circulos {
+        grid-column-gap: 80px;
+        margin-left: -30px;
+        padding-left: 0;
+        width: fit-content;
+        grid-row-gap: 28px;
+    }
+
+    .articleCirculos__img img {
+        width: 114px
+    }
+
+    .articleCirculos__img .valorCirculo {
+        line-height: 114px;
+        width: 114px;
+    }
+
+    /*Para la sección de Mi Red - Cuadros*/
+    .sectionDatosNetwork__cuadros {
+        grid-gap: 25px;
+    }
+
+    /*Para el slider inferior del index*/
+    .slider_div .owl-item.active {
+        left: -217px;
+    }
+
+    .prevv, .nextt {
+        top: 38.5% !important;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        margin-bottom: 0;
+        height: auto;
+    }
+}
+@media (min-width: 1600px) {
+    /*Para la sección de Mi Red - Circulos*/
+    .sectionDatosNetwork__red {
+        padding: 0 330px;
+    }
+
+    /*Para el slider inferior del index*/
+    .feature_big_add_area {
+        max-width: 1251px;
+    }
+
+    .slider_div .owl-item.active {
+        margin-left: -130px;
+        left: -333px;
+    }
+
+    .prevv {
+        left: 16.5% !important;
+    }
+    .nextt {
+        right: 16.5% !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .circleProgressBarGrande {
+        display: block
+    }
+}
+
+@media (max-width: 1300px) {
+    .home_left_main_area .left_menu {
+        display: none;
+    }
+
+    .home_left_main_area .right_body {
+        max-width: 100%;
+        flex: 0 0 100%;
+        background: #f0f0f0;
+    }
+
+    .shop_header_area.fixed_tb_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    .parallax1 {
+        /* The image used */
+        /*background: url(../../img/PLATAFORMA-movil.jpg);*/
+        /* Set a specific height */
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 2;
+        background-size: 100vw 100vh;
+        /*margin-top:-20px*/
+    }
+}
+
+@media (max-width: 1199px) {
+    .top_right li.user {
+        margin-right: 0px;
+    }
+
+    .top_right li a {
+        padding: 0px 10px;
+    }
+
+    .p_list_img img {
+        max-width: 100%;
+    }
+
+    .p_list_text {
+        padding-left: 10px;
+        padding-top: 7px;
+    }
+
+    .f_product_left .owl-prev, .f_product_left .owl-next {
+        display: none;
+    }
+
+    .p_list_text h3 {
+        font-size: 18px;
+    }
+
+    .shop_header_area .navbar .navbar-nav li:first-child {
+        margin-left: 18px;
+    }
+
+    .shop_header_area .navbar .navbar-nav li {
+        margin-right: 15px;
+    }
+
+    .l_p_text .add_cart_btn {
+        padding: 0px 10px;
+        font-size: 11px;
+    }
+
+    .carousel_menu_inner .navbar .navbar-nav.justify-content-end li a {
+        line-height: 42px;
+        padding: 0px 15px;
+    }
+
+    .fullwidth_menu {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .home_full_width {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .full_feature_item .left_full_feature {
+        width: 100%;
+        float: none;
+        overflow: hidden;
+    }
+
+    .full_feature_item .right_full_feature {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    .full_feature_item {
+        display: block;
+    }
+
+    .left_full_feature .full_feature_img img {
+        width: 100%;
+    }
+
+    .full_feature_item .right_full_feature .full_feature_text {
+        align-self: center;
+        vertical-align: middle;
+        max-width: 270px;
+        margin: 30px auto 0px;
+    }
+
+    .dir_right .right_full_feature .full_feature_text .full_feature_text_inner {
+        max-width: 270px;
+        float: none;
+        margin: 0px auto 0px;
+    }
+
+    .parallax_menu .carousel_menu_inner .navbar .navbar-nav.justify-content-end {
+        margin-left: 20px;
+    }
+
+    .l_feature_widget .verticalCarousel .verticalCarouselGroup {
+        padding: 0px 0px;
+    }
+
+        .l_feature_widget .verticalCarousel .verticalCarouselGroup li .media .d-flex {
+            padding-right: 5px;
+        }
+
+    .l_feature_widget .verticalCarousel .verticalCarouselHeader .float-md-left h3 {
+        font-size: 15px;
+    }
+
+    .l_categories_widget ul li a {
+        font-size: 14px;
+        padding: 20px 0px 20px 10px;
+    }
+
+    .f_w_title h3 {
+        font-size: 14px;
+    }
+
+    .cart_totals .checkout_btn {
+        margin-left: 0px;
+    }
+
+    .total_amount_area .update_btn {
+        margin-bottom: 20px;
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    .columnaDerecha {
+        flex-direction: column !important;
+    }
+
+    #bloquePeriodo {
+        max-width: 90% !important;
+    }
+
+    .nextt {
+        right: 13.5% !important;
+    }
+
+    .prevv {
+        left: 14.5% !important;
+    }
+}
+
+@media (max-width: 1127px) {
+    .shop_header_area .navbar .navbar-brand {
+        display: inline-block;
+        padding-top: 0px;
+    }
+
+    .top_header_middle img {
+        display: none;
+    }
+
+    .top_right_header {
+        text-align: center;
+        clear: both;
+    }
+
+        .top_right_header .header_social {
+            margin-top: 0px;
+        }
+
+        .top_right_header .top_right {
+            margin-top: 0px;
+        }
+
+    .header_social li a {
+        line-height: 12px;
+    }
+
+    .header_top_area {
+        padding-bottom: 25px;
+    }
+
+    .top_header_left .input-group {
+        margin-top: 10px;
+    }
+
+    .navbar-light .navbar-toggler {
+        margin-top: auto;
+        margin-bottom: auto;
+        border-radius: 0px;
+        color: #000;
+        cursor: pointer;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .shop_header_area .navbar .navbar-nav.categories li .bootstrap-select {
+        display: none;
+    }
+
+    .shop_header_area .navbar .navbar-nav li:first-child {
+        margin-left: 0px;
+    }
+
+    .shop_header_area .navbar .navbar-nav li {
+        margin-right: 0px;
+    }
+
+    .shop_header_area .navbar .navbar-nav.categories {
+        display: none;
+    }
+
+    .shop_header_area .navbar .navbar-nav li a {
+        line-height: 50px;
+    }
+
+    .navbar-collapse {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .shop_header_area .navbar .navbar-nav li.submenu .dropdown-menu {
+        padding: 0px;
+        border: none;
+        margin-top: 0px;
+    }
+
+        .shop_header_area .navbar .navbar-nav li.submenu .dropdown-menu li a {
+            color: #0b1033;
+            padding: 0px 10px;
+        }
+
+    .f_add_item {
+        max-width: 510px;
+        margin: 0px auto 30px;
+    }
+
+        .f_add_item .f_add_img img {
+            width: 100%;
+        }
+
+    .feature_add_area .feature_inner {
+        margin-bottom: -30px;
+    }
+
+    .p_list_img {
+        margin-left: 0px;
+    }
+
+    .p_listing_inner .col-lg-4 {
+        margin-bottom: 30px;
+    }
+
+    .p_listing_inner {
+        margin-bottom: -30px;
+    }
+
+    .p_list_text {
+        padding-left: 18px;
+        padding-top: 25px;
+    }
+
+    .fillter_slider_inner {
+        padding-top: 50px;
+    }
+
+    .from_blog_item {
+        margin-bottom: 30px;
+    }
+
+    .from_blog_inner {
+        margin-bottom: -30px;
+    }
+
+    .f_extra_widget {
+        padding-left: 0px;
+    }
+
+    .f_about_widget {
+        margin-bottom: 30px;
+    }
+
+    .shop_header_area .carousel_menu_inner .navbar .navbar-nav.justify-content-end {
+        display: none;
+    }
+
+    .special_offer_item {
+        max-width: 570px;
+        margin: auto;
+    }
+
+    .special_offer_item2 {
+        max-width: 570px;
+        margin: auto;
+    }
+
+    .shop_header_area.fullwidth_menu .navbar {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .fullwidth_menu {
+        left: 0px;
+        top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: #fff;
+    }
+
+        .fullwidth_menu .carousel_menu_inner .navbar .navbar-nav.mr-auto li {
+            display: block;
+        }
+
+        .fullwidth_menu .carousel_menu_inner .navbar .collapse {
+            text-align: left;
+        }
+
+        .fullwidth_menu .carousel_menu_inner .navbar .navbar-nav.mr-auto {
+            text-align: left;
+        }
+
+    .parallax_menu .carousel_menu_inner .navbar .collapse {
+        text-align: left;
+    }
+
+    .parallax_menu .carousel_menu_inner .navbar .navbar-nav.mr-auto {
+        text-align: left;
+    }
+
+        .parallax_menu .carousel_menu_inner .navbar .navbar-nav.mr-auto li {
+            display: block;
+        }
+
+    .parallax_menu {
+        padding: 0px 15px;
+        background: #fff;
+    }
+
+    .shop_header_area.parallax_menu .navbar {
+        padding: 0px;
+    }
+
+    .full_page_area {
+        height: calc(100vh - 150px);
+    }
+
+    .footer_copy_area {
+        bottom: 15px;
+        padding: 0px 15px;
+    }
+
+    .parallax_style_two h3 {
+        font-size: 100px;
+    }
+
+    .parallax_style_two h4 {
+        font-size: 15px;
+        letter-spacing: 7.6px;
+    }
+
+    .parallax_style_one h3 {
+        font-size: 28px;
+    }
+
+    .home_parallax {
+        padding: 0px 0px !important;
+    }
+
+    .advanced_search_area .bootstrap-select .dropdown-toggle span {
+        text-align: left !important;
+        padding-left: 10px;
+    }
+
+    .from_blog_item img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .l_supper_widget {
+        max-width: 270px;
+    }
+
+    .world_service_item::before {
+        display: none;
+    }
+
+    .f_w_title h3 {
+        font-size: 18px;
+    }
+
+    .checkout_main_area .checkout_prosses .checkout_from_area .forgot_area h4 {
+        display: block;
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+
+    .compare_table .table tbody tr th:first-child {
+        width: 130px;
+        padding-left: 20px;
+    }
+
+    .compare_table .table tbody tr td h3 {
+        padding: 30px 100px;
+    }
+
+    .contact_details .media {
+        margin-bottom: 30px;
+    }
+
+    .contact_details {
+        margin-bottom: -30px;
+    }
+
+    .login_inner .login_form {
+        margin-bottom: 30px;
+    }
+
+    .product_details_slider {
+        max-width: 370px;
+        margin-bottom: 30px;
+    }
+
+    .product_description_area .tab_menu .nav-tabs a {
+        border: none;
+    }
+
+    .product_description_area .tab_menu .nav-tabs {
+        border: none;
+    }
+
+        .product_description_area .tab_menu .nav-tabs a.active {
+            border-bottom: none;
+        }
+
+    .l_product_item .l_p_img {
+        text-align: center;
+    }
+
+    .billing_details {
+        padding-right: 0px;
+    }
+
+    .order_box_price {
+        margin-top: 50px;
+    }
+
+    .total_amount_area {
+        margin-top: 50px;
+    }
+
+        .total_amount_area .update_btn {
+            margin-bottom: 0px;
+        }
+
+    .cart_totals .checkout_btn {
+        margin-left: 25px;
+    }
+
+    .cart_totals_area {
+        margin-top: 50px;
+    }
+
+
+    .nextt {
+        right: 13.5% !important;
+    }
+
+    .prevv {
+        left: 14.5% !important;
+    }
+}
+
+@media (max-width: 1027px) {
+    .nextt {
+        right: 9.5% !important;
+    }
+
+    .prevv {
+        left: 10.5% !important;
+    }
+}
+
+@media (max-width: 927px) {
+    .nextt {
+        right: 0.5% !important;
+    }
+
+    .prevv {
+        left: 1.5% !important;
+    }
+}
+
+@media (max-width: 799px) {
+    .home_carousel_slider .h_carousel_item .carousel_hover {
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 2;
+        max-width: 270px;
+        margin: auto;
+    }
+
+    .home_carousel_slider .owl-next, .home_carousel_slider .owl-prev {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 22px;
+    }
+
+    .summer_text p {
+        padding: 15px 0px 30px 0px;
+    }
+
+    .summer_text h3 {
+        font-size: 30px;
+    }
+
+    .footer_copy_area .middle_text {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .p_list_text {
+        padding-left: 10px;
+        padding-top: 0px;
+    }
+
+    .f_widget {
+        margin-bottom: 30px;
+    }
+
+    .top_header_left {
+        text-align: center;
+    }
+
+        .top_header_left .selector .ddcommon {
+            text-align: left;
+        }
+
+    .l_p_text .add_cart_btn {
+        padding: 0px 15px;
+        font-size: 14px;
+    }
+
+    .fillter_l_p_inner .fillter_l_p li {
+        margin-right: 18px;
+    }
+
+    .summer_text {
+        left: 15px;
+    }
+
+    .account_list {
+        text-align: center;
+    }
+
+    .advanced_search_area .bootstrap-select {
+        width: 100% !important;
+        flex: none;
+        max-width: 100%;
+    }
+
+    .advanced_search_area .input-group {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .promotion_area .left_promotion {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0px;
+    }
+
+    .promotion_area .right_promotion {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0px;
+    }
+
+    .l_feature_widget .verticalCarousel .verticalCarouselHeader .float-md-left h3 {
+        padding-bottom: 20px;
+    }
+
+    .showing_fillter .first_fillter {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .showing_fillter .secand_fillter {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: right;
+    }
+
+    .showing_fillter .third_fillter {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 0px;
+    }
+
+    .showing_fillter .four_fillter {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: left;
+        text-align: right;
+    }
+
+    .c_product_item .c_product_img {
+        text-align: center;
+    }
+
+    .c_product_item .c_product_text {
+        padding-top: 30px;
+    }
+
+    .categories_sidebar {
+        margin-top: 50px;
+    }
+
+    .showing_fillter .secand_fillter .bootstrap-select .dropdown-toggle {
+        top: -2px;
+    }
+
+    .checkout_main_area .checkout_prosses .checkout_from_area {
+        padding-top: 30px;
+    }
+
+    .checkout_main_area {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .cart_product_list .table tbody tr td .media .media-body h4 {
+        white-space: nowrap;
+    }
+
+    .cart_items .table tbody tr td .quantity {
+        width: 165px;
+    }
+
+    .cart_items .table tbody tr td .media .media-body h4 {
+        white-space: nowrap;
+    }
+
+    .main_slider_area #main_slider ul li .slider_text_box .secand_text {
+        text-align: center !important;
+        color: #d91522;
+    }
+
+    .main_slider_area #main_slider ul li .slider_text_box .third_btn {
+        text-align: center !important;
+    }
+
+    .main_slider_area #main_slider ul li .slider_text_box .first_text img {
+        text-align: center !important;
+    }
+
+    .main_slider_area #fullwidth_slider ul li .slider_text_box .first_text {
+        color: #fff;
+    }
+
+    .main_slider_area #fullwidth_slider ul li .slider_text_box .secand_text {
+        color: #fff;
+    }
+
+    .main_slider_area #fullwidth_slider ul li .slider_text_box .third_text {
+        color: #999;
+    }
+
+    .main_slider_area #fullwidth_slider ul li .slotholder {
+        position: relative;
+    }
+
+        .main_slider_area #fullwidth_slider ul li .slotholder:before {
+            content: "";
+            background: rgba(0, 0, 0, .7);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+
+    .slider_div .owl-item.center .item img {
+        transform: scale(.75);
+    }
+}
+
+@media (max-width: 600px) {
+    .parallax_style_one h4 {
+        font-size: 18px;
+    }
+
+    .parallax_style_one h3 {
+        font-size: 16px;
+    }
+
+    .parallax_style_two h3 {
+        font-size: 50px;
+    }
+
+    .parallax_style_two h4 {
+        letter-spacing: 4.6px;
+        padding-top: 10px;
+    }
+
+    .parallax_style_two .discover_btn {
+        margin-top: 20px;
+    }
+
+    .parallax_style_two i {
+        margin-top: 30px;
+    }
+
+
+    .slider_div .owl-item.center .item img {
+        transform: scale(.65);
+    }
+    .nextt {
+        right: 5.5% !important;
+    }
+    .prevv {
+        left: 5.5% !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .top_header_middle a {
+        display: block;
+        line-height: 26px;
+        display: none;
+    }
+
+    .top_right_header {
+        display: none;
+    }
+
+    .top_header_left .selector {
+        display: none;
+    }
+
+    .usd_select.bootstrap-select {
+        display: none !important;
+    }
+
+    .l_product_item {
+        max-width: 270px;
+        margin: 0px auto 30px;
+    }
+
+    .p_list_img {
+        display: none;
+    }
+
+    .p_list_text {
+        padding-left: 18px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .carousel_top_header {
+        display: none;
+    }
+
+    .from_blog_item {
+        max-width: 370px;
+        margin: 0px auto 30px;
+    }
+
+    .fillter_home_sidebar .portfolio_filter {
+        text-align: center;
+    }
+
+    .fillter_home_sidebar .home_l_product_slider .home_l_product_slider {
+        top: 0px;
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    .home_sidebar_blog .single_title {
+        text-align: center;
+        padding-top: 35px;
+    }
+}
+
+@media (max-width: 320px) {
+    .shop_header_area .navbar .navbar-brand img {
+        max-width: 75%;
+    }
+
+    .l_product_slider .l_product_slider, .l_product_slider .home_l_product_slider, .home_l_product_slider .l_product_slider, .home_l_product_slider .home_l_product_slider {
+        position: relative;
+        right: 0px;
+        top: 0px;
+    }
+
+    .footer_widgets .col-lg-4, .footer_widgets .col-lg-2 {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .best_summer_banner {
+        overflow: hidden;
+        height: 400px;
+    }
+
+        .best_summer_banner img {
+            max-width: none;
+        }
+
+    .footer_social li {
+        margin-left: 8px;
+    }
+
+    #fp-nav {
+        right: 5px !important;
+    }
+
+    .c_banner_inner {
+        padding: 100px 0px;
+    }
+
+    .showing_fillter .first_fillter {
+        flex: none;
+        max-width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .showing_fillter .secand_fillter {
+        flex: none;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .showing_fillter .third_fillter {
+        flex: none;
+        max-width: 100%;
+        padding-left: 0px;
+    }
+
+    .showing_fillter .four_fillter {
+        flex: none;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .showing_fillter .row.m0 {
+        display: block;
+    }
+
+    .pagination_area .pagination li a {
+        padding: 7px 12px;
+    }
+
+    .calculate_shoping_area .calculate_shop_inner {
+        padding: 10px 10px;
+    }
+
+    .cupon_box .cupon_box_inner {
+        padding: 25px 25px 25px 25px;
+    }
+
+    .cart_totals .cart_total_inner {
+        padding: 30px 15px 30px 15px;
+    }
+
+    .cart_totals .checkout_btn {
+        margin-left: 0px;
+        display: block;
+        margin-top: 15px;
+    }
+
+    .cart_totals_area .cart_t_list .media:last-child .d-flex {
+        display: none !important;
+    }
+}
+
+.saltoLinea {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    overflow: visible;
+    height: 22px;
+    border: 0;
+    /*border-top: 1px solid lightgray;*/
+}
+
+/*@media screen and (min-device-width: 1350px){
+    .slider_div .owl-item.active {
+        left: -235px;
+    }
+}*/
+
+/*Dimensión: Nest Hub Max 1024px*/
+@media (max-device-width: 1349px) and (min-device-width: 1280px){
+    .menu__item:hover {
+        --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+        --transform: rotate(0);
+    }
+    .newNavBar-nav > li > .animacionBorderBottom:hover::before {
+        transform: scaleX(0) !important;
+    }
+
+    .newNavBar-nav > .ocultar {
+        height: 110px;
+    }
+
+        .newNavBar-nav .ocultar img {
+            top: 20px;
+        }
+
+        .newNavBar-nav .ocultar a {
+            margin: 0;
+            margin-top: 10px;
+            padding: 0 !important;
+            text-transform: inherit;
+            font-size: 16px !important;
+            color: var(--Primary-green) !important;
+            font-weight: bold;
+        }
+    /*Seccion Rango actual y Comisiones del Index*/
+    .sectionDatosNetwork__porcentaje .valorRango {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .sectionDatosNetwork__porcentaje .descRango {
+        font-size: 22px;
+    }
+    .textoProgresoPorcentaje {
+        bottom: 100px;
+        width: 125px;
+        right: 95px;
+    }
+    .siguienteConquista {
+        font-size: 22px;
+    }
+    .sectionDatosNetwork__porcentaje .valorComiTotal {
+        font-size: 36px;
+    }
+    .sectionDatosNetwork__porcentaje .valorComiTotal .moneda {
+        font-size: 32px;
+    }
+    .totComisiones {
+        font-size: 22px;
+    }
+    .sectionDatosNetwork__porcentaje .botonComisiones {
+        font-size: 22px;
+    }
+    .bloqueSectionMiProgreso {
+        width: 500px;
+    }
+    .sectionMiProgreso {
+        padding: 0 16px;
+        grid-gap: 0;
+    }
+    .sectionTotComisiones {
+        padding: 55px 43px;
+    }
+
+    /*Sección mi red Circulos del Index*/
+    .bloqueMiRed__circulos {
+        column-gap: 0;
+        padding-left: 0;
+    }
+    .articleCirculos__nombre p {
+        margin-top: 0;
+    }
+    .bloqueMiRed__irMapaRed {
+        margin-top: 21px;
+    }
+
+    /*Sección mi red Cuadros*/
+    .sectionDatosNetwork__cuadros .cuadrosDerecha div, .sectionDatosNetwork__cuadros .cuadrosIzquierda div {
+        width: 280px;
+    }
+    
+    /*Sección del Slider Inferior del Index*/
+    .feature_big_add_area {
+        padding-top: 40px;
+    }
+    .slider_div .owl-item.active {
+        left: -247px;
+    }
+    .owl-carousel .owl-stage-outer {
+        height: 360px;
+    }
+    .nextt {
+        right: 19% !important;
+        top: 39.5% !important;
+    }
+    .prevv {
+        left: 19% !important;
+        top: 39.5% !important;
+    }
+}
+
+@media (max-width: 1149px) and (min-width: 1024px){
+    .newNavBar-nav .ocultar {
+        height: 110px;
+    }
+}
+
+@media (max-width: 1390px) {
+    .sectionDatosNetwork__porcentaje {
+        grid-gap: 30px;
+        padding: 20px 0;
+    }
+}
+
+/*Para Tablet Ipad Pro 1024px - Nest Hub 1024px*/
+@media (max-width: 1279px) and (min-width: 1024px) {
+        .newNavBar-nav .ocultar img {
+            top: 20px;
+        }
+
+        .newNavBar-nav .ocultar a {
+            margin: 0;
+            margin-top: 10px;
+            padding: 0 !important;
+            text-transform: inherit;
+            font-size: 16px !important;
+            color: var(--Primary-green) !important;
+            font-weight: bold;
+        }
+    /*Para la sección Rango y Comisiones del Index*/
+    .sectionDatosNetwork__porcentaje .valorRango {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .sectionDatosNetwork__porcentaje .descRango {
+        font-size: 22px;
+    }
+
+    .sectionDatosNetwork__porcentaje {
+        padding: 30px 0;
+    }
+
+    .sectionMiProgreso {
+        padding: 0 20px;
+        grid-gap: 0px;
+        width: 500px;
+    }
+
+    .textoProgresoPorcentaje {
+        transform: translate(20%, 60%);
+    }
+
+    .sectionTotComisiones {
+        padding: 34px 43px;
+    }
+
+
+    /*Para la sección de Mi Red del Index*/
+    .bloqueMiRed__section {
+        margin: auto 35px auto 0px;
+    }
+
+    .bloqueMiRed__circulos {
+        padding-left: 0;
+    }
+
+    .articleCirculos__nombre p {
+        margin-top: 0px;
+    }
+
+    .sectionDatosNetwork__cuadros {
+        justify-content: flex-end;
+    }
+
+    /*Para el slider inferior del Index*/
+    .owl-carousel .owl-stage-outer {
+        margin-bottom: -60px;
+    }
+
+    .owl-carousel .owl-stage {
+        align-items: flex-start;
+    }
+
+    .nextt, .prevv {
+        top: 40% !important;
+    }
+
+    /*.slider_div .owl-item.active {
+        left: 318px;
+    }*/
+
+    /*.nextt {
+        top: 50% !important;
+        right: 0% !important;
+        transform: translate(-90%, -75%);
+        padding: 25px 30px !important;
+    }
+
+    .prevv {
+        top: 50% !important;
+        left: 10% !important;
+        transform: translate(-50%, -75%);
+        padding: 25px 30px !important;
+    }*/
+}
+
+@media (max-device-width: 1279px) and (min-device-width: 1024px){
+    .newNavBar-nav .ocultar {
+        height: 110px;
+    }
+    .slider_div .owl-item.active {
+        left: 195px;
+    }
+    .slider_div .owl-item.center .item img {
+        transform: scale(.95);
+    }
+    .nextt {
+        top: 50% !important;
+        right: 0% !important;
+        transform: translate(-90%, -75%);
+        padding: 25px 30px !important;
+    }
+
+    .prevv {
+        top: 50% !important;
+        left: 10% !important;
+        transform: translate(-50%, -75%);
+        padding: 25px 30px !important;
+    }
+}
+
+/*Para Tablet Ipad 768px*/
+@media (max-width: 1023px) and (min-width: 768px) {
+    .newNavBar-nav .ocultar {
+        height: 110px;
+    }
+
+        .newNavBar-nav .ocultar img {
+            top: 20px;
+        }
+
+        .newNavBar-nav .ocultar a {
+            margin: 0;
+            margin-top: 10px;
+            padding: 0 !important;
+            text-transform: inherit;
+            font-size: 16px !important;
+            color: var(--Primary-green) !important;
+            font-weight: bold;
+        }
+
+    /*Para la sección Rango y Comisiones del Index*/
+    .sectionDatosNetwork__porcentaje {
+        flex-direction: column;
+        grid-gap: 20px;
+        padding: 20px 0;
+    }
+
+        .sectionDatosNetwork__porcentaje .valorRango {
+            font-size: 25px;
+        }
+
+        .sectionDatosNetwork__porcentaje .descRango {
+            font-size: 22px;
+        }
+
+    .sectionMiProgreso {
+        padding: 0 26px;
+        grid-gap: 0;
+        width: 550px;
+    }
+
+    .circleProgressBarGrande {
+        display: block
+    }
+
+    .textoProgresoPorcentaje {
+        transform: translate(18%, 60%);
+    }
+
+    .sectionTotComisiones {
+        padding: 23px 23px;
+        width: 550px;
+    }
+
+    .siguienteConquista {
+        font-size: 20px;
+    }
+
+    .sectionDatosNetwork__porcentaje .valorComiTotal {
+        font-size: 30px;
+    }
+
+        .sectionDatosNetwork__porcentaje .valorComiTotal .moneda {
+            font-size: 30px;
+        }
+
+    .totComisiones {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .sectionDatosNetwork__porcentaje .botonComisiones {
+        font-size: 16px;
+    }
+
+    /*Para la sección de Mi Red Circulos del Index*/
+    .bloqueMiRed__titulo p {
+        font-size: 25px;
+    }
+
+    .articleCirculos__img img {
+        width: 100px;
+    }
+
+    .articleCirculos__img .valorCirculo {
+        transform: translate(-16.5%, -16.5%);
+        font-size: 12px !important;
+    }
+
+    .sectionDatosNetwork__cuadros .cuadrosDerecha div, .sectionDatosNetwork__cuadros .cuadrosIzquierda div {
+        width: 150px;
+    }
+
+    .bloqueMiRed__titulo {
+        padding-left: 23px;
+    }
+
+    .articleCirculos__nombre p {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .bloqueMiRed__irMapaRed {
+        margin-top: 20px;
+    }
+    /*Seccion Mi Red - Cuadros del Index*/
+    .sectionDatosNetwork__cuadros .cuadrosDerecha .paquete {
+        font-size: 20px;
+    }
+
+    .sectionDatosNetwork__cuadros .cuadrosDerecha .valor, .sectionDatosNetwork__cuadros .cuadrosIzquierda .valor {
+        font-size: 20px;
+    }
+
+    /*Para el slider inferior del Index*/
+
+    .slider_div .owl-item.active {
+        left: 200px;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        height: 350px;
+    }
+    .nextt, .prevv {
+        top: 40.5% !important;
+    }
+    /*.nextt {
+        top: 50% !important;
+        right: 0% !important;
+        transform: translate(-50%, -70%);
+        padding: 25px 30px !important;
+    }
+
+    .prevv {
+        top: 50% !important;
+        left: 10% !important;
+        transform: translate(-50%, -70%);
+        padding: 25px 30px !important;
+    }*/
+}
+@media (max-device-width: 1023px) and (min-device-width: 768px){
+    .slider_div .owl-item.active {
+        left: 170px;
+    }
+    .slider_div .owl-item .item img {
+        width: 100vw;
+    }
+    .slider_div .owl-item.center .item img {
+        transform: scale(0.95);
+    }
+    .nextt {
+        top: 50% !important;
+        right: 0% !important;
+        transform: translate(-50%, -70%);
+        padding: 25px 30px !important;
+    }
+
+    .prevv {
+        top: 50% !important;
+        left: 10% !important;
+        transform: translate(-50%, -70%);
+        padding: 25px 30px !important;
+    }
+}
+/*Dimensión: Surface Duo*/
+@media (max-width: 767px) and (min-width: 500px) {
+    .newNavBar-nav .ocultar {
+        height: 110px;
+    }
+
+        .newNavBar-nav .ocultar img {
+            top: 20px;
+        }
+
+        .newNavBar-nav .ocultar a {
+            margin: 0;
+            margin-top: 10px;
+            padding: 0 !important;
+            text-transform: inherit;
+            font-size: 16px !important;
+            color: var(--Primary-green) !important;
+            font-weight: bold;
+        }
+
+    header .menu {
+        min-width: calc(100vw - 40.3%);
+    }
+
+    #imgLogoNavBar {
+        width: 250px !important;
+    }
+
+    #clicLogin {
+        font-weight: 400;
+    }
+
+    /*Sección Progreso de Rango y Comisiones Index*/
+    .sectionMiProgreso__porcentaje {
+        display: flex;
+    }
+
+    .sectionDatosNetwork__porcentaje {
+        padding: 46px 20px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+    }
+
+    svg.radial-progress {
+        max-width: 160px;
+    }
+
+        svg.radial-progress circle {
+            stroke-width: 8px;
+        }
+
+    .circleProgressBarGrande {
+        display: none;
+    }
+
+    .sectionMiProgreso {
+        grid-gap: 0;
+        padding: 30px;
+        max-width: 432px;
+    }
+
+    .sectionDatosNetwork__porcentaje .valorRango {
+        font-size: 18px;
+    }
+
+    .sectionDatosNetwork__porcentaje .descRango {
+        font-size: 18px;
+    }
+
+    .card__number {
+        font-size: 4.5rem;
+    }
+
+    .textoProgresoPorcentaje {
+        bottom: 70px;
+        right: 30px;
+        color: #000;
+        line-height: 1;
+        font-size: 14px;
+        width: 100px;
+        transform: translate(-50%, -50%);
+    }
+
+    .sectionTotComisiones {
+        padding: 30px 53px;
+        width: 432px;
+    }
+
+    .siguienteConquista {
+        font-size: 18px;
+    }
+
+    .sectionDatosNetwork__porcentaje .valorComiTotal {
+        font-size: 25px;
+    }
+
+        .sectionDatosNetwork__porcentaje .valorComiTotal .moneda {
+            font-size: 22px;
+        }
+
+    .totComisiones {
+        font-size: 18px;
+    }
+
+    .sectionDatosNetwork__porcentaje .botonComisiones {
+        font-size: 16px;
+    }
+
+    /*Seccion Mi Red Index*/
+    .bloqueMiRed__titulo {
+        padding-left: 55px;
+    }
+
+    .sectionDatosNetwork__red {
+        flex-direction: column;
+    }
+
+    .bloqueMiRed {
+        width: 100%;
+    }
+
+    .articleCirculos__img .valorCirculo {
+        font-size: 18px
+    }
+
+    .articleCirculos__nombre p {
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .sectionDatosNetwork__cuadros {
+        width: 100%;
+    }
+
+    .sectionDatosNetwork__cuadros {
+        padding: 0 20px 60px 20px;
+        grid-gap: 20px;
+    }
+
+        .sectionDatosNetwork__cuadros .cuadrosDerecha div, .sectionDatosNetwork__cuadros .cuadrosIzquierda div {
+            width: 200px;
+        }
+
+    .bloqueMiRed__circulos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 15px;
+    }
+
+    bloqueMiRed__circulos article img {
+        width: 91px
+    }
+
+    .sectionDatosNetwork__cuadros .cuadrosDerecha .paquete {
+        font-size: 18px;
+    }
+
+    .sectionDatosNetwork__cuadros .cuadrosDerecha .valor, .sectionDatosNetwork__cuadros .cuadrosIzquierda .valor {
+        font-size: 18px;
+    }
+
+    .sectionDatosNetwork__cuadros .cuadrosDerecha .desc, .sectionDatosNetwork__cuadros .cuadrosIzquierda .desc {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .owl-carousel .owl-item {
+        height: fit-content;
+    }
+
+    .bloqueMiRed__irMapaRed a {
+        font-size: 16px;
+        padding: 10px 48px;
+        line-height: 1.4;
+    }
+    /*Para el slider inferior del Index*/
+    .owl-carousel .owl-stage {
+        display: inherit;
+    }
+
+    .feature_big_add_area {
+        padding-top: 0;
+    }
+
+    .nextt, .prevv {
+        top: 45.5% !important;
+    }
+
+    .slider_div .owl-item.active {
+        left: 170px;
+    }
+
+    /*Sección del Footer*/
+    .f_about_widget p, .autorizacionVisa, .copyright {
+        font-size: 12px;
+    }
+}
+
+@media (max-device-width: 767px) and (min-device-width: 500px) {
+
+    .slider_div .owl-item.center .item img {
+        transform: scale(.95);
+    }
+    .slider_div .owl-item .item img {
+        width: 100vw;
+        height: auto;
+    }
+    .slider_div .owl-item.active {
+        left: 170px;
+    }
+
+
+    .nextt {
+        top: 50% !important;
+        right: 0% !important;
+        transform: translate(-30%, -50%);
+        padding: 15px 20px !important;
+    }
+
+    .prevv {
+        top: 50% !important;
+        left: 0% !important;
+        transform: translate(30%, -50%);
+        padding: 15px 20px !important;
+    }
+}
+
+
+/*Dimensiones Móviles normales desde 281px hasta 500px de ancho*/
+@media (max-device-width: 499px) and (min-device-width: 281px) {
+    #idEditarPerfil2 {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0 !important
+    }
+
+    #clicLogin {
+        font-size: 12px;
+        font-weight: 500;
+        padding: 4px 15px;
+    }
+
+    .top-nav .navbar-collapse {
+        padding: 0
+    }
+
+    .textPeriodo {
+        font-size: 12px;
+        line-height: 1 !important;
+    }
+
+    .enlaceRegistrar {
+        text-transform: uppercase !important;
+        color: #D0D0D0 !important;
+    }
+
+
+    #descRango {
+        font-size: 15px !important;
+        padding-bottom: 5px
+    }
+
+    #bloquedescRango {
+        display: contents
+    }
+
+    #bloqueImagenVamosPorMas {
+        display: contents
+    }
+    /*
+    #bloquePeriodo {
+        display: flex;
+    }
+
+    #bloqueDelMedio {
+        margin-top: auto;
+        margin-bottom: auto;
+    }*/
+
+    #bloqueIzquierda {
+        width: 40%
+    }
+
+    #bloqueDelMedio {
+        width: 80%;
+        padding: 0;
+        margin-top: 20px !important;
+    }
+
+    #bloqueDerecha {
+        width: min-content;
+    }
+
+    /*#descRango {
+        background: radial-gradient(circle,white 60%, transparent) !important;
+    }*/
+
+    .brillo span {
+        width: 100px !important;
+        background-size: 45.67px 202px !important;
+    }
+
+    .claseFuente {
+        font-size: 24px !important;
+        margin-right: 17px !important;
+    }
+
+
+    .saltoLinea {
+        height: 0;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        overflow: visible;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 0;
+        border-top: 1px solid lightgray;
+    }
+
+    .s_m_title h2 {
+        font-size: 20px !important;
+        margin-bottom: -30px
+    }
+
+
+    .feature_product_area {
+        /*padding-top: 20px !important;*/
+    }
+
+    #bloqueSuperAlimentosDestacados {
+        margin-top: 60px
+    }
+
+    .resultadoPeriodo {
+        font-weight: 900;
+        font-family: sans-serif;
+    }
+
+    #bloqueTotalInscritos {
+        padding-top: 10px;
+    }
+
+    #bloqueNuevasAfiliacionesRed {
+        padding-top: 20px;
+    }
+
+
+
+    .bloqueDerecha {
+        font-size: 3.5vw !important;
+    }
+
+    .nuevosDirectos {
+        font-size: 3.5vw !important;
+        width: auto !important;
+    }
+
+    .sectionDatosNetwork__porcentaje .descRango {
+        color: #000;
+        font-weight: 500;
+        font-size: 12px !important;
+        /*margin-bottom: 13px !important;*/
+        margin: 0;
+        font-weight: 500;
+    }
+
+    .sectionDatosNetwork__porcentaje .valorComiTotal {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+        .sectionDatosNetwork__porcentaje .valorComiTotal .moneda {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+            .sectionDatosNetwork__porcentaje .valorComiTotal .moneda
+            .nuevasAfiliacionesRed {
+                font-size: 14px;
+            }
+
+    #videosSocios {
+        padding: 0 !important;
+    }
+
+    .carousel-inner {
+        width: 75% !important;
+    }
+
+    .columnaIzquierda {
+        flex-direction: column !important;
+    }
+
+    #bloquePeriodo {
+        padding: 0 !important;
+    }
+
+
+    #txtPP, #txtVP, #txtVG, #txtVQ, #txtCOMISION, #txtVIP, #txtNUEVOSDIRECTOS {
+        margin-top: 10px !important;
+    }
+
+    #txtValorPP, #txtValorVP, #txtValorVG, #txtValorVQ, #txtValorCOMISION, #txtValorVIP, #txtValorNUEVOSDIRECTOS {
+        margin-bottom: 10px !important;
+    }
+
+    #txtRANGO {
+        font-size: 12px !important;
+        margin: 0;
+        color: var(--Darkest-grises);
+        font-weight: 500;
+    }
+
+    .sectionDatosNetwork__porcentaje .valorRango {
+        font-size: 12px;
+        line-height: 1;
+        color: var(--Dark-grises);
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .bloqueDatos {
+        height: 70px !important;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+    #bloquePeriodo {
+        max-width: 100% !important;
+    }
+
+    .bloqueDerecha {
+        font-size: 2vw !important;
+    }
+
+    .btn-vertical-slider {
+        font-size: 20px !important
+    }
+
+    /*-----------------------------------------------------------------------------------------------*/
+    .bloqueSectionMiProgreso {
+        width: 277px;
+        height: 140px;
+        padding: 0 10px 0 30px;
+        grid-gap: 0;
+        border-radius: 17px;
+    }
+
+    .sectionTotComisiones {
+        padding: 0 30px;
+    }
+
+    .sectionMiProgreso__Rangos {
+        grid-gap: 24px;
+    }
+
+        .sectionMiProgreso__Rangos > div {
+            grid-gap: 7px;
+            width: max-content;
+        }
+
+    svg.radial-progress {
+        max-width: 108px;
+    }
+    /*----circle progress bar PROGRESO RANGO ACTUAL-----*/
+    .circleProgressBarNew {
+        width: 20rem;
+        height: 20rem;
+    }
+
+        .circleProgressBarNew circle {
+            transform: translate(1rem, 1rem );
+            stroke-width: 8px;
+        }
+
+    .circle {
+        width: 18.5rem;
+        height: 18.5rem;
+    }
+
+    .circle__medium {
+        width: 18.5rem;
+        height: 18.5rem;
+    }
+
+    .circle__semimedium {
+        width: 17.5rem;
+        height: 17.5rem;
+    }
+
+    .circle__small {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .card__number {
+        font-size: 3.5rem;
+        top: 65px;
+    }
+
+    .textoProgresoPorcentaje {
+        bottom: 43px !important;
+        font-size: 9px;
+        text-align: center;
+        width: 60px;
+        right: 43px;
+        color: #000;
+        font-weight: 600;
+    }
+    /*---------------------------------------------------*/
+    .sectionDatosNetwork__red {
+        flex-direction: column;
+    }
+
+    .bloqueMiRed {
+        width: 90%;
+        margin: 17px auto;
+    }
+
+    .bloqueMiRed__irMapaRed {
+        margin-top: 16px;
+    }
+
+    .articleCirculos__img img {
+        width: 85px;
+    }
+
+    .articleCirculos__img .valorCirculo {
+        font-size: 14px;
+        line-height: 85px;
+        width: 85px;
+    }
+
+
+    .siguienteConquista {
+        font-size: 12px;
+    }
+
+    .totComisiones {
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    .sectionDatosNetwork__porcentaje .botonComisiones {
+        font-size: 12px;
+        padding: 8px 22px;
+        line-height: 1;
+    }
+
+    .sectionDatosNetwork {
+        flex-direction: column;
+    }
+
+    .sectionDatosNetwork__porcentaje {
+        width: 100%;
+        padding: 30px 0px 40px;
+        grid-gap: 20px;
+        flex-direction: column;
+    }
+
+
+    .sectionDatosNetwork__cuadros {
+        flex-direction: row;
+        align-items: center;
+        padding: 13px 0 40px;
+        grid-gap: 21px;
+        width: 100%;
+    }
+
+        .sectionDatosNetwork__cuadros .cuadrosDerecha .paquete {
+            font-size: 16px;
+            width: min-content;
+        }
+
+        .sectionDatosNetwork__cuadros .cuadrosDerecha .valor, .sectionDatosNetwork__cuadros .cuadrosIzquierda .valor {
+            font-size: 16px;
+        }
+
+        .sectionDatosNetwork__cuadros .cuadrosDerecha .desc, .sectionDatosNetwork__cuadros .cuadrosIzquierda .desc {
+            font-size: 14px;
+        }
+
+    .rangoProximo {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .bloqueMiRed__section {
+        margin: auto 15px auto 5px;
+    }
+
+    .bloqueMiRed__circulos article {
+        grid-gap: 15px;
+    }
+
+    .bloqueMiRed__titulo {
+        margin-bottom: 20px;
+        padding-left: 0;
+    }
+
+        .bloqueMiRed__titulo p {
+            font-size: 16px;
+            margin-left: 26px;
+        }
+
+    .bloqueMiRed__section a {
+        font-size: 14px;
+        padding: 10px 36.5px;
+    }
+
+    .bloqueMiRed__circulos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+        padding: 0;
+    }
+
+    .articleCirculos__nombre p {
+        font-size: 12px;
+    }
+
+
+    /*Slider Inferio del Index*/
+    .owl-carousel .owl-stage{
+        display: inherit;
+    }
+    .slider_div .owl-item .item img {
+        width: 100% !important;
+        height: 100% !important
+    }
+
+    .slider_div .owl-item.active {
+        left: 170px !important;
+    }
+
+    .prevv {
+        top: 50% !important;
+        left: 5% !important;
+    }
+
+    .nextt {
+        top: 50% !important;
+        right: 5% !important;
+    }
+
+    .owl-item .item {
+        width: auto;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        height: 350px;
+        margin-bottom: -55px;
+    }
+
+    .slider_div .owl-item.center .item img {
+        transform: scale(.95);
+    }
+
+    .feature_big_add_area {
+        margin-top: -30px !important;
+        padding: 0;
+    }
+}
+
+
+/*Dimensión: Galaxy Fold*/
+@media (max-device-width: 280px) {
+    /*Estilos que ya estaban, en caso no sirvan eliminar*/
+    .product_details_text .p_rating {
+        display: block;
+    }
+
+    .product_details_text .add_review {
+        display: block;
+        padding-left: 0px;
+    }
+
+    .quantity .custom input {
+        width: 100%;
+    }
+
+    .quantity .add_cart_btn {
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .payment_list .price_single_cost {
+        border-top: 1px solid #bdbdbd;
+        padding: 20px 0px 0px 0px;
+    }
+
+    /*Sección Header*/
+    #imgLogoNavBar {
+        width: 150px !important;
+    }
+    #clicLogin {
+        font-size: 11px;
+        font-weight: 400;
+        padding: 4px 10px;
+    }
+    header .btn {
+        font-size: 20px
+    }
+    #idEditarPerfil2 {
+        display: none;
+    }
+
+    /*Sección Rango y Comisiones*/
+    .ocultarCircleParaGalaxyFold {
+        display: none;
+    }
+    .sectionDatosNetwork__porcentaje {
+        flex-direction: column;
+        grid-gap: 20px;
+    }
+    .sectionMiProgreso {
+        padding: 36px 16px;
+        grid-gap: 0;
+        width: 228px;
+        border-radius: 17px;
+    }
+    .sectionMiProgreso__Rangos {
+        width: 100%;
+        grid-gap: 0;
+        align-items: center;
+    }
+    .sectionDatosNetwork__porcentaje .valorRango {
+        font-size: 14px;
+        line-height: 1;
+    }
+        .sectionDatosNetwork__porcentaje .descRango {
+            font-size: 12px;
+        }
+    svg.radial-progress circle {
+        stroke-width: 7px;
+    }
+    svg.radial-progress {
+        max-width: 85px;
+    }
+    svg.radial-progress text {
+        dominant-baseline: ideographic;
+    }
+    .mostrarCircleParaGalaxyFold {
+        display: flex !important;
+        margin: 10px 0 8px;
+    }
+    .textoProgresoPorcentajeGalaxyFold {
+        font-size: 9px;
+        width: 53px;
+        color: var(--Medium-primary);
+        left: 50%;
+        top: 53%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        margin: 0px;
+        text-align: center;
+    }
+    .sectionRangoActual {
+        align-items: center;
+    }
+    .sectionSiguienteRango {
+        align-items: center;
+    }
+    .textoProgresoPorcentaje {
+        font-size: 9px;
+        bottom: 110px;
+        width: 53px;
+        color: var(--Medium-primary);
+        right: 33px;
+    }
+
+    .sectionTotComisiones {
+        padding: 16px 16px;
+        width: 228px;
+        border-radius: 17px;
+    }
+    .siguienteConquista {
+        font-size: 12px;
+    }
+    .sectionDatosNetwork__porcentaje .valorComiTotal {
+        font-size: 14px;
+    }
+        .sectionDatosNetwork__porcentaje .valorComiTotal .moneda {
+            font-size: 12px;
+        }
+    .totComisiones {
+        font-size: 12px
+    }
+    .sectionDatosNetwork__porcentaje .botonComisiones {
+        font-size: 12px;
+        padding: 10px 28px;
+        line-height: 1;
+    }
+
+    /*Sección Mi Red - Circulos*/
+    .bloqueMiRed__circulos {
+        padding-right: 14px;
+    }
+    .bloqueMiRed__titulo p {
+        font-size: 18px;
+    }
+    .sectionDatosNetwork__red {
+        flex-direction: column;
+    }
+    .bloqueMiRed {
+        width: 100%;
+        margin: 26px auto;
+    }
+    .bloqueMiRed__section {
+        margin: 0;
+    }
+    .bloqueMiRed__titulo {
+        padding-left: 34px;
+    }
+    .articleCirculos__img img {
+        width: 80px;
+    }
+    .articleCirculos__img .valorCirculo {
+        line-height: 80px;
+        width: 80px;
+        font-size: 12px !important;
+    }
+    .articleCirculos__nombre p {
+        font-size: 11px;
+        margin-top: 0;
+    }
+    .bloqueMiRed__irMapaRed {
+        margin-top: 21px;
+    }
+        .bloqueMiRed__irMapaRed a {
+            font-size: 12px;
+            padding: 10px 28px;
+        }
+
+    /*Sección Mi Red - Cuadros*/
+    .sectionDatosNetwork__cuadros {
+        width: 100%;
+        grid-gap: 12px;
+        padding: 25.5px 0px;
+    }
+        .sectionDatosNetwork__cuadros .cuadrosDerecha .paquete {
+            font-size: 15px;
+        }
+        .sectionDatosNetwork__cuadros .cuadrosDerecha .valor, .sectionDatosNetwork__cuadros .cuadrosIzquierda .valor {
+            font-size: 17px;
+        }
+        .sectionDatosNetwork__cuadros .cuadrosDerecha .desc, .sectionDatosNetwork__cuadros .cuadrosIzquierda .desc {
+            font-size: 13px;
+        }
+
+    /*Para el Slider inferior*/
+    .feature_big_add_area {
+        margin-top: -100px;
+    }
+    .owl-carousel .owl-stage {
+        align-items: inherit;
+    }
+    .owl-item .item {
+        width: auto;
+    }
+
+    .owl-carousel {
+        height: 270px;
+    }
+        .owl-carousel .owl-stage-outer {
+            height: 241px;
+        }
+    .slider_div .owl-item.active {
+        left: 170px;
+    }
+    .slider_div .owl-item.center .item img {
+        transform: scale(.35);
+    }
+    .slider_div .owl-item .item img {
+        transform: scale(.4);
+    }
+    .nextt {
+        right: 7% !important;
+        top: 56.5% !important;
+    }
+    .prevv {
+        left: 7% !important;
+        top: 56.5% !important;
+    }
+}
+.brillo span {
+    animation: cambio 5s infinite;
+}
+
+@keyframes cambio {
+    0% {
+        background-position: 300px 0;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 1s;
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    10% {
+        background-position: 300px 0;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 1s;
+        transition-property: all;
+        transition-duration: 1s;
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    #bloqueNuevasAfiliacionesRed {
+        margin-top: 50px !important;
+        margin-bottom: 60px !important
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/

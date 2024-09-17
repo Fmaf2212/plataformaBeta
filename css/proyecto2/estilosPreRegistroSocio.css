@@ -1,0 +1,1562 @@
+﻿/*.anchoBotonGuardar {
+            width: 40% !important;
+        }*/
+.preRegistroSocio {
+    width: 100%;
+    margin: 70px auto 129px;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 22px;
+}
+
+.preRegistroSocio__bloqueTitulo {
+    margin-bottom: 32px;
+    grid-area: 1 / 2 / span 1 / span 8;
+    margin-top: 15px;
+    height: min-content;
+}
+
+    .preRegistroSocio__bloqueTitulo .regresarBanderas {
+        cursor: pointer;
+        font-size: 14px;
+        margin: 0 10px 15px 0;
+        display: flex;
+        grid-gap: 10px;
+        width: min-content;
+    }
+
+        .preRegistroSocio__bloqueTitulo .regresarBanderas span {
+            font-family: system-ui;
+            font-weight: 700;
+        }
+
+    .preRegistroSocio__bloqueTitulo p {
+        font-weight: bold;
+        font-size: 25px;
+        color: var(--Dark-grises);
+        line-height: 1;
+        margin: 0;
+    }
+
+.preRegistroSocio__bloqueCrearCuenta {
+    grid-column: 11/ span 4;
+    grid-row: 2;
+    margin: 0;
+    border: 1px solid var(--Dark-grises);
+    border-radius: 7px;
+    padding: 19px 17px 25px;
+    margin-bottom: 31px;
+    box-shadow: 0px 4px 4px #91d19c57;
+    height: min-content;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .preRegistroSocio__bloqueCrearCuenta > label {
+        font-weight: 500;
+        font-size: 22px;
+        color: var(--Dark-grises);
+        margin-bottom: 26px;
+        line-height: 1;
+        text-align: center;
+        margin: 0 0 26px 0;
+    }
+
+.preRegistroSeleccione {
+    margin: 106px 96px 240px;
+}
+
+.preRegistroSeleccione__titulo label {
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--Dark-green);
+    text-align: start;
+    margin: 0;
+    line-height: .8;
+}
+
+.preRegistroSocio__bloqueFormulario {
+    grid-column: 2/ span 9;
+    grid-row: 2;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0;
+    display: block;
+}
+
+    .preRegistroSocio__bloqueFormulario > .bloqueInfoAfiliacion, .preRegistroSocio__bloqueFormulario > .bloqueDatosPersonales, .preRegistroSocio__bloqueFormulario > .bloqueInfoContacto, .preRegistroSocio__bloqueFormulario > .bloqueInfoResidencia {
+        border: 1px solid #6884D3;
+        border-radius: 7px;
+        padding: 19px 17px 25px;
+        margin-bottom: 31px;
+        box-shadow: 0px 4px 4px rgb(104 132 211 / 25%);
+    }
+
+.preRegistroSocio__bloqueFormulario .scrollflow {
+    width: calc((100% - 36px) / 3);
+}
+
+    .preRegistroSocio__bloqueFormulario .gj-datepicker > input {
+        height: 50px;
+        font-size: 15px;
+        padding-left: 20px;
+    }
+.bloqueInfoResidencia__body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.bloqueInfoAfiliacion, .bloqueDatosPersonales, .bloqueInfoContacto, .bloqueInfoResidencia {
+    border: 1px solid var(--Dark-grises);
+    border-radius: 7px;
+    padding: 19px 18px 22px;
+    margin-bottom: 31px;
+    box-shadow: 0px 4px 4px #91d19c57;
+}
+
+    .bloqueInfoAfiliacion .bloqueInfoAfiliacion__titulo, .bloqueDatosPersonales .bloqueDatosPersonales__titulo, .bloqueInfoContacto .bloqueInfoContacto__titulo, .bloqueInfoResidencia .bloqueInfoResidencia__titulo {
+        font-weight: 500;
+        font-size: 22px;
+        color: var(--Dark-grises);
+        margin-bottom: 35px;
+        line-height: 1;
+    }
+
+    .bloqueInfoAfiliacion .bloqueInfoAfiliacion__body, .bloqueDatosPersonales .bloqueDatosPersonales__body, .bloqueInfoContacto .bloqueInfoContacto__body, .bloqueInfoResidencia .bloqueInfoResidencia__body {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: start;
+        grid-column-gap: 18px;
+    }
+
+.preRegistroSocio__bloqueFormulario .colorlib-form {
+    background: none;
+    padding: 0 15px 0;
+    margin-bottom: 0;
+}
+
+    .preRegistroSocio__bloqueFormulario .colorlib-form > div:nth-child(1) {
+        margin-bottom: 0;
+    }
+
+.preRegistroSocio__bloqueBotones {
+    grid-row: 3;
+    grid-column: 5/ span 7;
+    padding: 0px 65px;
+    height: min-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    .preRegistroSocio__bloqueBotones .btnCancelar {
+        background: #FFFFFF;
+        border: 1px solid var(--Dark-green);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--Dark-green);
+        transition: .2s background;
+    }
+
+        .preRegistroSocio__bloqueBotones .btnCancelar .btnCancelar:active {
+            border: 1px solid var(--Dark-green);
+            background-color: var(--Light-primary);
+            color: var(--Dark-green);
+        }
+
+.validarIdentidad {
+    background: var(--Dark-green);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 5px 20px;
+    transition: .3s ease-in background
+}
+    .validarIdentidad:hover {
+        background: var(--Intense-green);
+    }
+
+    .preRegistroSocio__bloqueBotones .btnRegistrar {
+        background: var(--Dark-green);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: none;
+        border-radius: 7px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        transition: .2s background;
+    }
+
+        .preRegistroSocio__bloqueBotones .btnRegistrar:hover {
+            background: var(--Primary-green);
+        }
+
+        .preRegistroSocio__bloqueBotones .btnRegistrar:active {
+            background: var(--Light-primary);
+        }
+
+.inputDatepicker {
+    height: 100%;
+    background: #F1FBFF;
+    font-size: 16px;
+    padding: 0 20px;
+    border-radius: 7px 0 0 7px;
+    border: none;
+}
+
+.btnCancelar, .btnRegistrar {
+    width: 161px;
+    height: 46px;
+}
+
+.seleccionPais {
+    background: #FFFFFF;
+    border: 1px solid #B5B5B5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px #91d19c57;
+    border-radius: 7px;
+    width: 100%;
+    margin: 54px 0;
+    padding: 36px 81px 54px;
+}
+
+.seleccionPais__titulo {
+    display: flex;
+    justify-content: center;
+}
+
+    .seleccionPais__titulo label {
+        font-weight: bold;
+        font-size: 20px;
+        color: var(--Dark-green);
+        margin: 0;
+        line-height: .8;
+    }
+
+.seleccionPais .seleccionPais__banderas {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 132px;
+    grid-row-gap: 42px;
+    margin: 69px auto 0;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+}
+
+    .seleccionPais .seleccionPais__banderas div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .seleccionPais .seleccionPais__banderas .bandera {
+        cursor: pointer;
+        background-repeat: no-repeat;
+        width: 192PX;
+        background-position: inherit;
+        background-size: cover;
+        transition: .2s background-color;
+        height: 192px;
+        border-radius: 50%;
+        filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.25));
+    }
+
+    .seleccionPais .seleccionPais__banderas .banderaBolivia {
+        background-image: url(../../img/bolivia.png);
+    }
+
+    .seleccionPais .seleccionPais__banderas .banderaEcuador {
+        background-image: url(../../img/ecuador.png);
+    }
+
+    .seleccionPais .seleccionPais__banderas .banderaEEUU {
+        background-image: url(../../img/usa.png);
+    }
+
+    .seleccionPais .seleccionPais__banderas .banderaPanama {
+        background-image: url(../../img/panama.png);
+    }
+
+    .seleccionPais .seleccionPais__banderas .banderaPeru {
+        background-image: url(../../img/peru.png);
+    }
+
+    .seleccionPais .seleccionPais__banderas .bandera:hover {
+        background-blend-mode: soft-light;
+        background-color: rgb(104,132,211);
+    }
+
+    .seleccionPais .seleccionPais__banderas label {
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--Primary-green);
+        text-align: center;
+        margin: 22px 0 0 0;
+        line-height: 1;
+    }
+
+.preRegistroSocio .preRegistroSocio__titulo1 p {
+    font-weight: 900;
+    font-size: 25px;
+    color: var(--Dark-green);
+}
+
+
+.marginTop {
+    width: 270px !important
+}
+
+.labelPreRegistro {
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--Dark-grises);
+}
+
+.form-controlPreRegistro {
+    display: block;
+    height: calc(4.8rem + 2px);
+    width: 100%;
+    padding: .375rem 2.15rem;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #3A3A3A;
+    font-weight: normal;
+    background: #6d6d6d14;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    background-clip: padding-box;
+    border: none;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+html input.noEditable[disabled] {
+    cursor: not-allowed !important;
+    background: #6d6d6d59
+}
+html select.noEditable[disabled] {
+    cursor: not-allowed !important;
+    background: #6d6d6d59
+}
+
+select:focus {
+    outline: none;
+}
+
+.gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+    top: 14px !important;
+}
+
+.gj-datepicker-bootstrap [role=right-icon] button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-group .gj-unselectable {
+    height: calc(4.8rem + 2px);
+    width: 100% !important;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0px 5px 3px rgb(0 0 0 / 25%);
+}
+
+.btn-outline-secondary {
+    border-radius: 0 7px 7px 0 !important;
+    border: 1px solid whitesmoke !important;
+}
+
+input, button:focus {
+    outline: none !important;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .formulario .formulario__photo {
+        margin: 0 auto 46px;
+        border: 17px solid #808080;
+        border-radius: 50%;
+        width: 187px;
+        height: 186px;
+    }
+
+    .formulario .formulario__crearUsuario {
+        margin-bottom: 18px;
+    }
+
+    .formulario .formulario__crearCrearContraseña {
+        margin-bottom: 18px;
+    }
+
+        .formulario .formulario__crearCrearContraseña .ojito1, .formulario .formulario__confirmarContraseña .ojito2 {
+            position: absolute;
+            right: 20px;
+            bottom: 6px;
+            cursor: pointer;
+            border: none;
+        }
+
+.imgAddPhoto {
+    position: absolute;
+    width: 40px;
+    height: 42px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    background: #808080;
+    border-radius: 25%;
+}
+
+.inputAddPhoto {
+    display: none !important;
+}
+
+
+.select {
+    padding: 8px 18px;
+    color: #333333;
+    cursor: pointer;
+    border-radius: 5px;
+    appareance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%231B2C5E;" /></svg>  ');
+    background-position: right 15px top 50%;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    padding-right: 20px;
+    text-overflow: ellipsis;
+}
+
+    .select:focus, .select:hover {
+        outline: none;
+    }
+
+.mensajeContraseñasNoCoinciden {
+    font-size: 14px;
+    color: #A01C1C;
+    position: absolute;
+    bottom: -50px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5px;
+}
+
+/*RESPONSIVE - MEDIA QUERIES*/
+
+@media (max-width: 1920px) {
+
+    .validarIdentidad {
+        margin-top: 35px;
+        grid-column-gap: 25px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/*PARA Nest Hub Max*/
+@media (max-width: 1280px) {
+    .preRegistroSocio__bloqueBotones {
+        grid-column-gap: 30px;
+    }
+
+    .validarIdentidad {
+        margin-top: 35px;
+        grid-column-gap: 25px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1148px) {
+    .marginTop {
+        width: 240px !important;
+    }
+}
+
+@media (max-width: 1048px) {
+    .marginTop {
+        width: 240px !important;
+    }
+
+    .preRegistroSocio {
+        grid-template-rows: auto;
+    }
+
+    .preRegistroSocio__bloqueCrearCuenta {
+        margin: 0 auto;
+    }
+}
+
+/*PARA DIMENSION iPad Pro 1024px*/
+@media screen and (max-width: 1024px) {
+    /*Fuera de la página -> Home.Master*/
+    .vistaPagina {
+        min-height: 83vh !important;
+    }
+
+    /*Estilos dentro de PreRegistroSocio*/
+    .select {
+        padding-right: 30px;
+        background-position: right 10px top 55%;
+    }
+
+    .seleccionPais {
+        margin: 21px 0;
+        padding: 24px 24px 30px;
+    }
+
+        .seleccionPais .seleccionPais__banderas {
+            grid-column-gap: 92px;
+            margin: 58px auto 0;
+        }
+
+            .seleccionPais .seleccionPais__banderas .bandera {
+                width: 130px;
+                height: 130px;
+            }
+
+    .seleccionPais__titulo label {
+        font-size: 16px;
+    }
+
+    .preRegistroSocio {
+        padding: 0 61px;
+        grid-row-gap: 0;
+        grid-column-gap: 33px;
+        margin: 70px auto 61px;
+    }
+
+    .preRegistroSocio__bloqueCrearCuenta {
+        width: 100%;
+        margin: 0;
+        grid-column: 10/ -1;
+        grid-row: 2;
+        padding: 19px 60px 25px;
+    }
+
+    .preRegistroSocio__bloqueTitulo {
+        font-size: 16px;
+        grid-area: 1 / 1 / span 1 / -1;
+        margin-bottom: 27px !important;
+        margin-top: 37px;
+    }
+
+    .preRegistroSocio__bloqueFormulario {
+        grid-column: 1 / span 9;
+        grid-row: 2;
+        margin: 0;
+    }
+        .preRegistroSocio__bloqueFormulario .scrollflow {
+            width: calc((100% - 80px) / 3);
+        }
+
+        .preRegistroSocio__bloqueTitulo .regresarBanderas {
+            margin: 0 10px 16px 0;
+        }
+
+    .preRegistroSeleccione__titulo label {
+        font-size: 20px;
+    }
+
+    .preRegistroSocio__bloqueTitulo .regresarBanderas span {
+        font-size: 14px;
+    }
+
+    .preRegistroSocio__bloqueTitulo p {
+        font-size: 20px;
+    }
+    .preRegistroSocio__bloqueFormulario .gj-datepicker > input {
+        height: 100%;
+        font-size: 14px;
+    }
+    .preRegistroSocio__bloqueBotones {
+        margin-top: 27px;
+        grid-column-gap: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .validarIdentidad {
+        margin-top: 27px;
+        grid-column-gap: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .seleccionPais .seleccionPais__banderas label {
+        font-size: 16px;
+        margin: 11px 0 0 0;
+    }
+
+    .preRegistroSocio__bloqueCrearCuenta > label {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .labelPreRegistro {
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .form-controlPreRegistro {
+        height: calc(3rem + 2px);
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .formulario .formulario__photo {
+        width: 168px;
+        height: 170px;
+    }
+
+    .justify-content-md-center {
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .marginTop {
+        width: 217px !important;
+        margin: auto;
+    }
+
+    .formulario .formulario__crearCrearContraseña .ojito1, .formulario .formulario__confirmarContraseña .ojito2 {
+        right: 6px;
+        bottom: 3px;
+    }
+
+    .formulario__grupo {
+        width: 217px;
+    }
+
+    .formulario__input-error-activo {
+        width: 217px;
+    }
+
+    .formulario__validacion-estado {
+        bottom: 7px;
+    }
+
+    .bloqueInfoAfiliacion .bloqueInfoAfiliacion__titulo, .bloqueDatosPersonales .bloqueDatosPersonales__titulo, .bloqueInfoContacto .bloqueInfoContacto__titulo, .bloqueInfoResidencia .bloqueInfoResidencia__titulo {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .bloqueInfoAfiliacion .bloqueInfoAfiliacion__body, .bloqueDatosPersonales .bloqueDatosPersonales__body, .bloqueInfoContacto .bloqueInfoContacto__body, .bloqueInfoResidencia .bloqueInfoResidencia__body {
+        justify-content: flex-start;
+        grid-column-gap: 40px
+    }
+    .bloqueInfoAfiliacion, .bloqueDatosPersonales, .bloqueInfoContacto, .bloqueInfoResidencia {
+        margin-bottom: 20px;
+        padding: 15px 21px 19px;
+    }
+    .form-group .gj-unselectable {
+        height: calc(3rem + 2px);
+        width: 100% !important;
+    }
+
+    .gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+        top: 7px !important;
+    }
+
+    .gj-datepicker > input {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .inputDatepicker {
+        font-size: 14px;
+        padding: 0px 10px;
+    }
+
+    .bloqueInfoResidencia__body > div {
+        width: 139px
+    }
+
+    .refDireccion {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .preRegistroSocio__bloqueBotones .btnCancelar, .preRegistroSocio__bloqueBotones .btnRegistrar {
+        font-size: 16px;
+        padding: 12px 40px;
+        height: 100%;
+        line-height: 1.2;
+    }
+
+    preRegistroSocio__bloqueBotones {
+        grid-column-gap: 25px;
+    }
+}
+@media (max-width: 997px){
+    .preRegistroSocio {
+        padding: 0 20px;
+    }
+}
+
+/*PARA DIMENSION iPad 768px*/
+@media (max-width: 768px) {
+    .seleccionPais {
+        padding: 17px 24px 20px;
+    }
+
+        .seleccionPais .seleccionPais__banderas {
+            grid-column-gap: 74px;
+            margin: 51px auto 0;
+            grid-row-gap: 29px;
+        }
+
+            .seleccionPais .seleccionPais__banderas .bandera {
+                width: 110px;
+                height: 110px;
+            }
+
+            .seleccionPais .seleccionPais__banderas label {
+                font-size: 14px;
+                margin: 15px auto 0;
+            }
+
+    .preRegistroSeleccione {
+        margin: 106px 39px 240px;
+    }
+
+    .preRegistroSocio {
+        padding: 0 40px;
+        margin: 73px auto 25px;
+        grid-row-gap: 0;
+        grid-column-gap: 22px;
+    }
+
+    .preRegistroSocio__bloqueFormulario {
+        grid-column: 1 / span 10;
+    }
+
+    .preRegistroSocio__bloqueCrearCuenta {
+        grid-column: 11/ -1;
+        padding: 19px 38px 25px;
+    }
+
+    .preRegistroSocio__bloqueBotones {
+        grid-column-gap: 23px;
+        margin-top: 31px;
+    }
+
+    .validarIdentidad {
+        grid-column-gap: 17px;
+        margin-top: 27px;
+        grid-column-gap: 25px;
+    }
+
+    .preRegistroSocio__bloqueTitulo p {
+        font-size: 16px;
+    }
+
+    .preRegistroSocio__bloqueTitulo .regresarBanderas span {
+        font-size: 12px;
+    }
+    .preRegistroSocio__bloqueTitulo {
+        margin-bottom: 20px !important;
+    }
+    .form-controlPreRegistro {
+        height: calc(4rem);
+        width: 100%;
+        font-size: 12px;
+    }
+
+
+    .btnCancelar, .btnRegistrar {
+        font-size: 12px !important;
+        padding: 9px 31px;
+        height: auto;
+    }
+    .formulario {
+        width: 100%;
+    }
+    .formulario .formulario__photo {
+        width: 93px;
+        height: 95px;
+        border: 13px solid #000B44;
+        margin: 0 auto 25px;
+    }
+
+    .imgAddPhoto {
+        width: 20px;
+        height: 20px;
+    }
+
+    .preRegistroSocio__bloqueCrearCuenta {
+        margin: 0;
+    }
+
+        .preRegistroSocio__bloqueCrearCuenta > label {
+            font-size: 14px;
+        }
+
+    .preRegistroSocio__bloqueFormulario .colorlib-form {
+        padding: 0 15px 0;
+        margin-bottom: 0;
+    }
+    .preRegistroSocio__bloqueFormulario .gj-datepicker > input {
+        height: 100%;
+        font-size: 12px;
+        padding-left: 18px;
+    }
+
+    .marginTop {
+        width: 100% !important;
+    }
+
+    .labelPreRegistro {
+        font-size: 12px;
+    }
+
+    .formulario__grupo {
+        width: 100%;
+    }
+
+    .ojito1, .ojito2 {
+        width: 16px;
+    }
+
+    .formulario .formulario__crearCrearContraseña .ojito1, .formulario .formulario__confirmarContraseña .ojito2 {
+        bottom: 8px;
+    }
+
+    .bloqueInfoAfiliacion .bloqueInfoAfiliacion__titulo, .bloqueDatosPersonales .bloqueDatosPersonales__titulo, .bloqueInfoContacto .bloqueInfoContacto__titulo, .bloqueInfoResidencia .bloqueInfoResidencia__titulo {
+        font-size: 14px;
+    }
+    .bloqueInfoAfiliacion .bloqueInfoAfiliacion__body, .bloqueDatosPersonales .bloqueDatosPersonales__body, .bloqueInfoContacto .bloqueInfoContacto__body, .bloqueInfoResidencia .bloqueInfoResidencia__body {
+        justify-content: flex-start;
+        grid-column-gap: 35px;
+    }
+
+    .bloqueInfoAfiliacion, .bloqueDatosPersonales, .bloqueInfoContacto, .bloqueInfoResidencia {
+        margin-bottom: 19px;
+        padding: 18px 20px 20px;
+    }
+
+    .formulario__input-error-activo {
+        width: 152px;
+        font-size: 10px;
+    }
+
+    .select {
+        background-size: 11px;
+    }
+
+    .form-group .gj-unselectable {
+        height: calc(3rem);
+        width: 100% !important;
+    }
+
+    .gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+        font-size: 17px !important;
+        left: 10px;
+        top: 7px !important;
+        left: 7px !important;
+    }
+
+    .gj-datepicker > input {
+        font-size: 12px;
+        padding: 0px 8px;
+    }
+
+    .gj-datepicker-bootstrap [role=right-icon] button {
+        width: 30px !important;
+    }
+
+    .bloqueInfoResidencia__body > div {
+        width: min-content;
+    }
+
+    .bloqueInfoResidencia__body > div {
+        width: 119px;
+    }
+
+    .bloqueInfoResidencia {
+        margin-bottom: 0;
+    }
+
+    .colorlib-form > div:nth-child(1) {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .validarIdentidad {
+        grid-column-gap: 17px;
+        margin-top: 6px;
+        margin-left: 190px;
+    }
+}
+
+@media (max-width: 692px) {
+    .preRegistroSeleccione {
+        margin: 106px 45px 240px;
+    }
+
+    .preRegistroSeleccione__titulo label {
+        font-size: 18px;
+    }
+    .preRegistroSocio__bloqueCrearCuenta {
+        padding: 19px 19px 25px;
+    }
+    .seleccionPais {
+        padding: 36px 24px 54px;
+    }
+
+    .seleccionPais__titulo label {
+        font-size: 16px;
+    }
+
+    .seleccionPais .seleccionPais__banderas {
+        grid-column-gap: 25%;
+        margin: 39px auto 0;
+    }
+
+
+        .seleccionPais .seleccionPais__banderas .bandera {
+            width: 125px;
+            background-size: 125px;
+            height: 125px;
+        }
+
+        .seleccionPais .seleccionPais__banderas label {
+            font-size: 16px;
+        }
+}
+
+/*PARA DIMENSION 660px, incluye Surface Duo 540px*/
+@media screen and (max-width: 660px) {
+    /*SECCION BANDERAS*/
+    .preRegistroSocio {
+        padding: 0 40px;
+        grid-template-rows: none;
+    }
+
+    .preRegistroSocio__bloqueTitulo {
+        grid-area: 1 / 1 / auto / -1;
+    }
+
+        .preRegistroSocio__bloqueTitulo p {
+            font-size: 16px;
+        }
+
+    .preRegistroSocio__bloqueCrearCuenta {
+        grid-column: 1/ -1;
+        grid-row: 1;
+        width: 100%;
+    }
+
+    .preRegistroSocio__bloqueFormulario {
+        grid-column: 1/ -1;
+        grid-row: 2;
+        margin: 0px 0 0 !important;
+    }
+
+        .preRegistroSocio__bloqueFormulario .colorlib-form {
+            padding: 12px 0px 0;
+            margin: 0;
+        }
+
+    .preRegistroSeleccione {
+        margin: 106px 45px 240px;
+    }
+
+    .preRegistroSeleccione__titulo label {
+        font-size: 18px;
+    }
+
+    .preRegistroSocio .preRegistroSocio__bloqueCrearCuenta {
+        grid-column: 1/ -1;
+        grid-row: 1;
+        margin: 100px 0 0;
+        display: block;
+        padding: 19px 36px 25px;
+    }
+
+    .preRegistroSocio .preRegistroSocio__bloqueBotones {
+        grid-row: 3;
+        grid-gap: 40px
+    }
+
+    .validarIdentidad {
+        grid-row: 3;
+        grid-gap: 40px
+    }
+
+    .seleccionPais {
+        padding: 36px 24px 54px;
+    }
+
+    .seleccionPais__titulo label {
+        font-size: 16px;
+    }
+
+    .seleccionPais .seleccionPais__banderas {
+        grid-column-gap: 25%;
+        margin: 39px auto 0;
+    }
+
+
+        .seleccionPais .seleccionPais__banderas .bandera {
+            width: 125px;
+            background-size: 125px;
+            height: 125px;
+        }
+
+        .seleccionPais .seleccionPais__banderas label {
+            font-size: 16px;
+        }
+
+    /*PARA EL FORMULARIO "REGISTRO DE UN NUEVO EMPRESARIO"*/
+    /*CREAR CUENTA*/
+    .preRegistroSocio__bloqueCrearCuenta > label {
+        margin-left: 20px;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .preRegistroSocio__bloqueFormulario .scrollflow {
+        width: calc((100% - 35px) / 2);
+    }
+    .formulario {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: -10px;
+    }
+
+        .formulario .formulario__photo {
+            grid-column: 1 / 1;
+            grid-row: 1 / 4;
+            margin: auto;
+            width: 153px;
+            height: 153px;
+            margin-left: 0px;
+        }
+
+            .formulario .formulario__photo .imgAddPhoto {
+                width: 30px;
+                height: 32px;
+            }
+
+        .formulario .formulario__crearUsuario .marginTop, .formulario .formulario__crearCrearContraseña .marginTop, .formulario .formulario__confirmarContraseña .marginTop {
+            width: 100% !important;
+        }
+
+        .formulario .formulario__crearCrearContraseña .ojito1, .formulario .formulario__confirmarContraseña .ojito2 {
+            right: 10px;
+            bottom: calc(50% - 10px);
+            width: 20px;
+        }
+
+    .formulario__crearUsuario > label, .formulario__crearCrearContraseña > label, .formulario__confirmarContraseña > label {
+        font-size: 17px;
+    }
+    .formulario__grupo {
+        width: 100%;
+    }
+    /*Información de Afiliacion y los demás bloques inferiores*/
+    .bloqueInfoAfiliacion .bloqueInfoAfiliacion__body, .bloqueDatosPersonales .bloqueDatosPersonales__body, .bloqueInfoContacto .bloqueInfoContacto__body, .bloqueInfoResidencia .bloqueInfoResidencia__body {
+        justify-content: flex-start;
+    }
+    .bloqueInfoAfiliacion__body, .bloqueDatosPersonales__body, .bloqueInfoContacto__body, .bloqueInfoResidencia__body {
+        justify-content: space-between;
+        grid-row-gap: 19px;
+    }
+    .bloqueInfoAfiliacion, .bloqueDatosPersonales, .bloqueInfoContacto, .bloqueInfoResidencia {
+        padding: 18px 20px 20px;
+    }
+    .preRegistroSocio__bloqueFormulario .gj-datepicker > input {
+        height: 100%;
+        padding-left: 20px;
+    }
+
+    .bloqueDatosPersonales__body .gj-unselectable {
+        width: 100% !important;
+    }
+
+    .bloqueInfoAfiliacion .bloqueInfoAfiliacion__titulo, .bloqueDatosPersonales .bloqueDatosPersonales__titulo, .bloqueInfoContacto .bloqueInfoContacto__titulo, .bloqueInfoResidencia .bloqueInfoResidencia__titulo {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .form-controlPreRegistro {
+        width: 100%;
+        font-size: 16px;
+    }
+    .formulario__input-error-activo {
+        width: 100%;
+        font-size: 12px;
+    }
+    .formulario__validacion-estado {
+        bottom: 5px;
+    }
+    .labelPreRegistro {
+        font-size: 16px;
+    }
+    .btnCancelar, .btnRegistrar {
+        font-size: 16px !important;
+    }
+    .preRegistroSocio__bloqueBotones .btnCancelar, .preRegistroSocio__bloqueBotones .btnRegistrar {
+        padding: 10px 30px;
+        border-radius: 7px;
+        font-size: 16px;
+        line-height: 1;
+        height: min-content;
+        width: auto;
+    }
+
+    .validarIdentidad {
+        padding: 10px 30px;
+        border-radius: 7px;
+        font-size: 16px;
+        line-height: 1;
+        height: min-content;
+        width: auto;
+    }
+
+    .select {
+        padding: 4px 18px;
+    }
+}
+
+/*PARA DIMENSIONES MENORES A 500*/
+@media (max-device-width: 500px) {
+    /*SECCION BANDERAS*/
+    .preRegistroSeleccione {
+        margin: 70px 45px 240px;
+    }
+
+    .preRegistroSeleccione__titulo label {
+        font-size: 14px;
+    }
+
+    .seleccionPais {
+        padding: 20px 37px 25px;
+        margin: 25px 0;
+    }
+
+    .seleccionPais__titulo label {
+        font-size: 12px;
+    }
+
+    .seleccionPais .seleccionPais__banderas {
+        grid-column-gap: 25%;
+        margin: 39px auto 0;
+        justify-content: center;
+    }
+
+        .seleccionPais .seleccionPais__banderas .seleccionPais__banderas__EEUU {
+            width: 70px;
+        }
+
+            .seleccionPais .seleccionPais__banderas .seleccionPais__banderas__EEUU label {
+                white-space: nowrap;
+                margin-left: -26px;
+            }
+
+
+        .seleccionPais .seleccionPais__banderas .bandera {
+            width: 65px;
+            background-size: 65px;
+            height: 65px;
+        }
+
+        .seleccionPais .seleccionPais__banderas label {
+            font-size: 14px;
+        }
+
+
+    /*PARA EL FORMULARIO "REGISTRO DE UN NUEVO EMPRESARIO"*/
+    .preRegistroSocio {
+        grid-gap: 0;
+        margin: 73px auto 22px;
+        padding: 0 18px;
+    }
+
+    .preRegistroSocio__bloqueTitulo {
+        margin-top: 2px;
+    }
+
+    .preRegistroSocio .preRegistroSocio__bloqueCrearCuenta {
+        padding: 9px 26px 15px;
+        margin: 75px 0 0;
+    }
+
+    .preRegistroSocio__bloqueCrearCuenta > label {
+        margin-left: 21px;
+        font-size: 14px;
+    }
+    .preRegistroSocio__bloqueFormulario .scrollflow {
+        width: calc((100% - 35px) / 2);
+        margin-bottom: 0;
+    }
+
+    .formulario {
+        margin-top: -10px;
+        grid-column-gap: 8%;
+        grid-template-rows: none;
+    }
+
+        .formulario .formulario__photo {
+            width: 119px;
+            height: 119px;
+            border: 9px solid #000B44;
+        }
+
+        .formulario .formulario__crearUsuario, .formulario .formulario__crearCrearContraseña {
+            margin-bottom: 8px;
+        }
+
+    .formulario__crearUsuario > label, .formulario__crearCrearContraseña > label, .formulario__confirmarContraseña > label {
+        font-size: 12px;
+    }
+
+    .formulario .formulario__crearUsuario .marginTop, .formulario .formulario__crearCrearContraseña .marginTop, .formulario .formulario__confirmarContraseña .marginTop {
+        width: 100% !important;
+        height: 29px;
+    }
+
+    .formulario .formulario__crearCrearContraseña .ojito1, .formulario .formulario__confirmarContraseña .ojito2 {
+        right: 9px;
+        width: 19px;
+        bottom: 3px;
+        width: 17px;
+        bottom: 6px;
+    }
+
+    .formulario__validacion-estado {
+        right: -17px;
+        bottom: 4px;
+        font-size: 14px;
+    }
+
+    .formulario__input-error-activo {
+        font-size: 10px;
+        gap: 3px;
+        width: 150px;
+        margin-top: 5px;
+    }
+
+    .formulario__input-error-activo {
+        /* display: flex; */
+        font-size: 10px;
+        gap: 3px;
+        width: 150px;
+        margin-top: 5px;
+    }
+
+    .bloqueInfoAfiliacion, .bloqueDatosPersonales, .bloqueInfoContacto, .bloqueInfoResidencia {
+        margin-bottom: 20px;
+        padding: 10px 10px 16px;
+    }
+
+        .bloqueInfoAfiliacion .labelPreRegistro, .bloqueDatosPersonales .labelPreRegistro, .bloqueInfoContacto .labelPreRegistro, .bloqueInfoResidencia .labelPreRegistro {
+            font-size: 12px;
+        }
+
+        .bloqueInfoAfiliacion .bloqueInfoAfiliacion__titulo, .bloqueDatosPersonales .bloqueDatosPersonales__titulo, .bloqueInfoContacto .bloqueInfoContacto__titulo, .bloqueInfoResidencia .bloqueInfoResidencia__titulo {
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+
+    .bloqueDatosPersonales__body .gj-unselectable {
+        width: 150px !important;
+        height: 29px;
+    }
+
+    .gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+        top: 5px !important;
+        left: 10px !important;
+    }
+
+    .gj-datepicker > input {
+        font-size: 12px !important;
+    }
+
+    .preRegistroSocio .preRegistroSocio__bloqueBotones {
+        grid-gap: 19px;
+        margin-top: 0;
+    }
+
+    .preRegistroSocio__bloqueBotones .btnCancelar, .preRegistroSocio__bloqueBotones .btnRegistrar {
+        padding: 9px 31px;
+        font-size: 12px !important;
+    }
+
+    .form-controlPreRegistro {
+        width: 100%;
+        height: 29px;
+        font-size: 12px;
+        padding: 4px 9px;
+    }
+
+    .colorlib-form .select {
+        background-size: 13px;
+        padding: 0 40px 0 10px;
+    }
+}
+
+/*PARA DIMENSIONES MENORES A 414 (iPhone 6/7/8 Plus) y 411 (Pixel 2 XL) */
+@media (max-device-width: 414px) {
+    .bloqueInfoAfiliacion, .bloqueDatosPersonales, .bloqueInfoContacto, .bloqueInfoResidencia {
+        padding: 10px 26px 16px;
+    }
+}
+
+/*PARA DIMENSIONES MENORES A 375 (iPhone 6/7/8) */
+@media (max-device-width: 375px) {
+    .bloqueInfoAfiliacion, .bloqueDatosPersonales, .bloqueInfoContacto, .bloqueInfoResidencia {
+        padding: 12px 10px 16px;
+    }
+}
+
+/*PARA DIMENSIONES MENORES A 360 (Moto G4, Galaxy S5) */
+@media (max-device-width: 360px) {
+    /*Para el bloque "Realiza el registro de un nuevo empresario" */
+    .preRegistroSeleccione {
+        margin: 70px 35px 240px;
+    }
+
+    /*Para el bloque "REGISTRO DE UN NUEVO EMPRESARIO" */
+    .form-controlPreRegistro {
+        width: 100%;
+    }
+
+    .bloqueDatosPersonales__body .gj-unselectable {
+        width: 100% !important;
+        height: 29px;
+    }
+
+    .gj-datepicker > input {
+        padding: 0 12px !important;
+    }
+
+    .gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+        font-size: 16px !important;
+        top: 7px !important;
+        left: 11px !important;
+    }
+}
+
+/*PARA DIMENSIONES MENORES A 320 iPhone 5/SE */
+@media (max-device-width: 320px) {
+    /*SECCION BANDERAS*/
+    .preRegistroSeleccione {
+        margin: 70px 20px 240px;
+    }
+
+    .seleccionPais .seleccionPais__banderas {
+        grid-column-gap: 22%;
+        justify-content: space-between;
+    }
+
+        .seleccionPais .seleccionPais__banderas .bandera {
+            width: 56px;
+            background-size: 56px;
+            height: 56px;
+        }
+
+        .seleccionPais .seleccionPais__banderas div {
+            margin: auto;
+        }
+
+        .seleccionPais .seleccionPais__banderas label {
+            font-size: 11px;
+            margin: 11px 0 0 0;
+        }
+
+        .seleccionPais .seleccionPais__banderas .seleccionPais__banderas__EEUU label {
+            margin-left: -10px;
+        }
+    /*PARA EL FORMULARIO "REGISTRO DE UN NUEVO EMPRESARIO"*/
+    .preRegistroSocio__bloqueTitulo p {
+        font-size: 14px;
+    }
+
+    .formulario {
+        grid-column-gap: 4%;
+    }
+
+        .formulario .formulario__photo {
+            width: 100px;
+            height: 100px;
+        }
+
+    .form-controlPreRegistro {
+        width: 100%;
+    }
+
+    .bloqueInfoAfiliacion, .bloqueDatosPersonales, .bloqueInfoContacto, .bloqueInfoResidencia {
+        padding: 10px 10px 16px;
+    }
+
+    .bloqueDatosPersonales__body .gj-unselectable {
+        width: 120px !important;
+    }
+
+    .preRegistroSocio__bloqueBotones .btnCancelar, .preRegistroSocio__bloqueBotones .btnRegistrar {
+        font-size: 10px;
+    }
+
+    .preRegistroSocio .preRegistroSocio__bloqueCrearCuenta {
+        padding: 9px 21px 15px;
+    }
+}
+/*PARA DIMENSIONES MENORES A 280 Galaxy fold*/
+@media (max-device-width: 280px) {
+    /*SECCION BANDERAS*/
+    .preRegistroSocio {
+        margin: 71px auto 29px;
+    }
+
+    .preRegistroSeleccione__titulo label {
+        font-size: 12px;
+    }
+
+    .seleccionPais__titulo label {
+        font-size: 11px;
+    }
+    /*PARA EL FORMULARIO "REGISTRO DE UN NUEVO EMPRESARIO"*/
+    .preRegistroSocio__bloqueTitulo .regresarBanderas {
+        font-size: 12px;
+    }
+
+    .preRegistroSocio__bloqueTitulo p {
+        font-size: 12px;
+    }
+
+    .preRegistroSocio .preRegistroSocio__bloqueCrearCuenta {
+        display: flex;
+        margin: 58px 0 0;
+        padding: 9px 51px 15px;
+    }
+
+    .preRegistroSocio__bloqueCrearCuenta > label {
+        margin-left: 0;
+        font-size: 11px;
+    }
+    .preRegistroSocio__bloqueBotones .btnCancelar, .preRegistroSocio__bloqueBotones .btnRegistrar {
+        padding: 8px 18px;
+        font-size: 11px !important;
+    }
+    .preRegistroSocio .preRegistroSocio__bloqueBotones {
+        grid-gap: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    .validarIdentidad {
+        grid-gap: 7px;
+        display: flex;
+        align-items: center;
+    }
+
+    .preRegistroSocio__bloqueFormulario .scrollflow {
+        width: calc((100% - 15px) / 2);
+    }
+    .formulario {
+        display: flex;
+        margin-top: 10px;
+    }
+
+        .formulario .formulario__photo {
+            margin: 0 auto 15px;
+        }
+
+    .formulario__crearUsuario > label, .formulario__crearCrearContraseña > label, .formulario__confirmarContraseña > label {
+        font-size: 10px;
+    }
+
+    .formulario .formulario__photo .imgAddPhoto {
+        width: 24px;
+        height: 24px;
+    }
+
+    .formulario .formulario__crearUsuario .marginTop, .formulario .formulario__crearCrearContraseña .marginTop, .formulario .formulario__confirmarContraseña .marginTop {
+        width: 100% !important;
+        height: 26px;
+    }
+    .formulario__input-error-activo {
+        width: 100%;
+        text-align: justify;
+    }
+    .formulario .formulario__crearCrearContraseña .ojito1, .formulario .formulario__confirmarContraseña .ojito2 {
+        width: 12px;
+        bottom: 7px;
+    }
+    .form-controlPreRegistro {
+        width: 94px;
+        height: 26px;
+        font-size: 10px;
+    }
+
+    .colorlib-form .select {
+        background-size: 8px;
+        padding: 0 28px 0 10px;
+    }
+
+    .bloqueInfoAfiliacion, .bloqueDatosPersonales, .bloqueInfoContacto, .bloqueInfoResidencia {
+        padding: 10px 18px 16px;
+    }
+
+        .bloqueInfoAfiliacion .labelPreRegistro, .bloqueDatosPersonales .labelPreRegistro, .bloqueInfoContacto .labelPreRegistro, .bloqueInfoResidencia .labelPreRegistro {
+            font-size: 10px;
+            width: 94px;
+        }
+
+        .bloqueInfoAfiliacion .bloqueInfoAfiliacion__titulo, .bloqueDatosPersonales .bloqueDatosPersonales__titulo, .bloqueInfoContacto .bloqueInfoContacto__titulo, .bloqueInfoResidencia .bloqueInfoResidencia__titulo {
+            font-size: 11px;
+        }
+        .bloqueInfoAfiliacion .bloqueInfoAfiliacion__body, .bloqueDatosPersonales .bloqueDatosPersonales__body, .bloqueInfoContacto .bloqueInfoContacto__body, .bloqueInfoResidencia .bloqueInfoResidencia__body {
+            grid-column-gap: 15px;
+        }
+        .refDireccion {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    .bloqueDatosPersonales__body .gj-unselectable {
+        width: 94px !important;
+        height: 26px;
+    }
+
+    .gj-datepicker > input {
+        font-size: 10px !important;
+        padding: 0px 8px !important;
+    }
+
+    .gj-datepicker-bootstrap [role=right-icon] button {
+        width: 27px !important;
+    }
+
+        .gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+            font-size: 12px !important;
+            top: 7px !important;
+            left: 7px !important;
+        }
+}

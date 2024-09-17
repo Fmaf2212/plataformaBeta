@@ -1,0 +1,11 @@
+﻿/*Arreglar posición del botón*/
+.searchButton {
+    height: 33px;
+    width: 55px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.divPaddingSearch {
+    padding-left: 0px;
+}

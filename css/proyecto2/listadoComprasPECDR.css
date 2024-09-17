@@ -1,0 +1,111 @@
+﻿@import url("fonts-v2.css");
+
+.listaComprasPECDR {
+    font-family: 'HurmeGeometricSans1 Bold';
+    height: 100vh;
+    background-image: url('../../img/fondoPagListadoComprasPECDR.png');
+    background-size: 100% 100%;
+    padding: 20px 40px;
+}
+
+    .listaComprasPECDR .content-header h1 {
+        color: #1c1c72;
+        text-align: center;
+        text-decoration-color: #79b729;
+        text-decoration-line: underline;
+    }
+
+    .listaComprasPECDR .content .box-header h3 {
+        color: #1c1c72
+    }
+
+    .listaComprasPECDR .content .table-responsive .dataTables_wrapper .dataTables_length label{
+        color: #1c1c72
+    }
+
+    .listaComprasPECDR .content .table-responsive .dataTables_wrapper .dataTables_info {
+        color: #1c1c72
+    }
+
+    .listaComprasPECDR .content .table-responsive .dataTables_wrapper .dataTables_paginate ul .active a {
+        background-color: #1c1c72;
+    }
+
+    .listaComprasPECDR .content .table-responsive .dataTables_wrapper .dataTables_filter label {
+        color: #1c1c72;
+    }
+
+    .listaComprasPECDR .content .table-responsive .dataTables_wrapper .dataTables_paginate ul .disabled a {
+        color: #1c1c72;
+    }
+
+
+
+
+.tablaHeader > th {
+    background: #1c1c72 !important;
+    color: white;
+    text-transform: uppercase
+}
+
+.odd td:nth-child(2n+1), .even td:nth-child(2n+1) {
+    background: #A686D1
+}
+
+.odd td:nth-child(2n+2), .even td:nth-child(2n+2) {
+    background: #dbcfe8
+}
+
+.odd, .even td {
+    color: #1c1c72
+}
+
+
+#tbl_cdr tbody tr td > button {
+    background-color: #1c1c72;
+}
+
+.listaComprasPECDR .content {
+    background: transparent;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+@media (max-device-width: 1024px) {
+    .listaComprasPECDR {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (max-device-width: 540px) {
+    .listaComprasPECDR .content {
+        margin-top: 35px;
+    }
+}
+@media (max-device-width: 500px){
+    .listaComprasPECDR {
+        padding: 0;
+        background-image: none;
+    }
+
+        .listaComprasPECDR .content-header h1 {
+            padding: 20px 0;
+            font-size: 26px;
+            margin-top: 0;
+        }
+
+        .listaComprasPECDR .content {
+            margin-top: 0px;
+            padding: 0 15px;
+        }
+
+            .listaComprasPECDR .content .box-title {
+                font-size: 20px;
+            }
+
+    #tbl_Pedidos_wrapper .row {
+        width: max-content;
+    }
+
+}

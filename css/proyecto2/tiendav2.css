@@ -1,0 +1,460 @@
+﻿/*Arreglar posición del botón*/
+.searchButton {
+    height: 33px;
+    width: 55px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.divPaddingSearch {
+    padding-left: 0px;
+}
+
+.lblPeriodo{
+    font-size:15px
+}
+/*---------------------------------------------------------------------------------------------*/
+.ddlButtonPopupDelivery button {
+    height: 35px;
+    background-color: #FFC107; /* Botón amarillo brillante */
+    color: #0B1C6F;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 40px;
+    font-family: system-ui;
+    font-weight: 500;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 1); /* Sombra sutil */
+    transition: transform 0.2s linear;
+}
+
+    .ddlButtonPopupDelivery button:hover {
+        /*background-color: #FFB300; 
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);*/
+        transform: scale(1.025)
+    }
+
+    .ddlButtonPopupDelivery button:focus {
+        /*background-color: #FFB300; 
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);*/
+        outline: none
+    }
+/*----------------------------------------------------------*/
+
+#registrarDatosDelivery {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: auto;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+    #registrarDatosDelivery .modal-content {
+        position: relative;
+        background-color: #fff; /* Fondo blanco */
+        margin: 15% auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%; /* Ancho del modal */
+        max-width: 700px; /* Ancho máximo */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+    }
+
+    /* Estilo para el contenido del modal si necesitas ajustes específicos */
+    #registrarDatosDelivery .modal-body {
+        padding: 10px 0;
+    }
+
+    /* Estilo para el pie del modal si necesitas ajustes específicos */
+    #registrarDatosDelivery .modal-footer {
+        border-top: 1px solid #ccc;
+        padding: 10px 0;
+        text-align: right;
+    }
+/*--------------*/
+.modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleHeader {
+    background-color: var(--Light2-grises);
+    height: 50px;
+    padding: 18px 30px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e9ecef;
+}
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleHeader .modalDetalleHeader__titulo {
+        color: var(--Medium-primary);
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+.modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 20px;
+    padding: 30px 30px 0 30px;
+    flex: 1 1 auto;
+    position: relative;
+}
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .bloquePedido,
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .bloqueDestinatario {
+        border-radius: 20px;
+        padding: 1.5em 2em;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #6884D3;
+        box-shadow: 0px 4px 4px rgb(104 132 211 / 25%);
+    }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody div h2,
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody div h2 {
+        margin-left: 20px;
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #1B2C5E;
+        font-family: system-ui;
+    } 
+.modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila {
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+}
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila.filaDoble {
+        grid-column-gap: 20px
+    }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila.filaDoble::after {
+        display: none;
+    }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputFecha {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+        grid-gap: 20px;
+    }
+        .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputFecha .inputPequeño select {
+            max-width: 176px;
+            width: 100%;
+            border: 1px solid var(--Medium-primary) !important;
+            color: var(--Medium-primary);
+            border-radius: 8px;
+        }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputLargo,
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputCorto,
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.infoDesti {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        grid-gap: 20px;
+    }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputLargo,
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputCorto {
+        align-items: flex-start;
+    }
+        /*.modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.infoDesti {
+            align-items: center;
+        }*/
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido label{
+        margin-bottom: 0;
+        color: var(--Dark-grises);
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.infoDesti label {
+        padding-top: 3px;
+    }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido input {
+        width: 100%;
+        border: 1px solid var(--Medium-primary) !important;
+        color: var(--Medium-primary);
+        border-radius: 8px;
+        font-size: 12px;
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        line-height: 1.5;
+        background-color: #fff;
+        background-clip: padding-box;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+        .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido input:focus {
+            background-color: #fff;
+            outline: 0;
+            box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+        }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido .inputPequeño {
+        max-width: 416px;
+        width: 100%;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputLargo input {
+        max-width: 476px;
+    }
+/*--------------*/
+.modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleFooter {
+    border-top: 0px solid #e9ecef;
+    justify-content: center !important;
+    grid-column-gap: 23px;
+    display: flex;
+    align-items: center;
+    padding-top: 37px;
+    padding-bottom: 32px;
+}
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleFooter button {
+        background-color: var(--Medium-primary);
+        border: 1px solid var(--Medium-primary);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        color: white;
+        font-weight: normal;
+        font-size: 12px;
+        padding: 10px 37px !important;
+        line-height: 1;
+        transition: .3s ease background-color, .3s ease border;
+    }
+
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleFooter .btnCancelar {
+        background-color: white;
+        border: var(--Medium-primary) 1px solid;
+        color: var(--Medium-primary);
+        font-weight: 500;
+        transition: .3s ease background-color, .3s ease border;
+    }
+        .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleFooter .btnCancelar:hover {
+            border: var(--Light-primary) 1px solid;
+            background-color: var(--Light-primary);
+            color: white;
+        }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleFooter button:hover {
+        background-color: var(--Darkest2-primary);
+        border: 1px solid var(--Darkest2-primary);
+    }
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+.containerTienda {
+    /*margin-top: 30px;*/
+    width: 95%
+}
+
+@media screen and (max-width: 991px) {
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputLargo input, 
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido input {
+        max-width: 298px;
+    }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila.filaDoble {
+        flex-direction: column;
+        grid-row-gap: 10px;
+    }
+}
+@media screen and (max-width: 524px) {
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .bloquePedido, .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .bloqueDestinatario {
+        padding: 1.5em;
+    }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleFooter button {
+        padding: 7px 20px !important;
+        font-size: 10px;
+    }
+
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputLargo input {
+        max-width: 220px;
+    }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .error-message {
+        font-size: 10px
+    }
+
+    #registrarDatosDelivery .modal-content {
+        width: 100%;
+    }
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.infoDesti {
+        align-items: flex-start;
+    }
+}
+@media (max-width: 576px) {
+    .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputLargo input, .modal#registrarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido input {
+        max-width: 100%;
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+@media screen and (max-device-width: 321px) {
+    #divMayorDatosCompra {
+        margin-top: 8px !important;
+    }
+}
+
+@media screen and (max-device-width: 499px) {
+    #divMayorDatosCompra #lblDatosCompra {
+        color: white;
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+
+    /*#bloqueDatosCompra {
+        background-color: transparent !important
+    }*/
+
+    /*#svgFondoFooter {
+        margin-top: 50%
+    }*/
+    #divMayorDatosCompra {
+        margin-top: 13px !important;
+    }
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 499px) {
+    #divMayorDatosCompra {
+        margin-top: 20px !important;
+    }
+}
+
+@media screen and (min-width: 559px) {
+    #Label11, #Label13, #Label15, #lblDatosCompra {
+        color: #555;
+    }
+
+    #bloqueDatosCompra {
+        /*background-color: transparent !important;
+        margin-bottom: 50px;*/
+        /*background-color: #153285 !important;*/
+        background-image: url(../../img/Tienda/barra-infoCompra.png) !important;
+        padding: 10px 30px 10px;
+        margin-bottom: 50px;
+        height: 200px;
+        position: sticky;
+        top: 73px;
+        z-index: 9;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    #bloqueDatosCompra {
+        /*background-color: transparent !important;
+        margin-bottom: 150px;*/
+        /*background-color: #153285 !important;*/
+        background-image: url(../../img/Tienda/barra-infoCompra.png) !important;
+        background-repeat: no-repeat;
+        margin-bottom: 40px;
+        height: 250px;
+        padding: 10px 30px 10px;
+        position: sticky;
+        top: 73px;
+        z-index: 9;
+    }
+
+    #fondoDatosCompra {
+        margin-top: -100px !important;
+    }
+}
+
+@media screen and (max-device-width: 558px) {
+    #bloqueDatosCompra {
+        /*background-color: transparent !important;
+        margin-bottom: 150px;*/
+        /*background-color: #153285 !important;*/
+        background-image: url(../../img/Tienda/barra-infoCompra.png) !important;
+        background-repeat: no-repeat;
+        margin-bottom: 40px;
+        height: 225px;
+        padding: 10px 30px 10px;
+        position: sticky;
+        top: 45px;
+        z-index: 9;
+    }
+
+    #fondoDatosCompra {
+        margin-top: -100px !important;
+    }
+}
+
+@media (max-width: 1550px){
+    .containerTienda {
+        /*margin-top: 20px;*/
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 1200px){
+    .containerTienda {
+        margin-top: 0px;
+    }
+}
+
+
+@media screen and (max-device-width: 380px) {
+    .ddlMedioDePago {
+        width: auto !important
+    }
+
+    .ddlComboTienda {
+        width: auto !important
+    }
+
+    #DropDownList1 {
+        width: 100% !important;
+    }
+
+    #STipoCompra {
+        width: 100% !important;
+    }
+
+    #ComboTienda {
+        width: 100% !important;
+    }
+
+    #SMedioPago {
+        width: 100% !important;
+    }
+}
+
+/*icono de carrito*/
+@media screen and (min-device-width: 499px) {
+    .cart_anchor {
+        display: none !important
+    }
+}
+
+/*Carrito de compra*/
+@media screen and (max-device-width: 500px) {
+    #resumenDeLaCompra {
+        display: none !important
+    }
+
+    #bloqueHover {
+        display: none !important
+    }
+
+    #irCarrito {
+        font-size: 1.6rem !important;
+    }
+
+    /*#svgFondoFooter {
+        margin-top: 269px !important;
+    }*/
+}
+
+/*Para medidas de un iPhone 5/SE*/
+@media screen and (max-device-width: 321px) {
+    /*#svgFondoFooter {
+        margin-top: 305px !important; 
+    }*/
+
+    #divMayorDatosCompra {
+        margin-top: 7px !important
+    }
+}

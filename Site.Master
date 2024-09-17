@@ -1,0 +1,254 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SantaNaturaNetwork.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es_mx">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Santa Natura</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+
+
+    <link href="css/shadowv2.css" rel="stylesheet" type="text/css" />
+    <link href="css/listado-productov1.css" rel="stylesheet" type="text/css" />
+    <link href="css/Stylev2.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.8.7/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <form id="miFormulario" runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+
+            </Scripts>
+        </asp:ScriptManager>
+        <div style="margin-top: -45px">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-green navbar-light bg-white condition-label">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto TamanioLetrasNav">
+                            <li class="nav-item active SombraLetra">
+                                <a class="nav-link" runat="server" href="#">HOME <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RED</a>
+                                <ul class="dropdown-menu" style="height: 80px; vertical-align: middle">
+                                    <li class="nav-item"><a class="nav-link" href="#">MAPA DE RED</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">MAPA DE PATROCINIO</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">TABLA DE CALIFICACION</a></li>
+                                    <li class="nav-item dropdown submenu"><a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ESTADISTICA</a>
+                                        <ul class="nav-item dropdown-menu">
+                                            <li class="nav-item" style="margin-left: 30px"><a class="nav-link" href="#">SOCIOS</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#">CONSULTORES</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#">CONSUMIDORES INTELIGENTES</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TIENDA</a>
+                                <ul class="dropdown-menu" style="height: 80px; vertical-align: middle">
+                                    <li class="nav-item"><a class="nav-link" href="#">PEDIDO</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">MIS COMPRAS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BONIFICACIONES</a>
+                                <ul class="dropdown-menu" style="height: 80px; vertical-align: middle">
+                                    <li class="nav-item"><a class="nav-link" href="#">HISTORICO COMISIONES</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">HISTORICO DETALLADO</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SISTEMA EDUCATIVO</a>
+                                <ul class="dropdown-menu" style="height: 80px; vertical-align: middle">
+                                    <li class="nav-item"><a class="nav-link" href="#">NETWORKER</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">FINANZAS PERSONALES</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">CONTABILIDAD</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">SALUD</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <br />
+        <%--<footer>
+            <div class="container">
+                <div class="text-center">
+                    <h2>SÍGUENOS</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <div style="width: 65%" class="center-block">
+                            <div class="row">
+                                <div class="col-4 col-sm-4 col-md-4">
+                                    <a href="https://www.facebook.com/Santa-Natura-Network-687656258359262/" class="btn btn-lg btn-block kpx_btn-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                        <i class="fa fa-facebook fa-2x"></i>
+                                        <span class="hidden-xs"></span>
+                                    </a>
+                                </div>
+                                <!--<div class="col-3 col-sm-3 col-md-3">
+                                    <a href="#" class="btn btn-lg btn-block kpx_btn-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                        <i class="fa fa-twitter fa-2x"></i>
+                                        <span class="hidden-xs"></span>
+                                    </a>
+                                </div>-->
+                                <div class="col-4 col-sm-4 col-md-4">
+                                    <a style="align-items: center" href="https://www.instagram.com/santanatura.network/" class="btn btn-lg btn-block kpx_btn-instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                        <i class="fa fa-instagram fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="col-4 col-4 col-sm-4 col-md-4">
+                                    <a href="https://www.youtube.com/channel/UCkJ9y92IjBrzF6n15X2eTfQ?view_as=subscriber" class="btn btn-lg btn-block kpx_btn-youtube" data-toggle="tooltip" data-placement="top" title="YouTube">
+                                        <i class="fa fa-youtube fa-2x"></i>
+                                        <span class="hidden-xs"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <br />
+            <div class="container" style="width: 85%;">
+                <!--<div class="row">
+                    <div class="col-6 col-sm-3 col-md-3">
+                        <label>DESCUBRE</label>
+                        <div>
+                            <ul>
+                                <li>Quiénes somos</li>
+                                <li>Historia</li>
+                                <li>Filosofía del producto</li>
+                                <li>Únete a nosotros</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-md-3">
+                        <label>DESCUBRE</label>
+                        <div class="left-block">
+                            <ul>
+                                <li>Quiénes somos</li>
+                                <li>Historia</li>
+                                <li>Filosofía del producto</li>
+                                <li>Únete a nosotros</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-md-3">
+                        <label>DESCUBRE</label>
+                        <div>
+                            <ul>
+                                <li>Quiénes somos</li>
+                                <li>Historia</li>
+                                <li>Filosofía del producto</li>
+                                <li>Únete a nosotros</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-md-3">
+                        <label>DESCUBRE</label>
+                        <div>
+                            <ul>
+                                <li>Quiénes somos</li>
+                                <li>Historia</li>
+                                <li>Filosofía del producto</li>
+                                <li>Únete a nosotros</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+
+            <br />
+        </footer>--%>
+        <asp:HiddenField ID="CerrarSession" runat="server" />
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <style>
+        .TamanioLetrasNav > li > a {
+            font-size: 14px;
+            color: #555;
+            font-weight: bold;
+            font-family: SansOri, Helvetica, sans-serif;
+        }
+
+        .SombraLetra:hover > a {
+            color: greenyellow;
+        }
+
+        label {
+            font-family: SansOri,Arial,Helvetica,sans-serif;
+            font-size: 14px;
+        }
+
+        ul {
+            padding-left: 0px;
+        }
+
+            ul > li {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                font-family: SansOri,Arial,Helvetica,sans-serif;
+                font-size: 13px;
+            }
+    </style>
+    <script>
+        function IrLogin() {
+            var esIniciarSession = $("#NavBarINICIARSESSION").text();
+            var cerrarSession = document.getElementById('<%= CerrarSession.ClientID %>');
+
+            if (esIniciarSession == "INICIAR SESION") {
+                location.href = 'Login.aspx';
+            } else {
+                cerrarSession.value = "SI";
+                var cerrarSession = "SI";
+                location.href = 'Home.aspx?cerrarSession=' + cerrarSession;
+            }
+
+        }
+
+    </script>
+</body>
+</html>

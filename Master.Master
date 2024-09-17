@@ -1,0 +1,521 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="SantaNaturaNetwork.Master" %>
+
+<!DOCTYPE html>
+
+<html lang="es_mx">
+<head runat="server">
+    <meta http-equiv="content-language" content="es" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>Santa Natura Network</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="css/bootstrap.3.4.1.min.css?v1" rel="stylesheet" type="text/css"/>
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet" type="text/css" />
+    <link href="//code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/AdminLTE-v1.css?v2" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--Estilo-->
+    <link href="css/datatables/dataTables.bootstrap.css" rel="stylesheet" />
+    <style>
+        :root {
+            /*Primary*/
+            --Darkest-primary: #03164C;
+            --Dark-primary: #1B2C5E;
+            --Medium-primary: #153285;
+            --Light-primary: #6884D3;
+            --Lightest-primary: #AFBEE7;
+            --Darkest2-primary: #FE8538;
+            --Dark2-primary: #FFA56C;
+            /*Secundary*/
+            --Darkest-secundary: #4F9CD3;
+            --Dark-secundary: #B1ECFF;
+            --Medium-secundary: #D8F5FF;
+            --Light-secundary: #E5F8FF;
+            --Lightest-secundary: #F1FBFF;
+            /*Grises*/
+            --Darkest-grises: #000000;
+            --Dark-grises: #6D6D6D;
+            --Medium-grises: #C4C4C4;
+            --Light-grises: #E9E9E9;
+            --Lightest-grises: #FFFFFF;
+            /*Success*/
+            --Medium-success: #008C27;
+            /*Error*/
+            --Medium-error: #EA2325;
+            --Font-type: system-ui;
+            --anchoHeaderResponsive: calc(100vw - 14%);
+            --anchoHeaderResponsiveTablet: calc(100vw - 62%);
+        }
+
+        html, body {
+            min-height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        iframe {
+            display: block;
+            overflow: auto;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        .frame {
+            height: 49px;
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+            .frame a {
+                color: #666;
+            }
+
+                .frame a:hover {
+                    color: #222;
+                }
+
+            .frame .buttons a {
+                height: 49px;
+                line-height: 49px;
+                display: inline-block;
+                text-align: center;
+                width: 50px;
+                border-left: 1px solid #ddd;
+            }
+
+            .frame .brand {
+                color: #444;
+                font-size: 20px;
+                line-height: 49px;
+                display: inline-block;
+                padding-left: 10px;
+            }
+
+                .frame .brand small {
+                    font-size: 14px;
+                }
+
+        a, a:hover {
+            text-decoration: none;
+        }
+
+        .container-fluid {
+            padding: 0;
+            margin: 0;
+        }
+
+        .text-muted {
+            color: #999;
+        }
+
+        .ad {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background: #222;
+            background: rgba(0,0,0,0.8);
+            width: 100%;
+            color: #fff;
+            display: none;
+        }
+
+        #close-ad {
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #close {
+            cursor: pointer;
+        }
+
+        #no-cursor {
+            cursor: none;
+        }
+    </style>
+
+    <link href="css/proyecto2/newSidebarMasterMaster.css" rel="stylesheet" />
+</head>
+<body class="skin-blue">
+    <!--CABECERA-->
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+                    <a runat="server" id="logoYW" href="#">
+                        <img style="width: 95%;" class="imgLogoYacha" src="img/logoYacha.png" alt="Alternate Text" /></a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="sidebar-header">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="https://i.ibb.co/PrVhxMw/user.jpg" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">
+                            <asp:Label runat="server" ID="txtNom" />
+                            <strong>
+                                <asp:Label runat="server" ID="txtApe" /></strong>
+                        </span>
+
+                        <span class="user-role">
+                            <asp:Label runat="server" ID="txtTipo" /></span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-header  -->
+                <div class="sidebar-menu">
+                    <ul>
+                        <li id="Admin" class="header-menu" runat="server">
+                            <span>Administrador</span>
+                        </li>
+                        <li id="SociosRed" runat="server">
+                            <a href="SociosRed.aspx">
+                                <i id="sociosRed" class="fas fa-users"></i>
+                                <span>Socios de Red</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown" id="GestionarProductos" runat="server">
+                            <a href="#">
+                                <i id="gestProducProm" class="fas fa-tasks"></i>
+                                <span>Gestionar Productos y Promociones</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a id="gestProduct" href="GestionarProductos.aspx">Gestionar Productos</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestProductQR" href="GestionarProductosQR.aspx">Gestionar Productos QR</a>
+                                    </li>
+                                    <li>
+                                        <a id="paquetes" href="GenerarPacketeProducto.aspx">Paquetes</a>
+                                    </li>
+                                    <li>
+                                        <a id="promUnica" href="PromocionUnica.aspx">Promoción Única</a>
+                                    </li>
+                                    <li>
+                                        <a id="PromUnicaTC" href="PromocionUnica_TipoCompra.aspx">Promoción Única Paquete</a>
+                                    </li>
+                                    <li>
+                                        <a id="ofertas" href="Ofertas.aspx">Ofertas</a>
+                                    </li>
+                                    <li>
+                                        <a id="reglasPro" href="ReglasProductosVD.aspx">Reglas de los Productos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown" id="GestionarCDR" runat="server">
+                            <a href="#">
+                                <i id="gestCDR" class="fas fa-store"></i>
+                                <span>Gestionar CDR</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a id="gestDatPerCDR" href="GestionarDatosPersonalesCDR.aspx">Gestionar Datos Personales</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestInvIniCDR" href="InversionInicialCDR.aspx">Gestionar Inversion Inicial</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestLimiteCDR" href="GestionarLimiteSD_CDR.aspx">Gestionar Limite SD</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestMontosCDR" href="ValidacionMontosYW.aspx">Gestionar Montos de Validación</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestPerioCDR" href="PeriodoCDR.aspx">Gestionar Periodo CDR</a>
+                                    </li>
+
+                                    <li>
+                                        <a id="gestPedCDR" href="AprobarPedidosCDR.aspx">Gestionar Pedidos</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestPorcLinCDR" href="PorcentajeLinea.aspx">Gestionar Porcentaje de Linea</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestSerieCDR" href="GestionSerieCDR.aspx">Gestionar Serie</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestStock" href="GestionarStock.aspx">Gestionar Stock</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestSusInversion" href="SustraccionInversion.aspx">Gestionar Sustracción Inversión</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestDiasSaldDispo" href="DiasPedidoLineaCredito.aspx">Días Saldo Disponible - Adicional</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestDiasCondiEmer" href="DiasConficionalEmergencia.aspx">Días Condición Emergencia</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestPediComiCDR" href="FechasPedidoComisionCDR.aspx">Fechas Pedidos Comision</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestEvaPediCDR" href="RangoFechaEvaluacionPedidos.aspx">Fechas Evaluacion Pedidos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown" id="GestionCompras" runat="server">
+                            <a href="#">
+                                <i id="gestCompras" class="fas fa-shopping-basket"></i>
+                                <span>Gestionar Compras</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a id="limiFech" href="FechaLimiteCompras.aspx">Gestionar Limite de Horas Clientes</a>
+                                    </li>
+                                    <li>
+                                        <a id="limiFechYW" href="LimiteHoras_YW.aspx">Gestionar Limite de Horas Y.W.</a>
+                                    </li>
+                                    <li>
+                                        <a id="archiRecaudo" href="Archivos_Recaudo.aspx">Gestionar Archivos Recaudo</a>
+                                    </li>
+                                    <li>
+                                        <a id="reportCompr" href="ReporteCompras.aspx">Gestionar Compras en General</a>
+                                    </li>
+                                    <li>
+                                        <a id="comprEfect" href="ComprasEfectivo.aspx">Gestionar Compras Efectivo</a>
+                                    </li>
+                                    <li>
+                                        <a id="gstCall" href="PedidoCallCenter.aspx">Gestionar Compras CallCenter</a>
+                                    </li>
+                                    <li>
+                                        <a id="gstQR" href="GestionarPedidosQR.aspx">Gestionar Compras QR</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown" id="GestionArchivos" runat="server">
+                            <a href="#">
+                                <i id="gestArchImage" class="fas fa-file-image"></i>
+                                <span>Gestionar Archivos e Imagenes</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a id="gestPDFProm" href="GestionarPromociones.aspx">Gestionar PDF Promociones</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestPDFPrem" href="GestionarPremios.aspx">Gestionar PDF Premios</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestBanners" href="GestionarBanner.aspx">Gestionar Banners</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestPopup" href="GestionarPopup.aspx">Gestionar Popup</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestDocuInfo" href="GestionarDocumentosInformacion.aspx">Gestionar Documentos Informacion</a>
+                                    </li>
+                                    <li>
+                                        <a id="gestDocuMark" href="GestionarDocumentosMarketing.aspx">Gestionar Documentos Marketing</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown" id="GestionRedes" runat="server">
+                            <a href="#">
+                                <i id="gestMulti" class="far fa-gem"></i>
+                                <span>Gestionar Multinivel</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a id="contrCanjAbo" href="GestionarCanjesComisiones.aspx">Control de Canjes y Abonos</a>
+                                    </li>
+                                    <li>
+                                        <a id="listaSocPendFact" href="ListaSociosFacturacionPendiente.aspx">Lista Socios Pendiente Facturación</a>
+                                    </li>
+                                    <li>
+                                        <a id="genePeri" href="GenerarPeriodo.aspx">Generar Periodo</a>
+                                    </li>
+                                    <li>
+                                        <a id="genePeriComi" href="GenerarPeriodoComision.aspx">Generar Periodo Comision</a>
+                                    </li>
+                                    <li>
+                                        <a id="geneRanComi" href="GenerarRangos.aspx">Generar Rangos y Comisiones</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li id="ReporteLogistico" runat="server">
+                            <a href="ReporteLogistico.aspx">
+                                <i id="reporteLogistico" class="fas fa-clipboard-list"></i>
+                                <span>Reporte Logistico</span>
+                            </a>
+                        </li>
+                        <li id="YachayWasi" class="header-menu" runat="server">
+                            <span>
+                                <asp:Label runat="server" ID="txtIDPS" /></span>
+                        </li>
+                        <li id="IndexCDR" runat="server">
+                            <a href="Principal.aspx">
+                                <i id="principal" class="fas fa-home"></i>
+                                <span>&nbsp; Index</span>
+                            </a>
+                        </li>
+                        <li id="SolicitarStock" runat="server">
+                            <a href="SolicitarStockCDR.aspx">
+                                <i id="generarPedidos" class="fas fa-clipboard-list"></i>
+                                <span>&nbsp; Generar Pedidos</span>
+                            </a>
+                        </li>
+                        <li id="DatosPersonalesCDR" runat="server">
+                            <a href="DatosPersonalesCDR.aspx">
+                                <i id="datosPersonales" class="fas fa-user-edit"></i>
+                                <span>&nbsp; Datos Personales</span>
+                            </a>
+                        </li>
+                        <li id="ListaPedidosPECDR" runat="server">
+                            <a href="ListadoComprasPECDR.aspx">
+                                <i id="listaPagoEfectivo" class="fas fa-file-invoice-dollar"></i>
+                                <span>&nbsp; Lista Pedidos PagoEfectivo</span>
+                            </a>
+                        </li>
+                        <li id="ListaPedidosTupay_YW" runat="server">
+                            <a href="ListadoComprasTupay_YW.aspx">
+                                <i id="listaTupay_YW" class="fas fa-file-invoice-dollar"></i>
+                                <span>&nbsp; Lista Pedidos Tupay</span>
+                            </a>
+                        </li>
+                        <li id="AdjuntarComprobante" runat="server">
+                            <a href="AgregarComprobante.aspx">
+                                <i id="adjuntarComprobante" class="fas fa-file-invoice-dollar"></i>
+                                <span>&nbsp; Adjuntar Comprobante Pedido</span>
+                            </a>
+                        </li>
+                        <li id="AdjuntarCanje" runat="server">
+                            <a href="AgregarComprobanteCanje_CDR.aspx">
+                                <i id="adjuntarCanje" class="fas fa-file-invoice-dollar"></i>
+                                <span>&nbsp; Adjuntar Comprobante Canje</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown" id="ReportesYW" runat="server">
+                            <a href="#">
+                                <i id="gestReporYW" class="far fa-gem"></i>
+                                <span>Reportes</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a id="rptProdVend" href="ReporteProdMasVend_YW.aspx">Reporte de productos más vendidos</a>
+                                    </li>
+                                    <li>
+                                        <a id="rptTop50" href="ReporteTOP50_Clientes_YW.aspx">Reporte TOP 50 de clientes</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <%--<li id="Publicaciones" runat="server">
+                        <a href="Publicaciones.aspx">
+                            <i class="fas fa-file-alt"></i>
+                            <span>&nbsp;Banners</span>
+                        </a>
+                        </li>
+                        <li id="Novedades" runat="server">
+                            <a href="Novedades.aspx">
+                                <i class="far fa-newspaper"></i>
+                                <span>&nbsp;Promociones</span>
+                            </a>
+                        </li>
+                        <li id="ReporteCDRGene" runat="server">
+                            <a href="ReporteCDRGene.aspx">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>&nbsp;Reporte CDR</span>
+                            </a>
+                        </li>
+                        <li id="ProductosVendidos" runat="server">
+                            <a href="#">
+                                <i class="fas fa-money-check-alt"></i>
+                                <span>&nbsp;Reporte de Productos Vendidos</span>
+                            </a>
+                        </li>--%>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-content  -->
+            <div class="sidebar-footer">
+                <a id="close">
+                    <i class="fa fa-power-off"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <main class="page-content">
+            <form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+
+        </main>
+        <!-- page-content" -->
+    </div>
+    <script src="js/logout.js"></script>
+    <script src="js/file-uploadv1.js"></script>
+    <script src="js/AdminLTE/app.js?v1"></script>
+    <script src="js/jquery.numeric.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
+
+
+
+
+    <script>
+        $(".sidebar-dropdown > a").click(function () {
+            $(".sidebar-submenu").slideUp(200);
+            if (
+                $(this)
+                    .parent()
+                    .hasClass("active")
+            ) {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this)
+                    .parent()
+                    .removeClass("active");
+            } else {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this)
+                    .next(".sidebar-submenu")
+                    .slideDown(200);
+                $(this)
+                    .parent()
+                    .addClass("active");
+            }
+        });
+
+        $("#close-sidebar").click(function () {
+            $(".page-wrapper").removeClass("toggled");
+        });
+        $("#show-sidebar").click(function () {
+            $(".page-wrapper").addClass("toggled");
+        });
+    </script>
+
+</body>
+</html>

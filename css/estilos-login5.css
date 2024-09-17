@@ -1,0 +1,651 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    font-family: roboto;
+    display: flex; /* You delete it on your web page */
+    justify-content: center; /* and this - delete */
+    
+}
+
+/*#WindowLoad {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3200;
+    filter: alpha(opacity=65);
+    -moz-opacity: 65;
+    opacity: 0.65;
+    background: #999;
+}*/
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+
+.login-card {
+    width: 280px;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 0.625rem;
+    box-shadow: 0px 0px 16.5px -2px #636363;
+}
+
+.login-card:after {
+    /*background: linear-gradient(-135deg, rgb(0, 99, 255), rgb(0, 255, 144 ));*/
+    /*background: linear-gradient(-105deg, orange, white);*/
+    /*background: #c79139;*/
+    /* Login Card Arkaplan Rengi */
+    /*background: -webkit-linear-gradient(-135deg, rgb(13, 68, 154), #eee);*/
+    /* Login Card Arkaplan Rengi */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    /*opacity: 0.7;*/
+    opacity: .2;
+    z-index: 3;
+}
+
+    .login-card > form {
+        z-index: 4;
+        position: relative;
+        padding: 0px;
+        width: 100%;
+        margin: auto 0;
+    }
+
+    .login-card > form#form1 {
+        padding: 0px 5px;
+    }
+
+.logo-kapsul {
+    text-align: center;
+    position: relative;
+    opacity: 0.8;
+    margin-bottom: 30px;
+    padding: 0 30px;
+}
+
+.logo {
+    height: auto;
+    /*padding: 50px 0px;*/
+}
+/* form başlangıç stiller ------------------------------- */
+
+.group {
+    position: relative;
+}
+
+    .group input {
+        font-size: 16px;
+        text-align: center;
+        padding: 10px 18px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background: none;
+        color: darkslategray;
+        background-color: #F0EDED;
+    }
+
+        .group input#LoginUser_UserName {
+            margin-bottom: 20px;
+        }
+
+        .group input:focus {
+            outline: none;
+        }
+#iniciarSesion input[type=submit].giris-yap-buton:focus {
+    background-color: #872C6C
+}
+
+    .group .toggle-button {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    /* LABEL ======================================= */
+    .group label {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 5px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    /* active durum */
+
+    .group input:focus ~ label,
+    input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+/* BOTTOM BARS ================================= */
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+    .bar:before,
+    .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.7);
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+    .bar:after {
+        right: 50%;
+    }
+/* active durum bar */
+
+.group input:focus ~ .bar:before,
+.group input:focus ~ .bar:after {
+    width: 50%;
+}
+/* HIGHLIGHTER ================================== */
+
+.highlight {
+    position: absolute;
+    height: 0%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+/* active durum */
+
+.group input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+/* form animasyon ================ */
+
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.input-ikon {
+    font-size: 25px !important;
+    position: relative;
+    color: gray;
+}
+
+.input-sifre-ikon {
+    font-size: 22px !important;
+    position: relative;
+    color: gray;
+}
+
+.span-input {
+    /*margin-left: 10px;*/
+    position: relative;
+    top: -5px;
+    color: gray
+}
+
+.giris-yap-buton,
+.kayit-ol-buton,
+.sifre-hatirlat-buton {
+    background: linear-gradient(-135deg, rgb(63, 81, 181), rgb(233, 30, 99));
+    background: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #eee;
+    font-family: roboto;
+    font-weight: 100;
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+    opacity: 0.8;
+}
+
+.forgot-and-create {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px 0;
+}
+
+    .forgot-and-create a,
+    a.zaten-hesap-var-link {
+        font-family: system-ui;
+        font-size: 12px;
+        text-decoration: none;
+        color: #000;
+    }
+        .sifre-hatirlat-link:hover,
+        a.zaten-hesap-var-link:hover {
+            border-bottom: 1px solid #872C6C
+        }
+
+/*.giris-yap-buton:hover {
+    background: -webkit-linear-gradient(-135deg, rgb(123, 225, 248), rgb(136, 250, 114) );
+    transition: all 200ms ease;
+    color: green
+}*/
+
+#iniciarSesion {
+    /*background: radial-gradient(white -10%, transparent);*/
+    /*background: #8F4B96;*/
+    width: 100%;
+}
+
+    #iniciarSesion input[type=submit].giris-yap-buton,
+    #btnEnviarCorreoLogin a.giris-yap-buton {
+        /*border-radius: 6px;*/
+        background: #B23F8E;
+        color: #fff !important;
+        font-size: 14px;
+        font-family: system-ui;
+        font-weight: 500;
+        transition: .3s ease background, .3s ease color;
+        height: fit-content;
+        margin-top: 25px;
+    }
+
+        #iniciarSesion input[type=submit].giris-yap-buton:hover,
+        #btnEnviarCorreoLogin a.giris-yap-buton:hover {
+            background: #66356b;
+            color: #fff;
+        }
+
+.zaten-hesap-var-link{
+    font-family: system-ui;
+}
+
+/*------*/
+/*.sifre-hatirlat-link{
+
+}*/
+
+/*.hesap-olustur-link{
+
+}*/
+.hesap-olustur-link:hover {
+    border-bottom: 1px solid #872C6C
+}
+
+
+
+
+
+
+/*ADD*/
+
+#fondoFormularioLogin {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+    #fondoFormularioLogin::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+
+@media (max-width: 1760px) {
+    /*#fondoFormularioLogin {
+        background-image: url(../img/LOGIN-1920-x-1080.png);
+    }*/
+
+    #bloqueNoEresEmpresario {
+        justify-content: space-around !important;
+    }
+}
+
+@media (max-width: 1580px) {
+    /*#fondoFormularioLogin {
+        background-image: url(../img/LOGIN-1920-x-1080.png);
+    }*/
+
+    .claseFuente1 {
+        font-size: 40px !important;
+    }
+}
+
+@media (max-width: 1520px) {
+    /*#fondoFormularioLogin {
+        background-image: url(../img/LOGIN-1920-x-1080.png);
+    }*/
+
+    #bloqueNoEresEmpresario {
+        justify-content: space-between !important;
+    }
+}
+
+@media (max-width: 1440px) {
+    #fondoFormularioLogin::before {
+        background-image: url(../img/Login/LOGIN-1440-x-1080.jpg);
+    }
+}
+
+@media (max-width: 1160px) {
+    #fondoFormularioLogin::before {
+        background-image: url(../img/Login/LOGIN-1024-x-1080.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 1024px) {
+    #fondoFormularioLogin::before {
+    }
+}
+
+@media (max-width: 1024px) and (max-height: 700px) {
+    #fondoFormularioLogin::before {
+        background-size: 100vw 140vh;
+    }
+}
+
+@media (max-width: 499px) {
+    .login-card {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    #fondoFormularioLogin {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-size: cover;
+        opacity: 1; /* Ajustado de 1.1 a 1 para evitar valores fuera del rango */
+    }
+
+    .login-card:after {
+        background: linear-gradient(-1deg, white, white) !important;
+    }
+
+    #logoLogin {
+        width: 80%;
+        max-width: 280px; /* Asegura que el logo no sea demasiado grande en pantallas pequeñas */
+        margin-top: -50px;
+    }
+
+    .logo-kapsul{
+        padding: 0 20px;
+    }
+
+    #bienvenidosLogin {
+        width: 90%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    #ingreseDatos {
+        font-size: 24px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #bloqueNoEresEmpresario {
+        margin-top: 20px;
+        justify-content: space-around !important;
+        text-align: center;
+    }
+
+    #noEresEmpresario, #ClickAqui {
+        font-size: 18px !important;
+    }
+
+    #labelUsuario, #labelClave {
+        font-size: 18px !important;
+    }
+
+    #iconoLabelUsuario, #iconoLabelClave {
+        display: inline-block;
+        font-size: 20px !important;
+        vertical-align: middle;
+    }
+
+    #LoginUser_UserName, #LoginUser_Password {
+        font-size: 16px;
+        width: 100%;
+        padding: 14px;
+    }
+
+    #UserName, #Password {
+        font-size: 16px;
+    }
+
+    #iniciarSesion {
+        margin-top: 30px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .sifre-hatirlat-link{
+        height:17px
+    }
+
+    .ptxt, #recordarMiContraseña, .sifre-hatirlat-link, .hesap-olustur-link {
+        font-size: 14px;
+    }
+
+    .forgot-and-create,
+    {
+        margin-top: 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    #signoInterrogacion1, #signoInterrogacion2 {
+        font-size: 18px !important;
+    }
+
+    #form1,
+    #sifre-hatirlat-form {
+        padding: 10px;
+        max-width: 250px;
+        width: 100%;
+        margin: auto 0;
+    }
+
+    .group input {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #imgLogoParaLogin {
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #iniciarSesion input[type=submit].giris-yap-buton {
+        line-height: 1.5;
+        font-size: 14px !important;
+        padding: 10px 20px;
+        height: fit-content;
+    }
+}
+
+@media (min-width: 1440px) {
+    #fondoFormularioLogin::before {
+        background-image: url('../img/Login/fondologin_desktop.jpg');
+    }
+}
+
+@media (min-device-width: 750px) and (max-width: 1119px) {
+    /*#fondoFormularioLogin {
+        background-image: url(../img/LOGIN-1920-x-1080.png);
+    }*/
+
+    .login-card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-device-width: 1120px) and (max-width: 1270px) {
+    /*#fondoFormularioLogin {
+        background-image: url(../img/LOGIN-1920-x-1080.png);
+    }*/
+
+    .login-card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media screen and (min-device-width: 750px) and (max-device-width: 1120px) and (max-device-height: 1366px) {
+    /*#fondoFormularioLogin {
+        background-image: url(../img/LOGIN-1920-x-1080.png);
+    }*/
+
+    .login-card {
+        width: 27% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-device-width: 750px) and (max-device-width: 1120px) and (max-device-height: 1024px) {
+    /*#fondoFormularioLogin {
+        background-image: url(../img/LOGIN-1920-x-1080.png);
+    }*/
+
+    .login-card {
+        width: 60% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-device-width: 750px) and (max-device-width: 1120px) and (max-device-height: 700px) {
+    .login-card {
+        width: 27% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #fondoFormularioLogin::before {
+        background-image: none;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 960px) {
+
+
+    .login-card {
+        width: fit-content !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .group input {
+        padding: 10px;
+    }
+    #iniciarSesion input[type=submit].giris-yap-buton {
+        height: fit-content;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 749px) {
+
+
+    .login-card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media (min-width: 1120px) {
+    /*#fondoFormularioLogin {
+        background-image: url(../img/LOGIN-1920-x-1080.png);
+    }*/
+
+    .login-card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+

@@ -1,0 +1,29 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.claseFuente5 {
+    font-family: 'MASQUE__';
+    color: #262660;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: calc(1rem + .9vw);
+}
+
+@media screen and (max-device-width: 500px) {
+    .claseFuente5 {
+        font-size: calc(1rem + 3vw) !important;
+    }
+
+    #imgError {
+        width: 100% !important;
+    }
+}

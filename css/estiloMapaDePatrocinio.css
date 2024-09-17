@@ -1,0 +1,8 @@
+﻿@media (min-width: 650px) {
+    .ddlMapaDePatrocinio {
+        width:200px;
+    }
+    .divDdlMapaDePatrocinio {
+        margin-left: 10px
+    }
+}

@@ -1,0 +1,2647 @@
+﻿/*Para el nuevo diseño*/
+.container-tablaMisCompras2 {
+    margin: 100px 60px auto;
+    max-width: 1500px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.container-tablaMisCompras2 > .row > div {
+    padding: 0 55px;
+}
+
+nav > div.nav.nav-tabs.navHeaderHistorial {
+    margin: 0 auto;
+    background: white;
+    padding: 30px 65px;
+    border: 1px solid rgba(126, 224, 255, 0.47);
+    box-shadow: 1px 2px 4px rgb(0 0 0 / 25%);
+    border-radius: 15px;
+    overflow: hidden;
+    grid-column-gap: 50px;
+    grid-row-gap: 43px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+}
+
+nav > div.navHeaderHistorial > a.nav-item.nav-link {
+    max-width: 240px !important;
+    height: 49px !important;
+    border-radius: 8px !important;
+    color: #fff;
+    font-size: 12px;
+    background-color: var(--Light-red);
+    line-height: 1.3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column-gap: 13px;
+    grid-auto-columns: minmax(125px, auto);
+    min-width: 200px;
+    flex: 240px;
+    position: relative;
+    transition: .3s ease background-color;
+}
+
+nav > div.navHeaderHistorial > .ov-btn-grow-ellipse {
+    background: #fff;
+    border: 2px solid #4741d7;
+    padding: 16px 20px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+nav > div.navHeaderHistorial > a.nav-item.nav-link.active {
+    background: var(--Primary-red);
+    color: #fff;
+}
+
+nav > div.navHeaderHistorial > a.nav-item.nav-link::after {
+    content: "";
+    background: var(--Medium-red); /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    transition: background 0.5s ease;
+}
+
+nav > div.navHeaderHistorial > a.nav-item.nav-link:hover::after {
+    transition: all 1s ease-out;
+    transform: scale(1, 1);
+}
+
+nav > div.navHeaderHistorial > a.nav-item.nav-link:hover {
+    color: #fff;
+}
+/*nav > div.navHeaderHistorial > a.nav-item.nav-link:focus {
+        background: var(--Lightest-primary);
+    }*/
+nav > div.navHeaderHistorial > a.nav-item.nav-link:active {
+    background: var(--Primary-red);
+    color: #fff;
+    transition: background 0.20s linear;
+}
+
+nav > div.navHeaderHistorial > a.nav-item.nav-link.active:after {
+    content: none;
+}
+
+nav > div.navHeaderHistorial > a > img {
+    width: 26px;
+    margin: auto 0;
+}
+
+nav > div.navHeaderHistorial > a#nav-home-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/Compras-pendientes-pe-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-home-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/Compras-pendientes-pe-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-purchase-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/compra-pendiente-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-purchase-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/compra-pendiente-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-efectivo-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/cuenta-recaudadora-pendiente-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-efectivo-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/cuenta-recaudadora-pendiente-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-bbva-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/cuenta-recaudadora-pendiente-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-bbva-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/cuenta-recaudadora-pendiente-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-pendpe-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/Compras-pendientes-blanco.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-pendpe-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/Compras-pendientes-blanco.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-pen-tupay-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/Compras-realizadas-pagoefectivo-blanco.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-pen-tupay-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/Compras-realizadas-pagoefectivo-blanco.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-visa-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/Compras realizadas visanet-blanco.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-visa-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/Compras realizadas visanet-blanco.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-rpe-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/compra-pendiente-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-rpe-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/compra-pendiente-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-re-tupay-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/Compras-realizadas-pagoefectivo-blanco.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-re-tupay-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/Compras-realizadas-pagoefectivo-blanco.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-profile-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/cuenta-recaudadora-pendiente-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-profile-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/cuenta-recaudadora-pendiente-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-bbva-r-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/cuenta-recaudadora-realizada-blanco.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-bbva-r-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/cuenta-recaudadora-realizada-blanco.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-contact-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/Compras-pendientes-pe-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-contact-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/Compras-pendientes-pe-blancos.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-about-tab.active > img {
+    content: url("../../img/iconosNavHeadHistorial/Cancelado-blanco.png");
+}
+
+nav > div.navHeaderHistorial > a#nav-about-tab:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/Cancelado-blanco.png");
+}
+
+#nav-tabContent thead.table-success {
+    background-color: var(--Primary-red);
+}
+
+#nav-tabContent {
+    margin: 0;
+}
+
+    #nav-tabContent > .tab-pane.active > .row {
+        margin: 0;
+    }
+
+    #nav-tabContent .table-success tr th {
+        border: 1px solid transparent;
+        font-weight: normal;
+    }
+
+.table-success tr th:nth-child(1) {
+    border-radius: 7px 0 0 0;
+    border: 0;
+}
+
+.table-success tr th:nth-last-child(1) {
+    border-radius: 0 7px 0 0;
+    border: 0;
+}
+
+#nav-tabContent .newButtonTableHistorial {
+    width: 100px;
+    height: 28px;
+    padding: 6px !important;
+    font-size: 11px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column-gap: 6px;
+    margin: auto;
+    transition: .5s ease background, color;
+    text-wrap: balance;
+    line-height: 1.2;
+}
+
+    #nav-tabContent .newButtonTableHistorial.btnVoucher, 
+    #nav-tabContent .newButtonTableHistorial.btnDetalle, 
+    #nav-tabContent .newButtonTableHistorial {
+        border: 1px solid var(--Medium-red);
+        color: var(--Medium-red);
+    }
+
+    #nav-tabContent .newButtonTableHistorial.btnRemove {
+        border: 1px solid var(--Medium-error);
+        color: var(--Medium-error);
+    }
+
+#nav-pendienteTupay .newButtonTableHistorial {
+    width: 100px;
+    height: 28px;
+    padding: 6px !important;
+    font-size: 11px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column-gap: 6px;
+    margin: auto;
+    transition: .5s ease background, color;
+    text-wrap: balance;
+    line-height: 1.2;
+}
+
+    #nav-pendienteTupay .newButtonTableHistorial.btnRemove {
+        border: 1px solid var(--Medium-error);
+        color: var(--Medium-error);
+    }
+
+#nav-tabContent .btnVoucher:hover, #nav-tabContent .btnDetalle:hover {
+    background: var(--Primary-red);
+    color: white;
+    border: 1px solid var(--Primary-red);
+}
+
+#nav-tabContent .btnRemove:hover {
+    background: var(--Medium-error);
+    color: white;
+    border: 1px solid var(--Medium-error);
+}
+
+#nav-tabContent .newButtonTableHistorial.btnVoucher:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/ver-voucher-blanco.png");
+}
+
+#nav-tabContent .newButtonTableHistorial.btnDetalle:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/mas-info-blanco.png");
+}
+
+#nav-tabContent .newButtonTableHistorial.btnRemove:hover > img {
+    content: url("../../img/iconosNavHeadHistorial/delete-blanco.png");
+}
+
+#nav-tabContent .btnVoucher:active, #nav-tabContent .btnDetalle:active {
+    background: var(--Intense-red);
+    border: 1px solid var(--Intense-red);
+    outline: none;
+}
+
+#nav-tabContent .btnRemove:active {
+    background: #bf201d;
+    border: 1px solid #bf201d;
+    outline: none;
+}
+
+#nav-tabContent .btnVoucher:focus, #nav-tabContent .btnDetalle:focus, #nav-tabContent .btnRemove:focus {
+    box-shadow: none;
+}
+
+
+#nav-tabContent .table-bordered {
+    border-top-color: transparent;
+}
+
+    #nav-tabContent .table-bordered > tbody > tr > td {
+        border: 0px solid #ddd;
+    }
+
+    #nav-tabContent .table-bordered > tbody > tr > td {
+        border-bottom: 1px solid #ddd;
+    }
+
+#nav-tabContent .table-bordered {
+    border: 0px solid #dee2e6;
+}
+
+
+table {
+    table-layout: fixed !important auto;
+}
+
+/*para la opacidad del modal*/
+.modal-backdrop.show {
+    opacity: .3 !important;
+}
+
+body > div:nth-child(2) {
+    background-color: red;
+}
+/*-----------------Lo que está dentro del Modal DETALLE DE MI COMPRA----------------*/
+.modal .modal-dialog .modalDetalleContent {
+    border-radius: 8px;
+}
+
+    .modal .modal-dialog .modalDetalleContent .modalDetalleHeader {
+        background-color: var(--Light2-grises);
+        height: 50px;
+        padding: 18px 30px;
+        border-radius: 8px 8px 0 0;
+    }
+
+        .modal .modal-dialog .modalDetalleContent .modalDetalleHeader .modalDetalleHeader__titulo {
+            color: var(--Primary-red);
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        .modal .modal-dialog .modalDetalleContent .modalDetalleHeader button {
+            padding: 0;
+        }
+        .modal .modal-dialog .modalDetalleContent .modalDetalleHeader button:focus {
+            outline: none;
+        }
+        .modal .modal-dialog .modalDetalleContent .modalDetalleHeader button > span {
+            font-size: 3rem;
+        }
+
+    .modal .modal-dialog .modalDetalleContent .modalDetalleBody {
+        padding: 30px 30px 0 30px;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 10px;
+    }
+
+    .modal .modal-dialog .modalDetalleContent .dataTables_wrapper.no-footer {
+        padding: 0 5px;
+    }
+
+    .modal .modal-dialog .modalDetalleContent .modalDetalleBody .dataTables_scroll .dataTables_scrollHead {
+        box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
+        border-radius: 7px 7px 0 0;
+    }
+
+        .modal .modal-dialog .modalDetalleContent .modalDetalleBody .dataTables_scroll .dataTables_scrollHead > div > table {
+            margin-top: 0 !important;
+        }
+
+    .modal .modal-dialog .modalDetalleContent .modalDetalleBody .dataTables_scroll .dataTables_scrollBody {
+        box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
+    }
+
+.dataTables_scrollHeadInner {
+    width: 100% !important;
+}
+
+.dataTables_wrapper.no-footer div.dataTables_scrollHead table.dataTable {
+    width: 100% !important;
+}
+
+#nav-tabContent .table-success tr th {
+    white-space: nowrap;
+}
+
+.dataTables_scrollBody > table {
+    width: 100% !important;
+}
+
+.table > thead > tr > th {
+    border-bottom: 0px solid #ddd !important;
+}
+
+.table > thead:first-child > tr:first-child > th, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > tbody > tr > td {
+    text-align: center;
+    font-size: 12px;
+}
+
+.modal.show .table-success {
+    background-color: var(--Light2-grises) !important;
+}
+
+    .modal.show .table-success > tr {
+        color: #3F3F3F !important;
+    }
+
+.modal.show .table > thead:first-child > tr:first-child > th {
+    color: #3F3F3F !important;
+    font-weight: 500;
+}
+
+.modal.show .dataTables_scrollBody table tbody {
+    background-color: var(--Light2-grises);
+}
+
+    .modal.show .dataTables_scrollBody table tbody > tr {
+        background-color: inherit;
+    }
+
+.modal.show table.dataTable.no-footer {
+    border-bottom: 0px solid !important;
+}
+
+.modal.show .dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: 0px solid !important;
+    border-radius: 0 0 7px 7px;
+    max-height: 350px;
+}
+
+#tablaDetalleComprasRealizadasEfectivo.dataTable tbody tr:hover {
+    background-color: inherit !important;
+}
+
+    #tablaDetalleComprasRealizadasEfectivo.dataTable tbody tr:hover > .sorting_1 {
+        background-color: inherit !important;
+    }
+
+#tablaDetalleComprasRealizadasEfectivo_paginate {
+    padding-top: 1rem;
+}
+
+/*Para el boton Cerrar*/
+.modal.show .modalDetalleFooter {
+    border-top: 0px solid #e9ecef;
+    padding-bottom: 2rem;
+    justify-content: center !important;
+    grid-column-gap: 23px;
+}
+
+    .modal.show .modalDetalleFooter button {
+        background-color: var(--Primary-red);
+        border: 1px solid var(--Primary-red);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        color: white;
+        font-weight: normal;
+        font-size: 12px;
+        padding: 10px 37px !important;
+        line-height: 1;
+        transition: .3s ease background-color, .3s ease border;
+    }
+
+        .modal.show .modalDetalleFooter button:hover {
+            background-color: var(--Intense-red);
+            border: 1px solid var(--Intense-red);
+        }
+
+        .modal.show .modalDetalleFooter button:active {
+            background-color: var(--Medium-red);
+            border: 1px solid var(--Medium-red);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            outline: none;
+        }
+
+            .modal.show .modalDetalleFooter button:active:focus {
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+        .modal.show .modalDetalleFooter button.btn-primary {
+            background-color: var(--Primary-green);
+            border: 1px solid var(--Primary-green);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 7px;
+            color: white;
+            font-weight: normal;
+            font-size: 12px;
+            padding: 10px 37px !important;
+            line-height: 1;
+            transition: .3s ease background-color, .3s ease border;
+        }
+
+            .modal.show .modalDetalleFooter button.btn-primary:hover {
+                background-color: var(--Intense-green);
+                border: 1px solid var(--Intense-green);
+            }
+
+            .modal.show .modalDetalleFooter button.btn-primary:active {
+                background-color: var(--Medium-green);
+                border: 1px solid var(--Medium-green);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                outline: none;
+            }
+
+                .modal.show .modalDetalleFooter button.btn-primary:active:focus {
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+
+/*Para la paginación de la tabla del modal DETALLE DE MI COMPRA*/
+.modal.show .dataTables_paginate.paging_simple_numbers > a {
+    font-size: 14px;
+    padding: 0.5em 0.5em;
+}
+
+    .modal.show .dataTables_paginate.paging_simple_numbers > a:hover {
+        background: none;
+        border: 1px solid transparent;
+        color: #000 !important;
+    }
+
+    .modal.show .dataTables_paginate.paging_simple_numbers > a:active {
+        background: none;
+        border: 0px solid #111;
+        color: #000 !important;
+    }
+
+    .modal.show .dataTables_paginate.paging_simple_numbers > a:focus {
+        box-shadow: none;
+    }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    font-size: 12px;
+    padding: 0.5em 0.75em;
+}
+
+.modal.show .dataTables_paginate.paging_simple_numbers > span > a.current {
+    background: var(--Primary-red);
+    border: 1px solid var(--Primary-red);
+    color: white !important;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    font-size: 14px;
+    padding: 6.5px 8.5px;
+    line-height: .8;
+    transition: .3s ease color,.3s ease border,.3s ease background;
+}
+
+.modal.show .dataTables_paginate.paging_simple_numbers > span > a:hover {
+    color: white !important;
+    border: 1px solid var(--Intense-red);
+    background: var(--Intense-red);
+    line-height: .8;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    font-size: 14px;
+    padding: 6.5px 8.5px;
+    transition: .3s ease color,.3s ease border,.3s ease background;
+}
+
+/*----------------------Paginación de la tabla COMPRAS PENDIENTES-------------------------------*/
+.responsiveTbl.table-responsive .dataTables_paginate.paging_simple_numbers > a {
+    font-size: 14px;
+    padding: 0.5em 0.5em;
+}
+
+    .responsiveTbl.table-responsive .dataTables_paginate.paging_simple_numbers > a:hover {
+        background: none;
+        border: 1px solid transparent;
+        color: #000 !important;
+    }
+
+    .responsiveTbl.table-responsive .dataTables_paginate.paging_simple_numbers > a:active {
+        background: none;
+        border: 0px solid #111;
+        color: #000 !important;
+    }
+
+    .responsiveTbl.table-responsive .dataTables_paginate.paging_simple_numbers > a:focus {
+        box-shadow: none;
+    }
+
+.responsiveTbl.table-responsive .dataTables_paginate .paginate_button {
+    font-size: 12px;
+    padding: 0.5em 0.75em;
+}
+
+.responsiveTbl.table-responsive .dataTables_paginate.paging_simple_numbers > span > a.current {
+    background: var(--Primary-red);
+    border: 1px solid var(--Primary-red);
+    color: white !important;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    font-size: 14px;
+    padding: 6.5px 8.5px;
+    line-height: .8;
+    transition: .3s ease color,.3s ease border,.3s ease background;
+}
+
+.responsiveTbl.table-responsive .dataTables_paginate.paging_simple_numbers > span > a:hover {
+    color: white !important;
+    border: 1px solid var(--Intense-red);
+    background: var(--Intense-red);
+    line-height: .8;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    font-size: 14px;
+    padding: 6.5px 8.5px;
+    transition: .3s ease color,.3s ease border,.3s ease background;
+}
+
+/*--------------------------------Para el modal EDITAR VOUCHER------------------------------------------*/
+#editarComprasPendientes .modal-content.modalDetalleContent {
+    width: 560px
+}
+#editarComprasPendientes .col-form-label {
+    padding: 0 !important;
+}
+
+#editarComprasPendientes .form-group {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+#editarComprasPendientes .fila {
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+    #editarComprasPendientes .fila .fila__contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        #editarComprasPendientes .fila .fila__contenido.bloqueIzquierda {
+            width: 230px;
+        }
+
+            #editarComprasPendientes .fila .fila__contenido.bloqueIzquierda label, #editarComprasPendientes .fila .fila__contenido.bloqueDerecha label {
+                margin-bottom: 0;
+                color: var(--Dark-grises);
+                font-weight: 400;
+                font-size: 12px;
+            }
+
+        #editarComprasPendientes .fila .fila__contenido.bloqueDerecha {
+            width: 224px;
+        }
+
+        #editarComprasPendientes .fila .fila__contenido .cajaIzquierda {
+            width: 104px;
+            height: 32px;
+        }
+
+            /*#editarComprasPendientes .fila .fila__contenido .cajaIzquierda > input,
+            #editarComprasPendientes .fila .fila__contenido .cajaIzquierda > select,
+            #editarComprasPendientes .fila .fila__contenido .cajaIzquierda > label {
+                border: 1px solid #153285;
+                border-radius: 8px;
+            }*/
+
+            #editarComprasPendientes .fila .fila__contenido .cajaIzquierda .noBorder {
+                border: 1px solid #e9ecef;
+                box-shadow: none;
+            }
+
+            #editarComprasPendientes .fila .fila__contenido .cajaIzquierda .border {
+                border: 1px solid var(--Primary-red) !important;
+                color: var(--Medium-primary);
+                border-radius: 8px;
+                font-size: 11px;
+            }
+
+            #editarComprasPendientes .fila .fila__contenido .cajaIzquierda .subirArchivo {
+                background-color: var(--Primary-red);
+                text-align: left;
+                align-items: center;
+                display: flex;
+                color: white;
+                transition: .3s ease background-color;
+                cursor: pointer;
+            }
+
+                #editarComprasPendientes .fila .fila__contenido .cajaIzquierda .subirArchivo:hover {
+                    background-color: var(--Dark-red);
+                    border: 1px solid var(--Dark-red) !important;
+                }
+
+                #editarComprasPendientes .fila .fila__contenido .cajaIzquierda .subirArchivo:active {
+                    background-color: var(--Intense-red);
+                    border: 1px solid var(--Intense-red) !important;
+                    box-shadow: none;
+                }
+
+                #editarComprasPendientes .fila .fila__contenido .cajaIzquierda .subirArchivo input.form-control {
+                    right: 100px;
+                }
+
+            #editarComprasPendientes .fila .fila__contenido .cajaIzquierda > input {
+                /*border: 1px solid #153285;*/
+                border-radius: 8px;
+                font-size: 11px;
+            }
+
+            #editarComprasPendientes .fila .fila__contenido .cajaIzquierda > div > input {
+                /*border: 1px solid #153285;*/
+                border-radius: 8px 0 0 8px;
+                font-size: 11px;
+            }
+
+            #editarComprasPendientes .fila .fila__contenido .cajaIzquierda > div > span {
+                /*border: 1px solid #153285;*/
+                border-radius: 0 8px 8px 0;
+            }
+
+            #editarComprasPendientes .fila .fila__contenido .cajaIzquierda > select {
+                height: 100%;
+                border-radius: 8px;
+                margin-bottom: 0 !important;
+                font-size: 11px;
+            }
+
+#editarComprasPendientes .modalDetalleBody {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 10px;
+}
+
+    #editarComprasPendientes .modalDetalleBody > div:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+        #editarComprasPendientes .modalDetalleBody > div:nth-child(1) > div {
+            padding: 0;
+            max-width: 378px;
+            width: 100% !important;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+            #editarComprasPendientes .modalDetalleBody > div:nth-child(1) > div > .nombreArchivo {
+                text-align: center;
+                display: none;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+#editarComprasPendientes .modalDetalleFooter {
+    padding-top: 37px;
+    padding-bottom: 32px;
+}
+/*    #editarComprasPendientes .modalDetalleFooter .btnCancelar {
+        background-color: white;
+        border: var(--Medium-primary) 1px solid;
+        color: var(--Medium-primary);
+        font-weight: 500;
+        transition: .3s ease background-color, .3s ease border;
+    }
+        #editarComprasPendientes .modalDetalleFooter .btnCancelar:hover {
+            border: var(--Light-primary) 1px solid;
+            background-color: var(--Light-primary);
+            color: white;
+        }
+        #editarComprasPendientes .modalDetalleFooter .btnCancelar:active {
+            border: var(--Lightest-primary) 1px solid;
+            background-color: var(--Lightest-primary);
+            color: white;
+        }*/
+/*----------------------------------Para el modal Eliminar Ticket------------------------------------------*/
+#confirm-delete > .modalDeleteDialog {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+    padding-left: 17px;
+    justify-content: center;
+}
+    #confirm-delete > .modalDeleteDialog > .modalDeleteContent {
+        max-width: 510px;
+        border: 0px;
+        background-color: white;
+        border-radius: 7px;
+    }
+        #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteBody {
+            text-align: center;
+            padding: 77px 134px 0;
+        }
+
+            #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteBody > label {
+                font-size: 15px;
+                font-weight: 400;
+                margin-bottom: 0;
+            }
+        #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteFooter {
+            justify-content: center;
+            border-top: 0px;
+            justify-content: center;
+            border-top: 0px;
+            padding: 46px 109px 63px;
+            grid-column-gap: 42px;
+            display: flex;
+        }
+            #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteFooter > a {
+                background-color: white;
+                border: var(--Medium-primary) 1px solid;
+                color: var(--Medium-primary);
+                font-weight: 500;
+                transition: .3s ease background-color, .3s ease border;
+                padding: 10px 32px;
+                border-radius: 7px;
+                cursor: pointer;
+                font-size: 15px;
+                line-height: 1;
+            }
+                #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteFooter > a:hover {
+                    border: var(--Light-primary) 1px solid;
+                    background-color: var(--Light-primary);
+                    color: white;
+                }
+                #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteFooter > a:active {
+                    border: var(--Lightest-primary) 1px solid;
+                    background-color: var(--Lightest-primary);
+                    color: white;
+                }
+
+            #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteFooter > button {
+                background-color: var(--Medium-primary);
+                border: 1px solid var(--Medium-primary);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 7px;
+                color: white;
+                font-weight: normal;
+                font-size: 12px;
+                padding: 10px 37px !important;
+                line-height: .9;
+                transition: .3s ease background-color, .3s ease border;
+                font-size: 15px;
+                line-height: 1;
+            }
+
+                #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteFooter > button:hover {
+                    background-color: var(--Darkest2-primary);
+                    border: 1px solid var(--Darkest2-primary);
+                }
+
+                #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteFooter > button:active {
+                    background-color: var(--Dark2-primary);
+                    border: 1px solid var(--Dark2-primary);
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    outline: none;
+                }
+
+                    #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteFooter > button:focus {
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        outline: none;
+                    }
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*Para el calendario al generar voucher*/
+@media (max-device-width: 499px) {
+    .gj-picker-bootstrap {
+        left: 0 !important;
+    }
+}
+
+
+nav > .nav.nav-tabs {
+    border: none;
+    color: #fff;
+    background: #272e38;
+    border-radius: 0;
+}
+
+/*Para el triangulo inverso cuando está seleccionado una opción*/
+nav > div a.nav-item.nav-link {
+    border: none;
+    padding: 10px 25px;
+    color: #fff;
+    background: var(--Primary-red);
+    border-radius: 0;
+    font: 10px;
+}
+
+@media (min-width:1005px) and (max-width:1170px) {
+    nav > div a.nav-item.nav-link {
+        width: 200px;
+    }
+}
+
+@media (max-width:1004px) {
+    nav > div a.nav-item.nav-link {
+        width: 320px;
+    }
+}
+
+@media (max-width:1036px) {
+    nav > div a.nav-item.nav-link.active:after {
+        visibility: hidden
+    }
+}
+
+nav > div a.nav-item.nav-link.active {
+    border: none;
+    padding: 10px 25px;
+    color: #fff;
+    background: #0da6e0;
+    border-radius: 0;
+    font: 10px;
+}
+
+    nav > div a.nav-item.nav-link.active:after {
+        content: "";
+        position: relative;
+        bottom: -46px;
+        left: -40%;
+        border: 15px solid transparent;
+        /*border-top-color: limegreen;*/
+    }
+
+.tab-content {
+    margin: 0 15px;
+}
+
+/*nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus {
+    border: none;
+    background: #0da6e0;
+    color: #fff;
+    border-radius: 0;
+    transition: background 0.20s linear;
+}*/
+
+#nav-tabContent .table-success tr th:nth-child(1) {
+    min-width: 77px !important;
+}
+
+#nav-tabContent .table-success tr th:nth-last-child(1) {
+    min-width: 106px !important;
+}
+
+#nav-tabContent .table-success tr th:nth-last-child(2) {
+    min-width: 106px !important;
+}
+
+#nav-tabContent .table-success tr th:nth-last-child(3) {
+    min-width: 106px !important;
+}
+
+#nav-tabContent .table-success tr th:nth-last-child(4) {
+    min-width: 81px !important;
+}
+
+#nav-tabContent .table-success tr th:nth-last-child(5) {
+    min-width: 53px !important;
+}
+
+#TablePurchasesMadeDeposit_wrapper > div:nth-child(2) > div:nth-child(1) > div > table > thead > tr > th:nth-last-child(6) {
+    min-width: 44px;
+}
+
+#TablePurchasesMadeCashPayment_wrapper > div:nth-child(2) > div:nth-child(1) > div > table > thead > tr > th:nth-child(4) {
+    min-width: 56px;
+}
+#TablePurchasesMadeDeposit > tbody > tr > td:nth-child(7) {
+    word-break: break-word;
+}
+@media (max-device-width: 1280px) {
+    #TablePurchasesMadeDeposit_wrapper > div:nth-child(2) > div:nth-child(1) > div > table > thead > tr > th:nth-last-child(6) {
+        min-width: 94px;
+    }
+
+    #TablePurchasesMadeDeposit > tbody > tr > td:nth-child(7) {
+        min-width: 112px;
+        padding: 0;
+    }
+}
+@media (max-device-width: 1024px) {
+    .container-tablaMisCompras2 {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+        .container-tablaMisCompras2 > div.row {
+            margin: 0;
+        }
+
+        .container-tablaMisCompras2 > .row > div {
+            padding: 0px 68.5px;
+        }
+
+    nav > div.nav.nav-tabs.navHeaderHistorial {
+        padding: 30px 46px;
+        grid-column-gap: 37px;
+    }
+
+/*    nav > div.navHeaderHistorial > a.nav-item.nav-link {
+        max-width: 170px !important;
+        min-width: 170px;
+        grid-column-gap: 7px;
+        justify-content: space-evenly;
+        padding: 10px 11px;
+        font-size: 11px;
+    }*/
+}
+@media (max-height: 700px) {
+    #comprasPen {
+        padding-bottom: 0 !important;
+    }
+}
+@media (max-device-width: 1024px) and (min-height: 1366px) {
+    .footerMaxWidth {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+@media (max-device-width: 768px){
+
+    .vistaPagina {
+        min-height: 100%;
+    }
+    nav > div.nav.nav-tabs.navHeaderHistorial {
+        padding: 30px 23px;
+        grid-column-gap: 25px;
+    }
+    .footerMaxWidth {
+        position: inherit;
+        bottom: inherit;
+        width: inherit;
+    }
+
+    #nav-tabContent .newButtonTableHistorial.btnVoucher, #nav-tabContent .newButtonTableHistorial.btnDetalle, #nav-tabContent .newButtonTableHistorial {
+        width: 72px;
+        height: 30px;
+        font-size: 10px;
+        grid-column-gap: 2px;
+    }
+
+        #nav-tabContent .newButtonTableHistorial.btnVoucher > img, #nav-tabContent .newButtonTableHistorial.btnDetalle > img, #nav-tabContent .newButtonTableHistorial > img {
+            width: 12px;
+        }
+    #nav-tabContent .table-success tr th:nth-last-child(3), #nav-tabContent .table-success tr th:nth-last-child(2), #nav-tabContent .table-success tr th:nth-last-child(1) {
+        min-width: 72px !important;
+    }
+    nav > div.navHeaderHistorial > a > img {
+        width: 20px;
+    }
+    .modal .modal-dialog .modalDetalleContent .modalDetalleHeader {
+        padding: 18px 15px;
+    }
+    .modal .modal-dialog .modalDetalleContent .modalDetalleBody {
+        padding: 20px 15px 0;
+    }
+}
+@media (max-width: 640px){
+    nav > div.nav.nav-tabs.navHeaderHistorial {
+        grid-template-columns: repeat(1, 240px);
+        grid-row-gap: 23px;
+    }
+}
+@media (max-device-width: 768px) and (max-height: 1024px) {
+    body {
+        height: 100vh;
+    }
+
+        body > form {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+}
+@media (max-device-width: 540px){
+    .container-tablaMisCompras2 > .row > div {
+        padding: 0px 53.5px;
+    }
+}
+
+@media (max-device-width: 414px){
+    .container-tablaMisCompras2 > .row > nav {
+        margin-bottom: 29px !important;
+    }
+
+    nav > div.nav.nav-tabs.navHeaderHistorial {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .container-tablaMisCompras2 > .row > div {
+        padding: 0px 20px;
+    }
+    .container-tablaMisCompras2 {
+        margin: 80px 20px 0;
+        padding: 0;
+    }
+    .container-tablaMisCompras2 > div.row {
+        margin: 0;
+    }
+
+/*    nav > div.navHeaderHistorial > a.nav-item.nav-link {
+        max-width: 132px !important;
+        min-width: 132px;
+        height: 45px !important;
+        font-size: 10px;
+        padding: 10px 10px;
+    }*/
+
+    nav > div.nav.nav-tabs.navHeaderHistorial {
+        padding: 30px 24px;
+        grid-column-gap: 21px;
+        grid-row-gap: 16px;
+    }
+    /*nav > div.navHeaderHistorial > a > img {
+        width: 14px;
+    }
+    */
+    .container-tablaMisCompras2 > .row > div {
+        padding: 0;
+    }
+    .modal.show .table > thead:first-child > tr:first-child > th {
+        vertical-align: middle;
+    }
+    .modal .modal-dialog .modalDetalleContent .modalDetalleHeader {
+        height: 36px;
+    }
+    .modal .modal-dialog .modalDetalleContent .modalDetalleHeader .modalDetalleHeader__titulo {
+        font-size: 12px;
+    }
+    .modal .modal-dialog .modalDetalleContent .modalDetalleHeader {
+        height: 50px;
+        padding: 12.5px 30px;
+        display: flex;
+        align-items: center;
+    }
+    #comprasPendientesEfectivoModal #div-image{
+        padding: 0;
+    }
+    #editarComprasPendientes .modal-content.modalDetalleContent {
+        width: 85%;
+    }
+    #editarComprasPendientes .modalDetalleBody {
+        grid-row-gap: 17px;
+    }
+    #editarComprasPendientes .fila {
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 17px;
+    }
+        #editarComprasPendientes .fila .fila__contenido.bloqueDerecha {
+            width: 230px;
+        }
+    #editarComprasPendientes .modalDetalleBody > div:nth-child(1) > div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20%;
+        width: 230px !important;
+    }
+
+        #editarComprasPendientes .modalDetalleBody > div:nth-child(1) > div > .nombreArchivo {
+            grid-area: 2 / 2;
+            margin-top: 5px;
+        }
+    #editarComprasPendientes .fila .fila__contenido.bloqueIzquierda label, #editarComprasPendientes .fila .fila__contenido.bloqueDerecha label {
+        white-space: nowrap;
+        font-size: 10px;
+    }
+    .modal.show .modalDetalleFooter button {
+        padding: 7px 20px !important;
+        font-size: 10px;
+    }
+    #editarComprasPendientes .modalDetalleFooter {
+        padding-top: 27px;
+        padding-bottom: 19px;
+    }
+    #editarComprasPendientes .fila .fila__contenido .cajaIzquierda {
+        width: 92px;
+        height: 25px;
+    }
+        #editarComprasPendientes .fila .fila__contenido .cajaIzquierda .border, #editarComprasPendientes .fila .fila__contenido .cajaIzquierda .noBorder {
+            height: 25px;
+            font-size: 10px;
+        }
+    #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteBody {
+        padding: 40px 20% 0;
+    }
+    #confirm-delete > .modalDeleteDialog{
+        padding: 0;
+    }
+    #confirm-delete > .modalDeleteDialog > .modalDeleteContent {
+        max-width: 85%;
+    }
+        #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteFooter {
+            padding: 30px 70px 40px;
+            grid-column-gap: 20%;
+        }
+        #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteFooter > button, #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteFooter > a {
+            height: min-content;
+            font-size: 10px;
+            padding: 7px 17px !important;
+        }
+        #confirm-delete > .modalDeleteDialog > .modalDeleteContent > .modalDeleteBody > label {
+            font-size: 12px;
+        }
+}
+
+@media (max-device-width: 414px) and (max-height: 1024px){
+    body {
+        height: 100vh;
+    }
+        body > form {
+            height: 100%;
+        }
+}
+
+@media (max-device-width: 320px){
+    #comprasPendientesEfectivoModal.modal.show .table > thead:first-child > tr:first-child > th:nth-child(2) {
+        min-width: 79px;
+    }
+    .modal .modal-dialog .modalDetalleContent .modalDetalleHeader {
+        padding: 9px 15px;
+        display: flex;
+        align-items: center;
+    }
+    .modal .modal-dialog .modalDetalleContent .dataTables_wrapper.no-footer {
+        padding: 0;
+    }
+}
+
+@media (max-device-width: 280px){
+    #editarComprasPendientes .fila .fila__contenido.bloqueDerecha, #editarComprasPendientes .fila .fila__contenido.bloqueIzquierda {
+        width: 200px !important;
+        grid-column-gap: 8%;
+    }
+    #editarComprasPendientes .modal-content.modalDetalleContent {
+        width: 95%;
+    }
+    .modal .modal-dialog .modalDetalleContent {
+        width: 96%;
+        margin: auto;
+    }
+}
+
+
+@media (max-device-width: 1023px) and (orientation: landscape) {
+    #editarComprasPendientes .modalDetalleBody > div:nth-child(1) > div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 22px;
+    }
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+/**,
+*:before,
+*:after {
+    box-sizing: inherit;
+}*/
+
+/** {
+    max-height: 1000000px;
+    margin: 0;
+    padding: 0;
+}*/
+
+/*body {
+    color: #333;
+    min-width: 320px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.gm-style img {
+    max-width: none;
+}
+
+@media only screen and (min-width: 1025px) {
+    a[href^=tel],
+    a[href^=skype],
+    a[href^=sms] {
+        cursor: default;
+        pointer-events: none;
+    }
+}
+/* HTML5 display-role reset for older browsers */
+/*article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}*/
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+
+table2 {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+    a:hover, a:focus {
+        text-decoration: none;
+        color: #713b87;
+    }
+
+
+/* responsive table */
+.responsiveTbl table2 {
+    text-align: center;
+    width: 100%;
+}
+
+tr2 {
+    background: #fff;
+}
+
+    tr2:nth-child(2n) {
+        background: #f2f2f2;
+    }
+
+    tr2:hover .msg {
+        opacity: 1;
+        top: 0;
+    }
+
+th2,
+td2 {
+    font-size: 12px;
+    padding: 15px 20px;
+    vertical-align: middle;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    text-align: left;
+}
+
+th2 {
+    background: green;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 25px 20px;
+}
+
+.price,
+.btn-miscompras {
+    font-size: 12px;
+    border: 1px solid green;
+    border-radius: 25px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px;
+    min-width: 68px;
+    text-align: center;
+}
+
+.price,
+.btn-miscomprasVoucher {
+    font-size: 12px;
+    border: 1px solid green;
+    border-radius: 25px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px;
+    min-width: 68px;
+    text-align: center;
+}
+
+.price,
+.btn-miscomprasEliminar {
+    font-size: 12px;
+    border: 1px solid green;
+    border-radius: 25px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px;
+    min-width: 68px;
+    text-align: center;
+}
+
+.btn-miscompras {
+    border: none;
+    color: #fff;
+    background: green;
+    transition: box-shadow 0.3s linear;
+}
+
+.btn-miscomprasVoucher {
+    border: none;
+    color: #fff;
+    background: #007bff;
+    transition: box-shadow 0.3s linear;
+}
+
+.btn-miscomprasEliminar {
+    border: none;
+    color: #fff;
+    background: #dc3545;
+    transition: box-shadow 0.3s linear;
+}
+
+
+
+/*para Hire me*/
+.btn-miscompras:hover {
+    box-shadow: inset 0 0 0 25px #0ecc00;
+    color: #fff;
+}
+
+.btn-miscomprasVoucher:hover {
+    box-shadow: inset 0 0 0 25px #5543cc;
+    color: #fff;
+}
+
+.btn-miscomprasEliminar:hover {
+    box-shadow: inset 0 0 0 25px #bf1300;
+    color: #fff;
+}
+
+/*@media (min-width: 5px) and (max-width: 1005px) {
+    #tableMisCompras2 {
+        position: relative;
+        width: 100%;
+        background-color: blue
+    }
+}*/
+
+/* responsive using desktop first approach */
+@media only screen and (max-width: 1095px) {
+    /*thead {
+        display: none;
+    }*/
+
+    /*tr {
+        margin: 0 0 15px;
+        display: block;
+    }*/
+
+    td {
+        /*display: block;*/
+        /*text-align: left;*/
+        padding: 5px 10px 5px 10px;
+        position: relative;
+    }
+
+    /*td:before {
+            content: 'Rank';
+            font-weight: 500;
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+    }*/
+
+    /*td:nth-of-type(2):before {
+            content: 'Full Name';
+        }
+
+        td:nth-of-type(3):before {
+            content: 'Starting Price';
+        }
+
+        td:nth-of-type(4):before {
+            content: 'Review';
+        }
+
+        td:nth-of-type(5):before {
+            content: 'Hiring';
+        }*/
+
+    /*.price,
+    .btn-miscompras {
+        border: none;
+        background: none;
+        padding: 0;
+        min-width: 0;
+        color: #333;
+    }
+
+    .price,
+    .btn-miscomprasVoucher {
+        border: none;
+        background: none;
+        padding: 0;
+        min-width: 0;
+        color: #333;
+    }
+
+    .price,
+    .btn-miscomprasEliminar {
+        border: none;
+        background: none;
+        padding: 0;
+        min-width: 0;
+        color: #333;
+    }*/
+}
+/*-------------------------------Estilos nuevo Datepicker (calendario)------------------------------------------*/
+.datepicker {
+    border-radius: 4px;
+    direction: ltr;
+}
+
+#datepicker {
+    pointer-events: none;
+}
+
+.datepicker-inline {
+    width: 220px;
+}
+
+.datepicker-rtl {
+    direction: rtl;
+}
+
+    .datepicker-rtl.dropdown-menu {
+        left: auto;
+    }
+
+    .datepicker-rtl table tr td span {
+        float: right;
+    }
+
+.datepicker-dropdown {
+    top: 0;
+    left: 0;
+    padding: 4px;
+}
+
+    .datepicker-dropdown:before {
+        content: '';
+        display: inline-block;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid rgba(0, 0, 0, 0.15);
+        border-top: 0;
+        border-bottom-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+    }
+
+    .datepicker-dropdown:after {
+        content: '';
+        display: inline-block;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #fff;
+        border-top: 0;
+        position: absolute;
+    }
+
+    .datepicker-dropdown.datepicker-orient-left:before {
+        left: 6px;
+    }
+
+    .datepicker-dropdown.datepicker-orient-left:after {
+        left: 7px;
+    }
+
+    .datepicker-dropdown.datepicker-orient-right:before {
+        right: 6px;
+    }
+
+    .datepicker-dropdown.datepicker-orient-right:after {
+        right: 7px;
+    }
+
+    .datepicker-dropdown.datepicker-orient-bottom:before {
+        top: -7px;
+    }
+
+    .datepicker-dropdown.datepicker-orient-bottom:after {
+        top: -6px;
+    }
+
+    .datepicker-dropdown.datepicker-orient-top:before {
+        bottom: -7px;
+        border-bottom: 0;
+        border-top: 7px solid rgba(0, 0, 0, 0.15);
+    }
+
+    .datepicker-dropdown.datepicker-orient-top:after {
+        bottom: -6px;
+        border-bottom: 0;
+        border-top: 6px solid #fff;
+    }
+
+.datepicker table {
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .datepicker table tr td,
+    .datepicker table tr th {
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        border: none;
+    }
+
+.table-striped .datepicker table tr td,
+.table-striped .datepicker table tr th {
+    background-color: transparent;
+}
+
+.datepicker table tr td.old,
+.datepicker table tr td.new {
+    color: darkgray;
+}
+
+.datepicker table tr td.day:hover,
+.datepicker table tr td.focused {
+    background: #eeeeee;
+    cursor: pointer;
+}
+
+.datepicker table tr td.disabled,
+.datepicker table tr td.disabled:hover {
+    background: none;
+    color: #777777;
+    cursor: default;
+}
+
+.datepicker table tr td.highlighted {
+    color: #000;
+    background-color: #d9edf7;
+    border-color: #85c5e5;
+    border-radius: 0;
+}
+
+    .datepicker table tr td.highlighted:focus,
+    .datepicker table tr td.highlighted.focus {
+        color: #000;
+        background-color: #afd9ee;
+        border-color: #298fc2;
+    }
+
+    .datepicker table tr td.highlighted:hover {
+        color: #000;
+        background-color: #afd9ee;
+        border-color: #52addb;
+    }
+
+    .datepicker table tr td.highlighted:active,
+    .datepicker table tr td.highlighted.active {
+        color: #000;
+        background-color: #afd9ee;
+        border-color: #52addb;
+    }
+
+        .datepicker table tr td.highlighted:active:hover,
+        .datepicker table tr td.highlighted.active:hover,
+        .datepicker table tr td.highlighted:active:focus,
+        .datepicker table tr td.highlighted.active:focus,
+        .datepicker table tr td.highlighted:active.focus,
+        .datepicker table tr td.highlighted.active.focus {
+            color: #000;
+            background-color: #91cbe8;
+            border-color: #298fc2;
+        }
+
+    .datepicker table tr td.highlighted.disabled:hover,
+    .datepicker table tr td.highlighted[disabled]:hover,
+    fieldset[disabled] .datepicker table tr td.highlighted:hover,
+    .datepicker table tr td.highlighted.disabled:focus,
+    .datepicker table tr td.highlighted[disabled]:focus,
+    fieldset[disabled] .datepicker table tr td.highlighted:focus,
+    .datepicker table tr td.highlighted.disabled.focus,
+    .datepicker table tr td.highlighted[disabled].focus,
+    fieldset[disabled] .datepicker table tr td.highlighted.focus {
+        background-color: #d9edf7;
+        border-color: #85c5e5;
+    }
+
+    .datepicker table tr td.highlighted.focused {
+        background: #afd9ee;
+    }
+
+    .datepicker table tr td.highlighted.disabled,
+    .datepicker table tr td.highlighted.disabled:active {
+        background: #d9edf7;
+        color: #777777;
+    }
+
+.datepicker table tr td.today {
+    color: #000;
+    background-color: #ffdb99;
+    border-color: #ffb733;
+}
+
+    .datepicker table tr td.today:focus,
+    .datepicker table tr td.today.focus {
+        color: #000;
+        background-color: #ffc966;
+        border-color: #b37400;
+    }
+
+    .datepicker table tr td.today:hover {
+        color: #000;
+        background-color: #ffc966;
+        border-color: #f59e00;
+    }
+
+    .datepicker table tr td.today:active,
+    .datepicker table tr td.today.active {
+        color: #000;
+        background-color: #ffc966;
+        border-color: #f59e00;
+    }
+
+        .datepicker table tr td.today:active:hover,
+        .datepicker table tr td.today.active:hover,
+        .datepicker table tr td.today:active:focus,
+        .datepicker table tr td.today.active:focus,
+        .datepicker table tr td.today:active.focus,
+        .datepicker table tr td.today.active.focus {
+            color: #000;
+            background-color: #ffbc42;
+            border-color: #b37400;
+        }
+
+    .datepicker table tr td.today.disabled:hover,
+    .datepicker table tr td.today[disabled]:hover,
+    fieldset[disabled] .datepicker table tr td.today:hover,
+    .datepicker table tr td.today.disabled:focus,
+    .datepicker table tr td.today[disabled]:focus,
+    fieldset[disabled] .datepicker table tr td.today:focus,
+    .datepicker table tr td.today.disabled.focus,
+    .datepicker table tr td.today[disabled].focus,
+    fieldset[disabled] .datepicker table tr td.today.focus {
+        background-color: #ffdb99;
+        border-color: #ffb733;
+    }
+
+    .datepicker table tr td.today.focused {
+        background: #ffc966;
+    }
+
+    .datepicker table tr td.today.disabled,
+    .datepicker table tr td.today.disabled:active {
+        background: #ffdb99;
+        color: #777777;
+    }
+
+.datepicker table tr td.range {
+    color: #000;
+    background-color: #eeeeee;
+    border-color: #bbbbbb;
+    border-radius: 0;
+}
+
+    .datepicker table tr td.range:focus,
+    .datepicker table tr td.range.focus {
+        color: #000;
+        background-color: #d5d5d5;
+        border-color: #7c7c7c;
+    }
+
+    .datepicker table tr td.range:hover {
+        color: #000;
+        background-color: #d5d5d5;
+        border-color: #9d9d9d;
+    }
+
+    .datepicker table tr td.range:active,
+    .datepicker table tr td.range.active {
+        color: #000;
+        background-color: #d5d5d5;
+        border-color: #9d9d9d;
+    }
+
+        .datepicker table tr td.range:active:hover,
+        .datepicker table tr td.range.active:hover,
+        .datepicker table tr td.range:active:focus,
+        .datepicker table tr td.range.active:focus,
+        .datepicker table tr td.range:active.focus,
+        .datepicker table tr td.range.active.focus {
+            color: #000;
+            background-color: #c3c3c3;
+            border-color: #7c7c7c;
+        }
+
+    .datepicker table tr td.range.disabled:hover,
+    .datepicker table tr td.range[disabled]:hover,
+    fieldset[disabled] .datepicker table tr td.range:hover,
+    .datepicker table tr td.range.disabled:focus,
+    .datepicker table tr td.range[disabled]:focus,
+    fieldset[disabled] .datepicker table tr td.range:focus,
+    .datepicker table tr td.range.disabled.focus,
+    .datepicker table tr td.range[disabled].focus,
+    fieldset[disabled] .datepicker table tr td.range.focus {
+        background-color: #eeeeee;
+        border-color: #bbbbbb;
+    }
+
+    .datepicker table tr td.range.focused {
+        background: #d5d5d5;
+    }
+
+    .datepicker table tr td.range.disabled,
+    .datepicker table tr td.range.disabled:active {
+        background: #eeeeee;
+        color: #777777;
+    }
+
+    .datepicker table tr td.range.highlighted {
+        color: #000;
+        background-color: #e4eef3;
+        border-color: #9dc1d3;
+    }
+
+        .datepicker table tr td.range.highlighted:focus,
+        .datepicker table tr td.range.highlighted.focus {
+            color: #000;
+            background-color: #c1d7e3;
+            border-color: #4b88a6;
+        }
+
+        .datepicker table tr td.range.highlighted:hover {
+            color: #000;
+            background-color: #c1d7e3;
+            border-color: #73a6c0;
+        }
+
+        .datepicker table tr td.range.highlighted:active,
+        .datepicker table tr td.range.highlighted.active {
+            color: #000;
+            background-color: #c1d7e3;
+            border-color: #73a6c0;
+        }
+
+            .datepicker table tr td.range.highlighted:active:hover,
+            .datepicker table tr td.range.highlighted.active:hover,
+            .datepicker table tr td.range.highlighted:active:focus,
+            .datepicker table tr td.range.highlighted.active:focus,
+            .datepicker table tr td.range.highlighted:active.focus,
+            .datepicker table tr td.range.highlighted.active.focus {
+                color: #000;
+                background-color: #a8c8d8;
+                border-color: #4b88a6;
+            }
+
+        .datepicker table tr td.range.highlighted.disabled:hover,
+        .datepicker table tr td.range.highlighted[disabled]:hover,
+        fieldset[disabled] .datepicker table tr td.range.highlighted:hover,
+        .datepicker table tr td.range.highlighted.disabled:focus,
+        .datepicker table tr td.range.highlighted[disabled]:focus,
+        fieldset[disabled] .datepicker table tr td.range.highlighted:focus,
+        .datepicker table tr td.range.highlighted.disabled.focus,
+        .datepicker table tr td.range.highlighted[disabled].focus,
+        fieldset[disabled] .datepicker table tr td.range.highlighted.focus {
+            background-color: #e4eef3;
+            border-color: #9dc1d3;
+        }
+
+        .datepicker table tr td.range.highlighted.focused {
+            background: #c1d7e3;
+        }
+
+        .datepicker table tr td.range.highlighted.disabled,
+        .datepicker table tr td.range.highlighted.disabled:active {
+            background: #e4eef3;
+            color: #777777;
+        }
+
+    .datepicker table tr td.range.today {
+        color: #000;
+        background-color: #f7ca77;
+        border-color: #f1a417;
+    }
+
+        .datepicker table tr td.range.today:focus,
+        .datepicker table tr td.range.today.focus {
+            color: #000;
+            background-color: #f4b747;
+            border-color: #815608;
+        }
+
+        .datepicker table tr td.range.today:hover {
+            color: #000;
+            background-color: #f4b747;
+            border-color: #bf800c;
+        }
+
+        .datepicker table tr td.range.today:active,
+        .datepicker table tr td.range.today.active {
+            color: #000;
+            background-color: #f4b747;
+            border-color: #bf800c;
+        }
+
+            .datepicker table tr td.range.today:active:hover,
+            .datepicker table tr td.range.today.active:hover,
+            .datepicker table tr td.range.today:active:focus,
+            .datepicker table tr td.range.today.active:focus,
+            .datepicker table tr td.range.today:active.focus,
+            .datepicker table tr td.range.today.active.focus {
+                color: #000;
+                background-color: #f2aa25;
+                border-color: #815608;
+            }
+
+        .datepicker table tr td.range.today.disabled:hover,
+        .datepicker table tr td.range.today[disabled]:hover,
+        fieldset[disabled] .datepicker table tr td.range.today:hover,
+        .datepicker table tr td.range.today.disabled:focus,
+        .datepicker table tr td.range.today[disabled]:focus,
+        fieldset[disabled] .datepicker table tr td.range.today:focus,
+        .datepicker table tr td.range.today.disabled.focus,
+        .datepicker table tr td.range.today[disabled].focus,
+        fieldset[disabled] .datepicker table tr td.range.today.focus {
+            background-color: #f7ca77;
+            border-color: #f1a417;
+        }
+
+        .datepicker table tr td.range.today.disabled,
+        .datepicker table tr td.range.today.disabled:active {
+            background: #f7ca77;
+            color: #777777;
+        }
+
+.datepicker table tr td.selected,
+.datepicker table tr td.selected.highlighted {
+    color: #fff;
+    background-color: #777777;
+    border-color: #555555;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+    .datepicker table tr td.selected:focus,
+    .datepicker table tr td.selected.highlighted:focus,
+    .datepicker table tr td.selected.focus,
+    .datepicker table tr td.selected.highlighted.focus {
+        color: #fff;
+        background-color: #5e5e5e;
+        border-color: #161616;
+    }
+
+    .datepicker table tr td.selected:hover,
+    .datepicker table tr td.selected.highlighted:hover {
+        color: #fff;
+        background-color: #5e5e5e;
+        border-color: #373737;
+    }
+
+    .datepicker table tr td.selected:active,
+    .datepicker table tr td.selected.highlighted:active,
+    .datepicker table tr td.selected.active,
+    .datepicker table tr td.selected.highlighted.active {
+        color: #fff;
+        background-color: #5e5e5e;
+        border-color: #373737;
+    }
+
+        .datepicker table tr td.selected:active:hover,
+        .datepicker table tr td.selected.highlighted:active:hover,
+        .datepicker table tr td.selected.active:hover,
+        .datepicker table tr td.selected.highlighted.active:hover,
+        .datepicker table tr td.selected:active:focus,
+        .datepicker table tr td.selected.highlighted:active:focus,
+        .datepicker table tr td.selected.active:focus,
+        .datepicker table tr td.selected.highlighted.active:focus,
+        .datepicker table tr td.selected:active.focus,
+        .datepicker table tr td.selected.highlighted:active.focus,
+        .datepicker table tr td.selected.active.focus,
+        .datepicker table tr td.selected.highlighted.active.focus {
+            color: #fff;
+            background-color: #4c4c4c;
+            border-color: #161616;
+        }
+
+    .datepicker table tr td.selected.disabled:hover,
+    .datepicker table tr td.selected.highlighted.disabled:hover,
+    .datepicker table tr td.selected[disabled]:hover,
+    .datepicker table tr td.selected.highlighted[disabled]:hover,
+    fieldset[disabled] .datepicker table tr td.selected:hover,
+    fieldset[disabled] .datepicker table tr td.selected.highlighted:hover,
+    .datepicker table tr td.selected.disabled:focus,
+    .datepicker table tr td.selected.highlighted.disabled:focus,
+    .datepicker table tr td.selected[disabled]:focus,
+    .datepicker table tr td.selected.highlighted[disabled]:focus,
+    fieldset[disabled] .datepicker table tr td.selected:focus,
+    fieldset[disabled] .datepicker table tr td.selected.highlighted:focus,
+    .datepicker table tr td.selected.disabled.focus,
+    .datepicker table tr td.selected.highlighted.disabled.focus,
+    .datepicker table tr td.selected[disabled].focus,
+    .datepicker table tr td.selected.highlighted[disabled].focus,
+    fieldset[disabled] .datepicker table tr td.selected.focus,
+    fieldset[disabled] .datepicker table tr td.selected.highlighted.focus {
+        background-color: #777777;
+        border-color: #555555;
+    }
+
+.datepicker table tr td.active,
+.datepicker table tr td.active.highlighted {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+    .datepicker table tr td.active:focus,
+    .datepicker table tr td.active.highlighted:focus,
+    .datepicker table tr td.active.focus,
+    .datepicker table tr td.active.highlighted.focus {
+        color: #fff;
+        background-color: #286090;
+        border-color: #122b40;
+    }
+
+    .datepicker table tr td.active:hover,
+    .datepicker table tr td.active.highlighted:hover {
+        color: #fff;
+        background-color: #286090;
+        border-color: #204d74;
+    }
+    /*color de fondo del día seleccionado en el datepicker*/
+    .datepicker table tr td.active:active,
+    .datepicker table tr td.active.highlighted:active,
+    .datepicker table tr td.active.active,
+    .datepicker table tr td.active.highlighted.active {
+        color: #fff;
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+        /*hover del color de fondo del día seleccionado en el datepicker*/
+        .datepicker table tr td.active:active:hover,
+        .datepicker table tr td.active.highlighted:active:hover,
+        .datepicker table tr td.active.active:hover,
+        .datepicker table tr td.active.highlighted.active:hover,
+        .datepicker table tr td.active:active:focus,
+        .datepicker table tr td.active.highlighted:active:focus,
+        .datepicker table tr td.active.active:focus,
+        .datepicker table tr td.active.highlighted.active:focus,
+        .datepicker table tr td.active:active.focus,
+        .datepicker table tr td.active.highlighted:active.focus,
+        .datepicker table tr td.active.active.focus,
+        .datepicker table tr td.active.highlighted.active.focus {
+            color: #fff;
+            background-color: #218838;
+            border-color: #218838;
+        }
+
+    .datepicker table tr td.active.disabled:hover,
+    .datepicker table tr td.active.highlighted.disabled:hover,
+    .datepicker table tr td.active[disabled]:hover,
+    .datepicker table tr td.active.highlighted[disabled]:hover,
+    fieldset[disabled] .datepicker table tr td.active:hover,
+    fieldset[disabled] .datepicker table tr td.active.highlighted:hover,
+    .datepicker table tr td.active.disabled:focus,
+    .datepicker table tr td.active.highlighted.disabled:focus,
+    .datepicker table tr td.active[disabled]:focus,
+    .datepicker table tr td.active.highlighted[disabled]:focus,
+    fieldset[disabled] .datepicker table tr td.active:focus,
+    fieldset[disabled] .datepicker table tr td.active.highlighted:focus,
+    .datepicker table tr td.active.disabled.focus,
+    .datepicker table tr td.active.highlighted.disabled.focus,
+    .datepicker table tr td.active[disabled].focus,
+    .datepicker table tr td.active.highlighted[disabled].focus,
+    fieldset[disabled] .datepicker table tr td.active.focus,
+    fieldset[disabled] .datepicker table tr td.active.highlighted.focus {
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+.datepicker table tr td span {
+    display: block;
+    width: 23%;
+    height: 54px;
+    line-height: 54px;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+    .datepicker table tr td span:hover,
+    .datepicker table tr td span.focused {
+        background: #eeeeee;
+    }
+
+    .datepicker table tr td span.disabled,
+    .datepicker table tr td span.disabled:hover {
+        background: none;
+        color: #777777;
+        cursor: default;
+    }
+
+    .datepicker table tr td span.active,
+    .datepicker table tr td span.active:hover,
+    .datepicker table tr td span.active.disabled,
+    .datepicker table tr td span.active.disabled:hover {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    }
+
+        .datepicker table tr td span.active:focus,
+        .datepicker table tr td span.active:hover:focus,
+        .datepicker table tr td span.active.disabled:focus,
+        .datepicker table tr td span.active.disabled:hover:focus,
+        .datepicker table tr td span.active.focus,
+        .datepicker table tr td span.active:hover.focus,
+        .datepicker table tr td span.active.disabled.focus,
+        .datepicker table tr td span.active.disabled:hover.focus {
+            color: #fff;
+            background-color: #286090;
+            border-color: #122b40;
+        }
+
+        .datepicker table tr td span.active:hover,
+        .datepicker table tr td span.active:hover:hover,
+        .datepicker table tr td span.active.disabled:hover,
+        .datepicker table tr td span.active.disabled:hover:hover {
+            color: #fff;
+            background-color: #286090;
+            border-color: #204d74;
+        }
+
+            .datepicker table tr td span.active:active,
+            .datepicker table tr td span.active:hover:active,
+            .datepicker table tr td span.active.disabled:active,
+            .datepicker table tr td span.active.disabled:hover:active,
+            .datepicker table tr td span.active.active,
+            .datepicker table tr td span.active:hover.active,
+            .datepicker table tr td span.active.disabled.active,
+            .datepicker table tr td span.active.disabled:hover.active {
+                color: #fff;
+                background-color: #286090;
+                border-color: #204d74;
+            }
+
+                .datepicker table tr td span.active:active:hover,
+                .datepicker table tr td span.active:hover:active:hover,
+                .datepicker table tr td span.active.disabled:active:hover,
+                .datepicker table tr td span.active.disabled:hover:active:hover,
+                .datepicker table tr td span.active.active:hover,
+                .datepicker table tr td span.active:hover.active:hover,
+                .datepicker table tr td span.active.disabled.active:hover,
+                .datepicker table tr td span.active.disabled:hover.active:hover,
+                .datepicker table tr td span.active:active:focus,
+                .datepicker table tr td span.active:hover:active:focus,
+                .datepicker table tr td span.active.disabled:active:focus,
+                .datepicker table tr td span.active.disabled:hover:active:focus,
+                .datepicker table tr td span.active.active:focus,
+                .datepicker table tr td span.active:hover.active:focus,
+                .datepicker table tr td span.active.disabled.active:focus,
+                .datepicker table tr td span.active.disabled:hover.active:focus,
+                .datepicker table tr td span.active:active.focus,
+                .datepicker table tr td span.active:hover:active.focus,
+                .datepicker table tr td span.active.disabled:active.focus,
+                .datepicker table tr td span.active.disabled:hover:active.focus,
+                .datepicker table tr td span.active.active.focus,
+                .datepicker table tr td span.active:hover.active.focus,
+                .datepicker table tr td span.active.disabled.active.focus,
+                .datepicker table tr td span.active.disabled:hover.active.focus {
+                    color: #fff;
+                    background-color: #204d74;
+                    border-color: #122b40;
+                }
+
+            .datepicker table tr td span.active.disabled:hover,
+            .datepicker table tr td span.active:hover.disabled:hover,
+            .datepicker table tr td span.active.disabled.disabled:hover,
+            .datepicker table tr td span.active.disabled:hover.disabled:hover,
+            .datepicker table tr td span.active[disabled]:hover,
+            .datepicker table tr td span.active:hover[disabled]:hover,
+            .datepicker table tr td span.active.disabled[disabled]:hover,
+            .datepicker table tr td span.active.disabled:hover[disabled]:hover,
+            fieldset[disabled] .datepicker table tr td span.active:hover,
+            fieldset[disabled] .datepicker table tr td span.active:hover:hover,
+            fieldset[disabled] .datepicker table tr td span.active.disabled:hover,
+            fieldset[disabled] .datepicker table tr td span.active.disabled:hover:hover,
+            .datepicker table tr td span.active.disabled:focus,
+            .datepicker table tr td span.active:hover.disabled:focus,
+            .datepicker table tr td span.active.disabled.disabled:focus,
+            .datepicker table tr td span.active.disabled:hover.disabled:focus,
+            .datepicker table tr td span.active[disabled]:focus,
+            .datepicker table tr td span.active:hover[disabled]:focus,
+            .datepicker table tr td span.active.disabled[disabled]:focus,
+            .datepicker table tr td span.active.disabled:hover[disabled]:focus,
+            fieldset[disabled] .datepicker table tr td span.active:focus,
+            fieldset[disabled] .datepicker table tr td span.active:hover:focus,
+            fieldset[disabled] .datepicker table tr td span.active.disabled:focus,
+            fieldset[disabled] .datepicker table tr td span.active.disabled:hover:focus,
+            .datepicker table tr td span.active.disabled.focus,
+            .datepicker table tr td span.active:hover.disabled.focus,
+            .datepicker table tr td span.active.disabled.disabled.focus,
+            .datepicker table tr td span.active.disabled:hover.disabled.focus,
+            .datepicker table tr td span.active[disabled].focus,
+            .datepicker table tr td span.active:hover[disabled].focus,
+            .datepicker table tr td span.active.disabled[disabled].focus,
+            .datepicker table tr td span.active.disabled:hover[disabled].focus,
+            fieldset[disabled] .datepicker table tr td span.active.focus,
+            fieldset[disabled] .datepicker table tr td span.active:hover.focus,
+            fieldset[disabled] .datepicker table tr td span.active.disabled.focus,
+            fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus {
+                background-color: #337ab7;
+                border-color: #2e6da4;
+            }
+
+    .datepicker table tr td span.old,
+    .datepicker table tr td span.new {
+        color: #777777;
+    }
+
+.datepicker .datepicker-switch {
+    width: 145px;
+}
+
+.datepicker .datepicker-switch,
+.datepicker .prev,
+.datepicker .next,
+.datepicker tfoot tr th {
+    cursor: pointer;
+}
+
+    .datepicker .datepicker-switch:hover,
+    .datepicker .prev:hover,
+    .datepicker .next:hover,
+    .datepicker tfoot tr th:hover {
+        background: #eeeeee;
+    }
+
+    .datepicker .prev.disabled,
+    .datepicker .next.disabled {
+        visibility: hidden;
+    }
+
+.datepicker .cw {
+    font-size: 10px;
+    width: 12px;
+    padding: 0 2px 0 5px;
+    vertical-align: middle;
+}
+
+.input-group.date .input-group-addon {
+    cursor: pointer;
+}
+
+.input-daterange {
+    width: 100%;
+}
+
+    .input-daterange input {
+        text-align: center;
+    }
+
+        .input-daterange input:first-child {
+            border-radius: 3px 0 0 3px;
+        }
+
+        .input-daterange input:last-child {
+            border-radius: 0 3px 3px 0;
+        }
+
+    .input-daterange .input-group-addon {
+        width: auto;
+        min-width: 16px;
+        padding: 4px 5px;
+        line-height: 1.42857143;
+        text-shadow: 0 1px 0 #fff;
+        border-width: 1px 0;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+.new {
+    background: none !important;
+    display: table-cell !important;
+    font-weight: 400 !important;
+    position: static !important;
+    font-size: 10px !important;
+}
+
+
+
+#actualizarDatosDelivery {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: auto;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+    #actualizarDatosDelivery .modal-content {
+        position: relative;
+        background-color: #fff; /* Fondo blanco */
+        margin: 15% auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%; /* Ancho del modal */
+        max-width: 700px; /* Ancho máximo */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+    }
+
+    /* Estilo para el contenido del modal si necesitas ajustes específicos */
+    #actualizarDatosDelivery .modal-body {
+        padding: 10px 0;
+    }
+
+    /* Estilo para el pie del modal si necesitas ajustes específicos */
+    #actualizarDatosDelivery .modal-footer {
+        border-top: 1px solid #ccc;
+        padding: 10px 0;
+        text-align: right;
+    }
+/*--------------*/
+.modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleHeader {
+    background-color: var(--Light2-grises);
+    height: 50px;
+    padding: 18px 30px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #e9ecef;
+}
+
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleHeader .modalDetalleHeader__titulo {
+        color: var(--Medium-primary);
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+.modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 20px;
+    padding: 30px 30px 0 30px;
+    flex: 1 1 auto;
+    position: relative;
+}
+
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .bloquePedido,
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .bloqueDestinatario {
+        border-radius: 20px;
+        padding: 2.1em 2.8em;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #6884D3;
+        box-shadow: 0px 4px 4px rgb(104 132 211 / 25%);
+    }
+
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody div h2,
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody div h2 {
+        margin-left: 20px;
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #1B2C5E;
+        font-family: system-ui;
+    }
+
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila {
+        margin: 0;
+        justify-content: space-between;
+        display: flex;
+    }
+
+        .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila.filaDoble {
+            grid-column-gap: 20px
+        }
+
+            .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila.filaDoble::after {
+                display: none;
+            }
+
+        .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputFecha {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            width: 100%;
+            grid-gap: 20px;
+        }
+            .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputFecha .inputPequeño select {
+                max-width: 168px;
+                width: 100%;
+                border: 1px solid var(--Medium-primary) !important;
+                color: var(--Medium-primary);
+                border-radius: 8px;
+                height: 27.5px;
+            }
+            .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputFecha .inputPequeño select:focus {
+                outline: none
+            }
+
+        .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputLargo,
+        .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputCorto {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            grid-gap: 20px;
+        }
+
+        .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido label {
+            margin-bottom: 0;
+            color: var(--Dark-grises);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido input {
+            width: 100%;
+            border: 1px solid var(--Medium-primary) !important;
+            color: var(--Medium-primary);
+            border-radius: 8px;
+            font-size: 12px;
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            line-height: 1.5;
+            background-color: #fff;
+            background-clip: padding-box;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+            .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido input:focus {
+                background-color: #fff;
+                outline: 0;
+                /*box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);*/
+            }
+
+        .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido .inputPequeño {
+            max-width: 416px;
+            width: 100%;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputLargo input {
+            max-width: 476px;
+        }
+/*--------------*/
+.modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleFooter {
+    border-top: 0px solid #e9ecef;
+    justify-content: center !important;
+    grid-column-gap: 23px;
+    display: flex;
+    align-items: center;
+    padding-top: 37px;
+    padding-bottom: 32px;
+}
+
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleFooter button {
+        background-color: var(--Medium-primary);
+        border: 1px solid var(--Medium-primary);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        color: white;
+        font-weight: normal;
+        font-size: 12px;
+        padding: 10px 37px !important;
+        line-height: 1;
+        transition: .3s ease background-color, .3s ease border;
+    }
+
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleFooter .btnCancelar {
+        background-color: white;
+        border: var(--Medium-primary) 1px solid;
+        color: var(--Medium-primary);
+        font-weight: 500;
+        transition: .3s ease background-color, .3s ease border;
+    }
+
+        .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleFooter .btnCancelar:hover {
+            border: var(--Light-primary) 1px solid;
+            background-color: var(--Light-primary);
+            color: white;
+        }
+
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleFooter button:hover {
+        background-color: var(--Darkest2-primary);
+        border: 1px solid var(--Darkest2-primary);
+    }
+
+@media screen and (max-width: 991px) {
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputLargo input,
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido input {
+        max-width: 258px;
+    }
+
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila.filaDoble {
+        flex-direction: column;
+        grid-row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleFooter button {
+        padding: 7px 20px !important;
+        font-size: 10px;
+    }
+
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputLargo input,
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido .inputPequeño,
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido input {
+        max-width: 100%;
+    }
+
+    #actualizarDatosDelivery .modal-content {
+        width: 100%;
+    }
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputLargo, .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputCorto,
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido .inputPequeño,
+    .modal#actualizarDatosDelivery .modal-dialog .modalDetalleContent .modalDetalleBody .fila .fila__contenido.bloqueInputFecha {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        grid-gap: 5px;
+        height: auto;
+    }
+}

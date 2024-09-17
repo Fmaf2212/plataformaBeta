@@ -1,0 +1,289 @@
+﻿.sectionDatosPedidos {
+    display: flex;
+    margin-top: 73px;
+    height: calc(100vh - 73px)
+}
+
+    .sectionDatosPedidos .sectionDatosPedidos__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../../img/Vivir-bien-10824X880.jpg);
+        background-size: cover;
+        width: 50%;
+        padding: 0;
+        position: relative;
+    }
+    .sectionDatosPedidos .sectionDatosPedidos__title:before {
+/*        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255,255,255,.5);
+        background-size: contain;
+        position: absolute;*/
+    }
+
+        .sectionDatosPedidos .sectionDatosPedidos__title h1 {
+            font-size: 3.58vw;
+            color: var(--Intense-green);
+            text-align: center;
+            background-color: rgba(255, 255, 255, .5);
+            width: 100%;
+            margin: auto;
+            padding: 0 130px;
+            line-height: 1.2;
+        }
+
+            .sectionDatosPedidos .sectionDatosPedidos__title h1 span {
+                font-weight: 400;
+            }
+
+    .sectionDatosPedidos .sectionDatosPedidos__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        padding: 0 5vw;
+        transition: .3s ease font-size;
+        background-color: #fff;
+    }
+        .sectionDatosPedidos .sectionDatosPedidos__body label {
+            color: #555;
+        }
+        .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__titulo {
+            display: none;
+        }
+
+        .sectionDatosPedidos .sectionDatosPedidos__body,
+        .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi,
+        .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divSelects {
+            grid-gap: 30px;
+            transition: .3s ease grid-gap;
+        }
+
+            .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__tipoDeCompra div select,
+            .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi div select {
+                background-color: #f4f4f4;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border: none;
+                color: #000;
+                padding: 2vh 20px;
+                border-radius: 8px;
+                width: 100%;
+                max-width: 249px;
+                outline: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%231B2C5E;" /></svg>  ');
+                background-position: right 15px top 50%;
+                background-repeat: no-repeat;
+                background-size: 15px;
+            }
+
+            .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__tipoDeCompra div select {
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+            }
+
+            .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi {
+                display: flex;
+                flex-direction: column;
+            }
+
+                .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divSelects {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                    .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divSelects div {
+                        flex-basis: 179.2px;
+                        flex-grow: 1;
+                    }
+
+                        .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divSelects div select {
+                            display: flex;
+                            justify-content: flex-start;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            /*background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%231B2C5E;" /></svg>  ');*/
+                            background-image: url('../../img/Arrowhead-Down-01.png');
+                            background-position: right 15px top 50%;
+                            background-repeat: no-repeat;
+                            background-size: 15px;
+                            color: var(--Medium-green);
+                        }
+
+                .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divLabels {
+                    padding: 10px 0;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    grid-gap: 15px;
+                }
+
+                    .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divLabels label {
+                        margin-bottom: 0;
+                        display: flex;
+                        grid-gap: 10px;
+                    }
+
+                        .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divLabels label span {
+                            font-weight: 500;
+                        }
+
+            .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__btnContinuar {
+                display: flex;
+                justify-content: center;
+            }
+                .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__btnContinuar a {
+                    background-color: var(--Medium-green);
+                    color: #fff;
+                    padding: 16px 4vw;
+                    border: 1px solid var(--Medium-green);
+                    border-radius: 21px;
+                    font-size: 1em;
+                    line-height: .8;
+                    transition: .3s ease background-color, .3s ease border;
+                }
+                    .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__btnContinuar a:hover {
+                        background-color: var(--Primary-green);
+                        border: 1px solid var(--Primary-green);
+                    }
+                    .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__btnContinuar a:focus {
+                        background-color: var(--Intense-green);
+                        border: 1px solid var(--Intense-green);
+                        outline: none;
+                    }
+
+@media (max-width: 1336px) {
+    .sectionDatosPedidos .sectionDatosPedidos__title {
+        background-image: url(../../img/Vivir-bien-768X880.jpg);
+        width: 80%;
+    }
+    .sectionDatosPedidos .sectionDatosPedidos__body {
+        padding: 0 8vw;
+    }
+}
+@media (max-width: 1026px) {
+    .sectionDatosPedidos .sectionDatosPedidos__body,
+    .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi,
+    .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divSelects {
+        grid-gap: 20px;
+    }
+
+        .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__tipoDeCompra div select, .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi div select {
+            padding: 1vh 20px;
+        }
+}
+@media (max-width: 910px) {
+    .sectionDatosPedidos .sectionDatosPedidos__title {
+        background-image: url(../../img/Vivir-bien-543x880.jpg);
+    }
+
+        .sectionDatosPedidos .sectionDatosPedidos__title h1 {
+            position: absolute;
+            top: 10%;
+            padding: 0 50px;
+        }
+    .sectionDatosPedidos .sectionDatosPedidos__body {
+        padding: 0 4vw;
+    }
+}
+@media (max-width: 820px) {
+    .sectionDatosPedidos .sectionDatosPedidos__title {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionDatosPedidos .sectionDatosPedidos__body {
+        font-size: 12px
+    }
+
+        .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__tipoDeCompra div select, .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi div select {
+            max-width: 100%;
+        }
+        .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divLabels {
+            grid-gap: 10px;
+        }
+        .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divLabels label {
+            flex-direction: column;
+            grid-gap: 0px;
+        }
+
+        .sectionDatosPedidos .sectionDatosPedidos__body, .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi, .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divSelects {
+            grid-gap: 10px;
+        }
+
+    .sectionDatosPedidos .sectionDatosPedidos__title {
+        width: 60%;
+    }
+}
+
+@media (max-width: 540px) {
+    .sectionDatosPedidos .sectionDatosPedidos__title {
+        width: 50%;
+    }
+}
+
+@media (max-device-width: 500px) {
+    .sectionDatosPedidos {
+        margin-top: 45px;
+        height: calc(100vh - 95px);
+    }
+
+        .sectionDatosPedidos .sectionDatosPedidos__title {
+            display: none;
+        }
+
+        .sectionDatosPedidos .sectionDatosPedidos__body {
+            font-size: 10px;
+            width: 100%;
+            padding: 0 15vw;
+        }
+
+            .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__titulo {
+                display: block;
+            }
+
+                .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__titulo h1 {
+                    font-size: 16px;
+                    color: var(--Dark-grises);
+                    font-weight: 500;
+                    margin: 0;
+                }
+
+            .sectionDatosPedidos .sectionDatosPedidos__body, .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi, .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divSelects {
+                grid-gap: 15px;
+            }
+
+                .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divLabels {
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    background-color: #F9F9F9;
+                    margin: auto;
+                    grid-gap: 5px;
+                    padding: 2vh 10px;
+                    margin-bottom: 20px;
+                }
+
+                .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divLabels label {
+                    grid-gap: 10px;
+                    flex-direction: row;
+                }
+
+                .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__btnContinuar a {
+                    border-radius: 15px;
+                }
+
+    .sectionDatosPedidos__body .sectionDatosPedidos__body__msj {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-device-height: 568px) {
+    .sectionDatosPedidos .sectionDatosPedidos__body, .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi, .sectionDatosPedidos .sectionDatosPedidos__body .sectionDatosPedidos__body__yachaywasi .divSelects {
+        grid-gap: 10px;
+    }
+}

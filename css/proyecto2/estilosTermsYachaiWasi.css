@@ -1,0 +1,66 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    padding: 0 100px;
+}
+
+#terms {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+    #terms h2 {
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 300;
+        color: #057d9f;
+        line-height: 48px;
+        text-align: center;
+        text-decoration-line: underline
+    }
+
+    #terms h3 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        color: #057d9f;
+        text-align: center;
+        line-height: 40px;
+    }
+
+ul li {
+    list-style: none
+}
+
+
+.op-text-block {
+    text-align: left;
+    line-height: 1.6em;
+    font-weight: 300;
+}
+
+    .op-text-block .description {
+        text-align: justify;
+        word-break: break-word;
+    }
+
+    .op-text-block h3 {
+        font-size: 24px;
+        color: #057d9f;
+        font-weight: lighter;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+.contrato {
+    display: flex;
+    justify-content: center;
+}
+
+    .contrato p {
+        text-align: justify;
+        width: 95%;
+        word-break: break-word;
+    }
