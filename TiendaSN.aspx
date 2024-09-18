@@ -141,6 +141,7 @@
 
         .producto-item {
             width: 220px; /* Ajusta el ancho según sea necesario */
+            min-height: 308px;
             padding: 10px;
             position: relative;
             overflow: hidden;
@@ -1118,8 +1119,8 @@
             var ventana_ancho = $(window).width();
             if (ventana_ancho < 1920) {
                 $("input[type='number']").inputSpinner({
-                    incrementButton: '<b class="glyphicon glyphicon-chevron-up"></b>',
-                    decrementButton: '<b class="glyphicon glyphicon-chevron-down"></b>',
+                    incrementButton: '<b class="glyphicon glyphicon-plus"></b>',
+                    decrementButton: '<b class="glyphicon glyphicon-minus"></b>',
                     groupClass: 'input-group-md',
                     buttonsClass: 'btn-success',
 
@@ -1129,15 +1130,23 @@
                     textAlign: 'center',
                 });
 
-                $(".txtCantProd").css("font-size", "inherit");
-                $(".txtCantProd").css("border", "none");
                 $(".cart").css("padding", "0 30px");
-                $(".btn-decrement").css("background-color", "#333333");
+                $(".btn-decrement").css("background-color", "#fff");
+                $(".btn-decrement").css("color", "#333");
                 $(".btn-decrement").css("border", "2px solid white");
                 $(".btn-decrement").css("margin-right", "3px");
-                $(".btn-increment").css("background-color", "#333333");
+                $(".btn-decrement").css("padding", "3px 0");
+                $(".btn-decrement").css("width", "20px");
+                $(".btn-decrement").css("min-width", "0");
+                $(".txtCantProd").css("font-size", "inherit");
+                $(".txtCantProd").css("border", "none");
+                $(".btn-increment").css("background-color", "#fff");
+                $(".btn-increment").css("color", "#333");
                 $(".btn-increment").css("border", "2px solid white");
                 $(".btn-increment").css("margin-left", "3px");
+                $(".btn-increment").css("padding", "3px 0");
+                $(".btn-increment").css("width", "20px");
+                $(".btn-increment").css("min-width", "0");
             }
         }
         //Caja de texto para aumentar o disminuir cantidad de productos
@@ -1155,6 +1164,7 @@
                     buttonsWidth: '3rem',
                     textAlign: 'center',
                 });
+
                 $(".cart").css("padding", "0 30px");
                 $(".btn-decrement").css("background-color", "#fff");
                 $(".btn-decrement").css("color", "#333");
@@ -1190,7 +1200,9 @@
             perPage: 8,
             limitPagination: entero + decimal,
             containerClass: 'panel-footer',
-            pageNumbers: true
+            pageNumbers: true,
+            firstText: 'Primero',
+            lastText: 'Último'
         })
 
         //Para que el menu del navbar se quede de un color cuando esté seleccionado
@@ -1294,34 +1306,31 @@
                         Nombre = Lista[i].NombreProducto;
                         Precio = Lista[i].PrecioUnitario;
                         cant = Lista.length;
-                        var html = html + ` <div><input hidden id="CantidadProductos" class="pagination" value="${cant}" /><div class="text-center">
-                            <div class="product-entry" style="padding: 40px;">
-                                <div class="product-img">
-                                    <div class="l_p_img" style="display: flex; justify-content: center; align-items: center; height: inherit">
-                                        <img src="https://tienda.mundosantanatura.com/products/${Foto}" alt="" />
-                                    </div>
-                                    <p class="tag" style="display: none"><span class="nuevo">New</span></p>
-                                    <div class="cart">
-                                        <div class="cajaProductos">
-                                            <input type="number" class="txtCantProd" step="1" min="0" max="100" id="${Codigo}" value="1">
-                                        </div>
-                                        <span class="addtocart">
-                                            <img src="https://tienda.mundosantanatura.com/products/${Foto}" alt="" style="display: none" />
-                                            <a class="agregarAlCarrito" id="idAgregarCarrito" href="#" onclick="AgregarCarrito('${Codigo}');" style="transition: .5s;"><i class="icon-shopping-cart"></i></a>
-                 
-                                             
+                        var html = html + ` <article class="producto-item">
+                        <input hidden id="CantidadProductos" class="pagination" value="${cant}" />
 
-
-                                        </span>
-                                        <span style="display: none;"><a href="#" style="transition: .5s" onclick="VerDetalle('${Codigo}', this)"><i class="icon-eye"></i></a></span>
-                                    </div>
+                        <div class="producto-contenido">
+                            <div class="producto-imagen">
+                                <h3 class="producto-nombre"><a href="DetalleProducto.aspx">${Nombre}</a></h3>
+                                <div class="imagen-contenedor">
+                                    <img class="imagen-producto" src="https://tienda.mundosantanatura.com/products/${Foto}" alt="" />
                                 </div>
-                                <div class="desc">
-                                    <h3><a href="DetalleProducto.aspx">${Nombre}</a></h3>
-                                    <p class="price"><span>S/. ${Precio}</span></p>
+                                <div class="bloquePrecio">
+                                    <div class="producto-carrito">
+                                        <div class="producto-cantidad">
+                                            <input type="number" class="cantidad-input" step="1" min="0" max="100" id="${Codigo}" value="1">
+                                        </div>
+                                        <a class="agregar-carrito" href="#${Codigo}" id="idAgregarCarrito" onclick="AgregarCarrito('${Codigo}')">
+                                            <i class="icon-shopping-cart"></i>
+                                        </a>
+                                    </div>
+                                    <p class="producto-precio">S/. ${Precio}</p>
                                 </div>
                             </div>
-                        </div></div>`
+                        </div>
+                    </article>
+
+`
                         $("#idpaginadoProductos").html(html);
                     }
                     CargaBoton();
@@ -1335,7 +1344,7 @@
                     }
 
                     $('.paginadoProductos').paginathing({
-                        perPage: 6,
+                        perPage: 8,
                         limitPagination: entero + decimal,
                         containerClass: 'panel-footer',
                         pageNumbers: true

@@ -21,14 +21,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Icono Santa Natura-->
-    <link rel="icon" href="https://tienda.mundosantanatura.com/img/Natural_Food_icon.png" type="image/x-icon" />
+    <link rel="icon" href="https://tienda.mundosantanatura.com/img/WEB-ICONO.png" type="image/x-icon" />
 
     <link href="css/proyecto2/materialize.css" rel="stylesheet" />
 
     <!-- Bootstrap -->
     <link href="css/proyecto2/bootstrap.min-v2.css?Fv35" rel="stylesheet" />
     <!--Para que salga el video de socios-->
-    <link href="css/proyecto2/bootstrap-3.3.0-css-bootstrap.min-v3.css?Fv40" rel="stylesheet" />
+    <link href="css/proyecto2/bootstrap-3.3.0-css-bootstrap.min-v3.css?Fv41" rel="stylesheet" />
 
     <!-- Rev slider css -->
     <link href="css/proyecto2/vendors/revolution/css/settings.css" rel="stylesheet" />
@@ -1213,7 +1213,7 @@
 
             .menu.active {
                 overflow-y: auto;
-                height: calc(100vh - 171px);
+                height: calc(100vh - 170px);
             }
 
             #navlogin {

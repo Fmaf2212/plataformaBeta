@@ -12,7 +12,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10" type="text/javascript"></script>
     <%--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>--%>
 
-    <link href="css/proyecto2/estilosPreRegistroSocio.css?Fv42" rel="stylesheet" />
+    <link href="css/proyecto2/estilosPreRegistroSocio.css?Fv44" rel="stylesheet" />
 
     <link
         rel="stylesheet"

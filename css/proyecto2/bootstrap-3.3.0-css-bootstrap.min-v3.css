@@ -5291,7 +5291,12 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
         border-color: #ddd
     }
 
-.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+.pagination > .active > a, 
+.pagination > .active > span, 
+.pagination > .active > a:hover, 
+.pagination > .active > span:hover, 
+.pagination > .active > a:focus, 
+.pagination > .active > span:focus {
     z-index: 2;
     color: #fff;
     cursor: default;
@@ -5300,15 +5305,18 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     background-color: var(--Primary-green);
     border-color: var(--Primary-green)
 }
-    #table_id_wrapper .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-        z-index: 2;
-        color: #fff;
-        cursor: default;
-        /*    background-color: #0b1c6f;
-    border-color: #0b1c6f*/
-        background-color: var(--Primary-purple);
-        border-color: var(--Primary-purple)
-    }
+[id^="table_id"] .pagination > .active > a,
+[id^="table_id"] .pagination > .active > span,
+[id^="table_id"] .pagination > .active > a:hover,
+[id^="table_id"] .pagination > .active > span:hover,
+[id^="table_id"] .pagination > .active > a:focus,
+[id^="table_id"] .pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: var(--Primary-purple);
+    border-color: var(--Primary-purple);
+}
 
 .pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
     color: #777;

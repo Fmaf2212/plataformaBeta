@@ -409,6 +409,7 @@ input, button:focus {
             bottom: 6px;
             cursor: pointer;
             border: none;
+            background-color: #F4F4F4;
         }
 
 .imgAddPhoto {
@@ -643,6 +644,7 @@ input, button:focus {
     .formulario .formulario__crearCrearContraseña .ojito1, .formulario .formulario__confirmarContraseña .ojito2 {
         right: 6px;
         bottom: 3px;
+        display: flex;
     }
 
     .formulario__grupo {
@@ -794,12 +796,12 @@ input, button:focus {
     .formulario {
         width: 100%;
     }
-    .formulario .formulario__photo {
-        width: 93px;
-        height: 95px;
-        border: 13px solid #000B44;
-        margin: 0 auto 25px;
-    }
+        .formulario .formulario__photo {
+            width: 93px;
+            height: 95px;
+            border: 13px solid #808080;
+            margin: 0 auto 25px;
+        }
 
     .imgAddPhoto {
         width: 20px;
@@ -837,11 +839,12 @@ input, button:focus {
     }
 
     .ojito1, .ojito2 {
-        width: 16px;
+        width: 24px;
     }
 
     .formulario .formulario__crearCrearContraseña .ojito1, .formulario .formulario__confirmarContraseña .ojito2 {
         bottom: 8px;
+        padding: 0;
     }
 
     .bloqueInfoAfiliacion .bloqueInfoAfiliacion__titulo, .bloqueDatosPersonales .bloqueDatosPersonales__titulo, .bloqueInfoContacto .bloqueInfoContacto__titulo, .bloqueInfoResidencia .bloqueInfoResidencia__titulo {
@@ -954,6 +957,7 @@ input, button:focus {
     .preRegistroSocio {
         padding: 0 40px;
         grid-template-rows: none;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .preRegistroSocio__bloqueTitulo {
@@ -999,7 +1003,8 @@ input, button:focus {
 
     .preRegistroSocio .preRegistroSocio__bloqueBotones {
         grid-row: 3;
-        grid-gap: 40px
+        grid-gap: 40px;
+        grid-column: auto;
     }
 
     .validarIdentidad {
@@ -1157,6 +1162,10 @@ input, button:focus {
     .seleccionPais {
         padding: 20px 37px 25px;
         margin: 25px 0;
+        min-height: 57vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .seleccionPais__titulo label {
@@ -1180,9 +1189,9 @@ input, button:focus {
 
 
         .seleccionPais .seleccionPais__banderas .bandera {
-            width: 65px;
-            background-size: 65px;
-            height: 65px;
+            width: 105px;
+            background-size: 105px;
+            height: 105px;
         }
 
         .seleccionPais .seleccionPais__banderas label {
@@ -1224,7 +1233,7 @@ input, button:focus {
         .formulario .formulario__photo {
             width: 119px;
             height: 119px;
-            border: 9px solid #000B44;
+            border: 9px solid #808080;
         }
 
         .formulario .formulario__crearUsuario, .formulario .formulario__crearCrearContraseña {
@@ -1300,6 +1309,7 @@ input, button:focus {
     .preRegistroSocio .preRegistroSocio__bloqueBotones {
         grid-gap: 19px;
         margin-top: 0;
+        padding: 0px;
     }
 
     .preRegistroSocio__bloqueBotones .btnCancelar, .preRegistroSocio__bloqueBotones .btnRegistrar {
