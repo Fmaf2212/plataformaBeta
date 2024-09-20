@@ -28,7 +28,7 @@
     }
 
     .sectionDatosNetwork__porcentaje .valorRango {
-        color: var(--Primary-orange);
+        color: #7b7a7a;
         font-weight: 500;
         font-size: 30px;
         text-align: start;
@@ -39,7 +39,7 @@
 
     .sectionDatosNetwork__porcentaje .valorComiTotal {
         font-size: 35px;
-        color: var(--Primary-orange);
+        color: #7b7a7a;
         font-weight: 500;
         text-align: center;
         line-height: 1;
@@ -295,7 +295,7 @@
     margin-top: 0;
     font-weight: 500;
     font-size: 18px;
-    color: var(--Primary-orange);
+    color: #7b7a7a;
     text-align: center;
     font-family: var(--Font-type);
 }

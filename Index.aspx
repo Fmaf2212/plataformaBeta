@@ -513,7 +513,7 @@
     </style>
 
     
-    <link href="css/proyecto2/index-sectionDatosNetwork.css?Fv71" rel="stylesheet"/>
+    <link href="css/proyecto2/index-sectionDatosNetwork.css?Fv72" rel="stylesheet"/>
     
     
 
