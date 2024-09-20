@@ -271,12 +271,12 @@
                 outline: none
             }
 
-        #BntComprar.btn-success:not([disabled]):not(.disabled):active {
+/*        #BntComprar.btn-success:not([disabled]):not(.disabled):active {
             color: #fff;
             background-color: rgba(11, 28, 111, .9);
             border-color: rgba(11, 28, 111, .9);
             box-shadow: none;
-        }
+        }*/
 
         #BntComprar.btn-success:not([disabled]):not(.disabled):focus {
             outline: none;
@@ -352,6 +352,12 @@
 
             .colorTextLblCheckbox.active {
                 color: #a876aa;
+            }
+
+            @media(min-width: 540px){
+                .rowProductos{
+                    justify-content: center;
+                }
             }
     </style>
 
@@ -505,9 +511,9 @@
                                             {%>
                                     <tr id="TR<%=productoCarrito.Codigo%>">
                                         <td>
-                                            <div class="row">
-                                                <div class="col-7 col-sm-7 col-md-7 center-block">
-                                                    <img id="ImgFotoo" src="https://tienda.mundosantanatura.com/products/<%=productoCarrito.Foto %>" class="img-responsive" />
+                                            <div class="row rowProductos">
+                                                <div class="col-7 col-sm-7 col-md-7 center-block" style="margin: 0">
+                                                    <img id="ImgFotoo" src="https://tienda.mundosantanatura.com/products/<%=productoCarrito.Foto %>" class="img-responsive" style="min-width: 65px;"/>
                                                 </div>
                                             </div>
                                         </td>
@@ -1262,10 +1268,10 @@
                         <br />
                         <h2>Gracias por comprar, su pedido está realizado</h2>
                         <br />
-                        <p>
-                            <a href="TiendaSN.aspx" class="btn btn-primary" style="width: 60px; height: 30px">Tienda</a>
-                            <a href="MisComprasV2.aspx" class="btn btn-primary btn-outline" style="height: 30px">Historial de Compras</a>
-                        </p>
+                        <div style="display: flex; justify-content: center; align-items: center; grid-gap: 40px;">
+                            <a href="TiendaSN.aspx" class="btn btn-success" style="display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; padding: 7.5px 20px; width: auto; border-radius: 15px;">Tienda</a>
+                            <a href="MisComprasV2.aspx" class="btn btn-success btn-outline" style="display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; padding: 7.5px 20px; width: auto; border-radius: 15px;">Historial de Compras</a>
+                        </div>
                     </div>
                 </div>
             </div>

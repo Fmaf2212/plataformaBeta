@@ -1620,7 +1620,7 @@
 
 
     <!--Para mostrar los iconos de las redes sociales-->
-    <link href="css/proyecto2/vendors/elegant-icon/style.css?v2" rel="stylesheet" />
+    <link href="css/proyecto2/vendors/elegant-icon/style.css?v3" rel="stylesheet" />
 
 
 
@@ -1710,7 +1710,7 @@
                                 <li id="liMapaRed" class="nav-item"><a id="idSubMenuMapaDeRed" class="fondoNaranjaFocus  claseFuente1" href="MapaRedSocios.aspx">Mapa Red</a></li>
                                 <li id="liListadoActividad" class="nav-item"><a id="idSubMenuListadoActividad" class="fondoNaranjaFocus  claseFuente1" href="ListadoActividad.aspx">Listado de Actividad</a></li>
                                 <li id="liTopReportes" class="nav-item"><a id="idSubMenuTopReportes" class="fondoNaranjaFocus  claseFuente1" href="ResumenVentas.aspx">Top Reportes</a></li>
-                                <li id="liTablaCali" class="nav-item"><a id="idSubMenuTablaCalificacion" class="fondoNaranjaFocus  claseFuente1" href="TablaCalificacion.aspx">Tabla de Calificación</a></li>
+                                <%--<li id="liTablaCali" class="nav-item"><a id="idSubMenuTablaCalificacion" class="fondoNaranjaFocus  claseFuente1" href="TablaCalificacion.aspx">Tabla de Calificación</a></li>--%>
                                 <li id="liEmprRegis" class="nav-item"><a id="idSubMenuDatosPre" class="fondoNaranjaFocus  claseFuente1" href="CompletarPregistro.aspx">Empresarios Registrados</a></li>
                                 <li id="liEstadisticas" class="nav-item" style="display: none"><a id="idSubMenuEstadisticas" class="fondoNaranjaFocus  claseFuente1" href="Estadisticas.aspx">Estadísticas</a></li>
                                 <li id="liTop10" class="nav-item" style="display: none"><a id="idSubMenuTop10" class="fondoNaranjaFocus  claseFuente1" href="Top10.aspx">TOP 10</a></li>
@@ -1834,7 +1834,7 @@
                                 <li id="liFacebook2" class="nav-item"><a href="http://www.facebook.com/santanaturanetworkoficialperu" style="font-size: 30px; display: flex; margin: 0 14px;"><i class="social_facebook" style="font-size: 27px"></i></a></li>
                                 <li id="liYoutube2" class="nav-item"><a href="https://www.youtube.com/c/SANTANATURANETWORK" style="font-size: 30px; display: flex; margin: 0 14px;"><i class="social_youtube" style="font-size: 27px"></i></a></li>
                                 <li id="liInstagram2" class="nav-item"><a href="https://www.instagram.com/santanatura.network/" style="font-size: 30px; display: flex; margin: 0 14px;">
-                                    <img class="social_instagram" src="img/iconInstagram.png" alt="iconInstagram"></a></li>
+                                    <img class="social_instagram" src="img/iconInstagram.png" alt="iconInstagram" style="width: 27px"></a></li>
                             </ul>
                         </li>
 
