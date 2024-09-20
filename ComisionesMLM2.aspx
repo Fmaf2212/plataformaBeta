@@ -207,7 +207,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <link href="assets/css/material-dashboard.css?v1" rel="stylesheet" />
+    <link href="assets/css/material-dashboard.css?v2" rel="stylesheet" />
     <link href="assets/css/google-roboto-300-700.css" rel="stylesheet" />
 
     <div class="bloqueDetalleComision" id="bloqueDetalleComision" style="flex-direction: column">
